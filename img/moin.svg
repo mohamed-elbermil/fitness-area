@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>croix2</title>
+	<defs>
+		<image width="90" height="90" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAABBElEQVR4nO3XTUpbURzG4V/bgZBKO3AJiktyG/2YdDnFrThUZ9KiKK7BDlrIpO0gGXQQ0gs3MYl5Hnhnfw7nvBw49xYAAAAAAAAAAAAAAAAA7Ly31efquvpR/dmzPM3P/mnexVqcVt+34LDbkm/VyahGFzhMyYtyV70fUuCbIUPVl+ps4Ow+Oap+VherWvChzd+ebc39kAJfDZg5qH5Vr4csuId+V5NqumxIec9kSNHT6nHdG9lhj/3nNtfwG30+bi8v2tdVLnbY7Ltx0w/PtuW2ejei14VOUva/uamORzW6xKT6WF01+x3d9GGfO0/VZfVh3gUAAAAAAAAAAAAAAAAA7LK/zk/k2/MMFTAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="moin" href="#img1" transform="matrix(5.689,0,0,5.689,0,0)"/>
+</svg>
