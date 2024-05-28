@@ -5,7 +5,6 @@
   text-decoration: none;
 }
 
-
 /* ----Barre de progression------- */
 #barre {
   height: 10px;
@@ -24,9 +23,7 @@
 
 ::-webkit-scrollbar-track {
   background-color: #f9c0ae;
-
 }
-
 
 ::-webkit-scrollbar-thumb {
   background-color: #f46c36;
@@ -34,12 +31,9 @@
   border-radius: 100vw;
 }
 
-
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: #ff8352;
 }
-
 
 /* -------burger-menu--------- */
 .hamburger,
@@ -68,8 +62,6 @@ body {
   padding: 0;
   background: #ffffff; /*Nouvelle couleur de fond */
 }
-
-
 
 .carousel {
   padding-top: 10%;
@@ -172,7 +164,7 @@ body {
 .content p {
   color: #ffffff;
   font-size: 14px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 #cookies {
@@ -205,7 +197,7 @@ body {
 .btn {
   border: none;
   outline: none;
-  padding: .8em 1.5em;
+  padding: 0.8em 1.5em;
   width: 100px;
   margin-right: 1em;
   border-radius: 3px;
@@ -220,8 +212,6 @@ body {
 .btn.accept:hover {
   background-color: #f44336;
   color: white;
-
-
 }
 
 /* -----------HEADER----------------- */
@@ -249,13 +239,11 @@ header {
   display: none;
 }
 
-
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 header nav li {
   display: flex;
@@ -263,13 +251,12 @@ header nav li {
   margin-right: 13em;
 }
 
-
 header nav ul li a {
   padding: 2em 2em;
   color: white;
   text-decoration: none;
-  font-family: 'Source Sans Pro';
-  transition-duration: .6s;
+  font-family: "Source Sans Pro";
+  transition-duration: 0.6s;
 }
 
 header nav ul :nth-of-type(5):hover {
@@ -283,7 +270,6 @@ header nav ul li a:hover {
   /* border-radius: 99px; */
 }
 
-
 header nav input {
   height: 32px;
   width: 281px;
@@ -292,13 +278,12 @@ header nav input {
   box-shadow: 0 2px 19px #ffffff57;
   padding: 16px 21px;
   margin-right: 94px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 header nav input:hover {
   background: #ffffff87;
 }
-
 
 .box {
   position: relative;
@@ -311,26 +296,19 @@ header nav input:hover {
   color: #fd7c00;
 }
 
-
 header #logo {
   width: 14em;
   /* height: 5%; */
   /* margin-right: 23em; */
   transform: translateY(-0.2em);
-  transition: .4s;
+  transition: 0.4s;
   margin-left: 13%;
 }
-
-
-
 
 #logo2 {
   width: 14em;
   height: 5%;
 }
-
-
-
 
 header #logo:hover {
   transform: translateY(-0.3em);
@@ -338,12 +316,10 @@ header #logo:hover {
   z-index: 2;
 }
 
-
 /* ----main---- */
 main {
   margin-top: -4em;
 }
-
 
 /* -------carousselle---------------- */
 
@@ -356,8 +332,6 @@ main {
   padding-top: 74px;
   margin-right: -148px;
 }
-
-
 
 .carousel-control-prev-icon {
   filter: invert(1);
@@ -410,8 +384,6 @@ main {
   font-size: 16px;
 }
 
-
-
 .btn_inscrire2:hover {
   background: #ca441b;
   color: white;
@@ -438,28 +410,28 @@ main {
   height: 315px;
   position: relative;
   filter: brightness(0.8);
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 
-.bg-top:hover{
+.bg-top:hover {
   filter: brightness(1);
 }
 
-.bg-top a{
+.bg-top a {
   position: absolute;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   left: 50%;
   transform: translate(-50%, -50%);
-    bottom: 1em;
-    border: solid #fff 2px;
-    border-radius: 30px;
-    color: #fff;
-    padding: 6px 2em;
-    backdrop-filter: blur(15px);
-    text-decoration: none;
+  bottom: 1em;
+  border: solid #fff 2px;
+  border-radius: 30px;
+  color: #fff;
+  padding: 6px 2em;
+  backdrop-filter: blur(15px);
+  text-decoration: none;
 }
 
-.bg-top a:hover{
+.bg-top a:hover {
   background: #ff693a;
 }
 
@@ -469,21 +441,17 @@ main {
   width: 23%;
   right: 6%;
   top: 27%;
-  transition: transform 1s cubic-bezier(1, 0, 0.17, 1); 
-  animation: slideUp 3s ;
-  transition-delay:1s ;
-
+  transition: transform 1s cubic-bezier(1, 0, 0.17, 1);
+  animation: slideUp 3s;
+  transition-delay: 1s;
 }
 
-@keyframes slideUp{
-  from{
+@keyframes slideUp {
+  from {
     width: 0%;
-
-    
   }
-  to{
+  to {
     width: 23%;
-
   }
 }
 
@@ -504,6 +472,87 @@ main {
   color: #ffffff;
 }
 
+/* SERVICES TRIO */
+
+#cest-partie {
+  margin: 3em 0;
+}
+
+.services-trio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-text {
+  margin: 0 2em;
+  position: relative;
+}
+
+.service-text img {
+  width: 20em;
+  filter: brightness(0.8);
+  transition-duration: 0.4s;
+}
+
+.service-text img:hover {
+  filter: brightness(1.1);
+}
+
+.service-text-p {
+  position: absolute;
+}
+
+.text-services {
+  position: absolute;
+  width: 11em;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.little-title {
+  position: absolute;
+  top: -110px;
+  left: 19px;
+}
+
+.little-title p {
+  margin: -15px 0;
+  top: -105px;
+  font-size: 28px;
+  left: 14px;
+}
+
+.little-title span {
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: #fff;
+  color: #19191900;
+}
+
+.title-service {
+  position: absolute;
+  top: -40px;
+  font-size: 23px;
+  left: 19px;
+}
+
+.en-savoir-plus {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.en-savoir-plus button {
+  background: #ff693a;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: none;
+  color: #fff;
+  padding: 8px 18px;
+}
 
 /* -----Maintenant------------------ */
 
@@ -527,12 +576,6 @@ main {
   margin-right: 2em;
   font-size: 26px;
 }
-
-
-/* .maintenant p {
-  margin-right: 2em;
-  cursor: context-menu;
-} */
 
 /* ------carte fitnesss-pass---------------------- */
 
@@ -569,12 +612,6 @@ main {
   border-radius: 32px;
   box-shadow: 0 10px 40px #00000054;
 }
-
-
-
-
-
-
 
 /* ----------A vos marque----------------------- */
 .A-vos-marque {
@@ -616,7 +653,7 @@ main {
 }
 
 .prestation img {
-  width: 194px; 
+  width: 194px;
   height: 194px;
   border-radius: 16px;
   transition: 0.4s;
@@ -633,7 +670,7 @@ main {
   position: relative;
 }
 
-.prestation span{
+.prestation span {
   position: absolute;
   left: 13%;
   top: 78%;
@@ -641,14 +678,61 @@ main {
   text-transform: uppercase;
 }
 
-.maigre, .detente, .muscle {
+.maigre,
+.detente,
+.muscle {
   position: relative;
 }
 
+/* PROMO INSTAGRAM */
+#promo-instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7em 0;
+}
 
+.title-promo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 52px;
+}
 
+.title-promo p {
+  width: 13em;
+  margin: -12px 0;
+}
 
-/* ---------Video-------------- */
+.title-promo span {
+  color: #ff693a;
+  font-size: 20px;
+}
+
+.image-promo img {
+  width: 27em;
+  margin-right: 2em;
+}
+
+.contenue-promo {
+  margin: 32px 0;
+}
+
+.promo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.promo i {
+  color: #ff693a;
+}
+
+.promo p {
+  margin: 0 12px;
+}
+
+/* ---------VIDEO-------------- */
 
 .video {
   display: flex;
@@ -672,15 +756,34 @@ main {
   margin: 12em 0 0 31%;
 }
 
-.video #motif2 {
+#motif2 {
   width: 18em;
   position: absolute;
   z-index: -1;
-  top: 335%;
+  top: 70em;
   margin-left: -36%;
-
+  /* animation: motiFall 2s ease-in-out; */
+  animation-name: motifFall;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /* left: 35em; */
 }
 
+@keyframes motifFall {
+  0% {
+    left: 35em;
+    rotate: 0deg;
+  }
+  50% {
+    left: 110em;
+    rotate: 180deg;
+  }
+  100% {
+    left: 35em;
+    rotate: 0deg;
+  }
+}
 
 /* -------Articles------------------ */
 .Articles_compile {
@@ -699,7 +802,7 @@ main {
   border-radius: 9px;
   display: flex;
   align-items: center;
-  transition: .9s;
+  transition: 0.9s;
   margin: 0 6% 3em;
   border: solid 2px #ff693a;
 }
@@ -736,7 +839,6 @@ main {
   color: grey;
   font-size: 12px;
   cursor: context-menu;
-  
 }
 
 .btn_bloc {
@@ -747,7 +849,6 @@ main {
   padding: 3px 0;
   border-radius: 30px;
   cursor: pointer;
-
 }
 
 .btn_bloc a {
@@ -759,7 +860,6 @@ main {
   color: white;
 }
 
-
 /* ----------Localisation----------- */
 .location {
   background: #009688;
@@ -770,7 +870,7 @@ main {
   flex-wrap: wrap;
 }
 
-.location iframe{
+.location iframe {
   border: 0;
   border-radius: 24px;
   width: 43em;
@@ -778,24 +878,20 @@ main {
   margin-right: 2em;
 }
 
-.info-itineraire{
+.info-itineraire {
   background: #07514a;
-    padding: 11px;
-    border-radius: 15px;
-    margin: 1em 0;
-    color: #14d4c2;
+  padding: 11px;
+  border-radius: 15px;
+  margin: 1em 0;
+  color: #14d4c2;
 }
 
-#itinéraire{
+#itinéraire {
   font-weight: bold;
   text-decoration: underline;
 }
 
-
-
-
-
-#retrouver h5{
+#retrouver h5 {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #ffffff;
   color: #ff9d4700;
@@ -829,7 +925,8 @@ main {
   font-size: 70%;
 }
 
-#texte-itinÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©raire span {
+#texte-itinÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©raire
+  span {
   color: #56001d;
   margin-right: 22px;
 }
@@ -854,7 +951,7 @@ main {
   display: block;
 }
 
-#like{
+#like {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -872,7 +969,7 @@ main {
 }
 
 .temoignage {
-  background-color: white;
+  cursor: context-menu;
   height: 12em;
   border-radius: 10px;
   margin: 9px 5px;
@@ -881,7 +978,8 @@ main {
   flex-direction: column;
   padding: 27px;
   align-items: center;
-  box-shadow: 0 0 22px #161a2636;
+  border: 1px solid #0707074a;
+  background: linear-gradient(45deg, #e0e0e0, white);
 }
 
 #pp {
@@ -913,7 +1011,13 @@ main {
   margin: 0 16px;
 }
 
-.temoignage .nom1 {display: flex;justify-content: center;padding-left: -176px;/* width: max-content; */flex-direction: column;align-items: center;}
+.temoignage .nom1 {
+  display: flex;
+  justify-content: center;
+  padding-left: -176px; /* width: max-content; */
+  flex-direction: column;
+  align-items: center;
+}
 
 .star {
   display: flex;
@@ -934,115 +1038,6 @@ main {
   display: none;
 }
 
-/* --------Canidature&Newsletter--------------- */
-
-.recrute-newsletter {
-  display: flex;
-  width: 84%;
-  margin: 0 auto 9em;
-}
-
-.candidature {
-  background:#385abb;
-  width: 50%;
-  border-radius: 6px;
-  text-align: center;
-  padding: 2em 0 0 0;
-  margin-right: 0.5em;
-  position: relative;
-}
-
-#on-recrute h6 {
-  font-size: 2em;
-  text-transform: uppercase;
-  font-family: "Source Sans Pro regular", sans-serif;
-  color: white;
-  text-decoration: underline;
-}
-
-.candidature p {
-  padding: 2em 8em 0em 8em;
-  color: white;
-  padding: 0 3em;
-  margin: 1em;
-}
-
-#cv {
-  background-color: #4b4b4b;
-  color: white;
-  border-radius: 43px;
-  box-shadow: 1px 1px 29px #00000063;
-  padding: 9px 2%;
-  position: absolute;
-  left: 32%;
-  width: 37%;
-}
-
-
-
-
-/* -------Newsletter------ */
-.newsletter {
-  background: linear-gradient(to right, #ff7904, rgb(255 181 117));
-  width: 50%;
-  border-radius: 6px;
-  text-align: center;
-  padding: 2em 0 0 0;
-}
-
-.newsletter input {
-  border-radius: 24px;
-  border: none;
-  width: 55%;
-  height: 34px;
-  padding: 0 25px;
-  box-shadow: 5px 5px 0px #ff690a;
-  color: #ff690a;
-  margin-top: 1em;
-}
-
-#newsletter h6{
-  font-size: 2em;
-  text-transform: uppercase;
-  font-family: "Source Sans Pro regular", sans-serif;
-  color: white;
-  text-decoration: underline;
-}
-
-.newsletter p {
-  color: white;
-  padding: 0 3em;
-  margin: 1em;
-}
-
-.recrute-newsletter .btn {
-  border: solid white 2px;
-  border-radius: 44px;
-  padding: 5px 56px;
-  color: white;
-  font-weight: 600;
-  margin-top: 5em;
-  margin-bottom: 1em;
-  padding: 4px;
-}
-
-.recrute-newsletter .btn:hover {
-  color: black;
-  background-color: #fff;
-}
-
-/* ---Illustration_bas--- */
-
-.illustration_bas {
-  display: flex;
-  justify-content: center;
-}
-
-.illustration_bas img {
-  width: 34em;
-}
-
-
 /* ----------Footer------------------- */
 
 footer {
@@ -1057,15 +1052,14 @@ footer {
   position: relative;
 }
 
-#credit{
+#credit {
   font-size: 66%;
-    position: absolute;
-    bottom: 1em;
-    color: #ffffff7a;
-    left: 32px;
-    font-family: inherit;
+  position: absolute;
+  bottom: 1em;
+  color: #ffffff7a;
+  left: 32px;
+  font-family: inherit;
 }
-
 
 footer img {
   width: 43px;
@@ -1090,8 +1084,6 @@ footer img {
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
 }
-
-
 
 .a-propos a {
   display: block;
@@ -1126,14 +1118,11 @@ footer img {
   margin-top: 0.1em;
 }
 
-
 /*Page A_propos*/
 
 .a-propos {
   margin: 32px 0;
 }
-
-
 
 .modele {
   z-index: 2;
@@ -1142,21 +1131,17 @@ footer img {
   margin-left: 64%;
 }
 
-
 .reveal {
   opacity: 0;
   transform: translateY(30px);
 }
 
-
-
 .reveal-visible {
   opacity: 1;
   transform: translateY(0);
-  transition: .9s;
+  transition: 0.9s;
   cursor: context-menu;
 }
-
 
 .intro_A-propos {
   color: #161a26d6;
@@ -1204,18 +1189,18 @@ footer img {
 
 /*PrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©sentation salle*/
 
-#Salle-titre{
+#Salle-titre {
   font-size: 5em;
   -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(59, 58, 58);
-    color: #17171700;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 1em;
+  -webkit-text-stroke-color: rgb(59, 58, 58);
+  color: #17171700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .Article_salle {
- display: flex;
+  display: flex;
   margin: 7em auto;
   width: 71em;
   padding: 0 5px;
@@ -1230,7 +1215,7 @@ footer img {
   font-size: calc(25px+3.3vw);
 }
 
-.texteNbtn #inscrire1{
+.texteNbtn #inscrire1 {
   background-color: #ff693a;
   text-align: center;
   color: white;
@@ -1242,7 +1227,7 @@ footer img {
   /* text-transform: uppercase; */
 }
 
-#inscrire1:hover{
+#inscrire1:hover {
   background: #ff511a;
 }
 
@@ -1256,7 +1241,6 @@ footer img {
   overflow: hidden;
 }
 
-
 #texte1 {
   color: white;
   font-size: 3em;
@@ -1269,26 +1253,22 @@ footer img {
   top: 92px;
 }
 
-#texte1 span{
+#texte1 span {
   font-size: 3em;
   margin-left: -8px;
 }
 
-#modele_pub{
+#modele_pub {
   width: 29em;
 }
 
-#qr_code{
+#qr_code {
   width: 14em;
-    position: absolute;
-    left: 68%;
-    top: 21%;
-    border-radius: 23px;
+  position: absolute;
+  left: 68%;
+  top: 21%;
+  border-radius: 23px;
 }
-
-
-
-
 
 #FAQ {
   font-size: 5em;
@@ -1298,10 +1278,7 @@ footer img {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: rgb(59, 58, 58);
   color: #17171700;
-
 }
-
-
 
 .NotreSalle {
   padding: 0% 7%;
@@ -1357,8 +1334,6 @@ footer img {
   display: flex;
 }
 
-
-
 .slogan_btn {
   background-color: #f44336;
   width: 64%;
@@ -1385,9 +1360,6 @@ footer img {
   text-decoration: none;
 }
 
-
-
-
 /* ----PAGE-Inscription---- */
 .sinscrire {
   background: linear-gradient(45deg, #623a2d, #d7481c);
@@ -1400,7 +1372,7 @@ footer img {
 }
 
 .texte_inscription h1 {
-  color: #FF7F00;
+  color: #ff7f00;
   font-size: 1em;
   text-transform: uppercase;
 }
@@ -1453,7 +1425,7 @@ footer img {
   width: 32em;
 }
 
-.form-floating>.form-select {
+.form-floating > .form-select {
   padding-top: 29px;
   padding-bottom: 0.625rem;
   background: #fd7246;
@@ -1474,9 +1446,9 @@ footer img {
   border: solid #ff4f42 2px;
   transition: 0.4s;
   background: #ea5223;
-  }
+}
 
-.btn_sent:hover{
+.btn_sent:hover {
   background: #ffffff;
   border: solid 1px #fff;
 }
@@ -1507,12 +1479,10 @@ footer img {
 
 /* ------------------ */
 
-
 .hamburger,
 .mobile-nav {
   display: none;
 }
-
 
 /* --------PAGE-FORFAITS---------------- */
 
@@ -1529,16 +1499,13 @@ header #logo-lien {
   filter: brightness(0.5);
 }
 
-
-
-
 .intro_equipement {
   color: #161a26d6;
   text-align: center;
   padding: 0 6%;
 }
 
-.intro_equipement p{
+.intro_equipement p {
   font-weight: 400;
 }
 
@@ -1552,7 +1519,7 @@ header #logo-lien {
   width: 67%;
   position: relative;
 }
-.invitation img{
+.invitation img {
   width: 28%;
 }
 
@@ -1578,21 +1545,19 @@ header #logo-lien {
   border-radius: 54px;
 }
 
-.btn_inscrire3:hover{
+.btn_inscrire3:hover {
   background-color: white;
   color: black;
 }
 
-.btn_inscrire3 a{
+.btn_inscrire3 a {
   color: white;
   text-decoration: none;
 }
 
-
-
-
 .intro_tarif h1,
-.intro_equipement h1, .intro_A-propos h1 {
+.intro_equipement h1,
+.intro_A-propos h1 {
   margin-top: 2%;
   text-transform: uppercase;
   font-weight: lighter;
@@ -1618,10 +1583,8 @@ header #logo-lien {
   text-underline-position: under;
 }
 
-
 .NosForfaits {
   font-size: 1em;
-
 }
 
 .AllForfait {
@@ -1631,34 +1594,33 @@ header #logo-lien {
   flex-wrap: wrap;
 }
 
-
-.ClassicForfait, .PremiumForfait {
-    position: relative;
-    background-color: white;
-    width: 21em;
-    height: 39em;
-    padding: 30px 20px 0 20px;
-    margin: 0 24px 2em 24px;
-    border-radius: 47px;
-    transition: .4s;
-    z-index: 1;
-    /* border: solid 1px #949494; */
-    box-shadow: 0 0 22px #2125294d;
-    z-index: -1;
+.ClassicForfait,
+.PremiumForfait {
+  position: relative;
+  background-color: white;
+  width: 21em;
+  height: 39em;
+  padding: 30px 20px 0 20px;
+  margin: 0 24px 2em 24px;
+  border-radius: 47px;
+  transition: 0.4s;
+  z-index: 1;
+  /* border: solid 1px #949494; */
+  box-shadow: 0 0 22px #2125294d;
+  z-index: -1;
 }
 
-.ClassicForfait:hover, .PremiumForfait:hover:hover{
+.ClassicForfait:hover,
+.PremiumForfait:hover:hover {
   /* box-shadow: 0 0 37px #00000085; */
 }
-
-
 
 .ClassicForfait h2 {
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
   color: 46474D;
-  color: #46474D;
+  color: #46474d;
 }
 
 .price {
@@ -1674,7 +1636,8 @@ header #logo-lien {
   line-height: 21px;
 }
 
-.price span, .price2 span {
+.price span,
+.price2 span {
   font-size: 13px;
   color: #524d4b;
 }
@@ -1699,7 +1662,7 @@ header #logo-lien {
   text-transform: uppercase;
   width: 96%;
   margin-bottom: 3px;
-  transition-duration: .4S;
+  transition-duration: 0.4s;
 }
 
 .btn_orange:hover {
@@ -1713,8 +1676,8 @@ header #logo-lien {
   justify-content: space-between;
 }
 
-.yes i{
-  font-size: 25px;  
+.yes i {
+  font-size: 25px;
   position: absolute;
   top: 4px;
   left: 92%;
@@ -1734,8 +1697,6 @@ header #logo-lien {
   left: 92%;
 }
 
-
-
 .prix {
   display: flex;
 }
@@ -1745,18 +1706,13 @@ header #logo-lien {
   margin-left: 3em;
 }
 
-
-
 .PremiumForfait h2 {
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
   color: 46474D;
-  color: #46474D;
+  color: #46474d;
 }
-
-
-
 
 .price2 {
   background: #e91e63;
@@ -1769,7 +1725,6 @@ header #logo-lien {
   position: absolute;
   left: 0;
   line-height: 21px;
-
 }
 
 .btn_red {
@@ -1834,7 +1789,7 @@ header #logo-lien {
   cursor: pointer;
 }
 
-.btn_plus a{
+.btn_plus a {
   color: white;
   text-decoration: none;
 }
@@ -1845,12 +1800,9 @@ header #logo-lien {
   height: 23em;
 }
 
-#fond-homme{
+#fond-homme {
   width: 100%;
 }
-
-
-
 
 #guenage {
   height: 25em;
@@ -1860,12 +1812,6 @@ header #logo-lien {
 #foot_tarif {
   margin-top: 0px;
 }
-
-
-
-
-
-
 
 /* --------Page SE MUSCLER----------------- */
 
@@ -1958,14 +1904,11 @@ header #logo-lien {
   cursor: url(../images/chaussure.png), auto;
 }
 
-
 /* -----A propos------ */
-
 
 #A-propos-main {
   background: rgb(132, 132, 132);
 }
-
 
 /* ---Equipement---- */
 
@@ -1973,7 +1916,8 @@ header #logo-lien {
   width: 100%;
 }
 
-.machine, .machine2 {
+.machine,
+.machine2 {
   display: flex;
   width: 67%;
   margin: 5em auto;
@@ -1986,7 +1930,7 @@ header #logo-lien {
   align-items: center;
 }
 
-.machine span{
+.machine span {
   font-weight: 700;
 }
 
@@ -2000,7 +1944,8 @@ header #logo-lien {
   width: 22em;
 }
 
-.machine p, .machine2 p {
+.machine p,
+.machine2 p {
   color: black;
   font-size: 74%;
   /* overflow: auto; */
@@ -2010,12 +1955,12 @@ header #logo-lien {
   font-family: sans-serif;
 }
 
-.titreNtexte{
+.titreNtexte {
   margin-left: 22px;
   margin-right: 13px;
 }
 
-.titreNtexte a:hover{
+.titreNtexte a:hover {
   color: #ff5722;
   font-weight: 500;
 }
@@ -2024,11 +1969,15 @@ header #logo-lien {
   display: none;
 }
 
-.article_infos2 img{
+.article_infos2 img {
   width: 372px;
 }
 
-.titreNtexte h1,.titreNtexte h2, .titreNtexte h3, .titreNtexte h4, .titreNtexte span{
+.titreNtexte h1,
+.titreNtexte h2,
+.titreNtexte h3,
+.titreNtexte h4,
+.titreNtexte span {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
@@ -2036,16 +1985,15 @@ header #logo-lien {
   margin: -17px 0;
 }
 
-
-.titreNtexte span{
+.titreNtexte span {
   /* -webkit-text-stroke: 1px; */
   /* -webkit-text-stroke-color: rgb(59, 58, 58); */
   color: #ff693a;
 }
 /* ----detente---- */
 
-.contenue a{
-  color: #FF7F00;
+.contenue a {
+  color: #ff7f00;
 }
 
 .contenue h5 {
@@ -2058,17 +2006,9 @@ header #logo-lien {
   margin: 140px 0;
 }
 
-
-
-
-
-
-
 /* -----Media-query-Accueil----- */
 
 /*SMARTPHONE*/
-
-
 
 @media screen and (max-width: 1177px) {
   .article-muscle img {
@@ -2086,8 +2026,6 @@ header #logo-lien {
   }
 }
 
-
-
 /* -------Media Query bloc------------ */
 
 @media screen and (max-width: 1459px) {
@@ -2104,65 +2042,60 @@ header #logo-lien {
     height: 30em;
   }
 
-  .bloc-insta-rose{
+  .bloc-insta-rose {
     display: none;
   }
-
-
 }
 
 /*A-propos*/
 
-@media screen and (max-width:1270px){
- 
-  .machine img, .machine2 img {
+@media screen and (max-width: 1270px) {
+  .machine img,
+  .machine2 img {
     border-radius: 4px;
     width: 100%;
+  }
+
+  .machine,
+  .machine2 {
+    display: flex;
+    align-items: auto;
+    margin-bottom: none;
+    width: 97%;
+    /* overflow: auto; */
+  }
+
+  .titreNtexte {
+    margin: 0 13px 0 22px;
+  }
 }
 
-.machine, .machine2 {
-  display: flex;
-  align-items:auto;
-  margin-bottom: none;
-  width: 97%;
-  /* overflow: auto; */
-}
-
-.titreNtexte {
-  margin: 0 13px 0 22px;
-}
-
-}
-
-@media screen and (max-width:1108px){
+@media screen and (max-width: 1108px) {
   .Article_salle {
     width: 94%;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
 
-#Salle_de_sport{
-  width: 100%;
-}
+  #Salle_de_sport {
+    width: 100%;
+  }
 
-.texteNbtn {
-  padding: 2em 0em 0 0em;
-}
-
+  .texteNbtn {
+    padding: 2em 0em 0 0em;
+  }
 }
 
 /*Tablette*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
+  .bg-top {
+    display: none;
+  }
 
- .bg-top{
-  display: none;
- }
-
- .Offre {
-  margin: 0 1em;
-}
-
+  .Offre {
+    margin: 0 1em;
+  }
 
   header {
     background-color: #ff693a;
@@ -2172,7 +2105,6 @@ header #logo-lien {
     display: block;
     justify-content: none;
     align-items: none;
-
   }
 
   header #logo {
@@ -2194,9 +2126,6 @@ header #logo-lien {
   .ouvrir {
     display: block;
     font-size: 2em;
-
-
-
   }
 
   .toggle .fermer {
@@ -2210,9 +2139,7 @@ header #logo-lien {
   .open .fermer {
     display: block;
     font-size: 2em;
-
   }
-
 
   /* Mettre image redimensionnÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© */
   .w-100 {
@@ -2226,7 +2153,6 @@ header #logo-lien {
     padding-top: 0;
   }
 
-
   /*banniÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨re*/
   #A-propos-img,
   #banniere_tarifs {
@@ -2235,10 +2161,6 @@ header #logo-lien {
     margin-top: 9em;
     filter: none;
   }
-
-
-
-
 
   /* ------------- */
   header nav li {
@@ -2263,7 +2185,7 @@ header #logo-lien {
     text-transform: uppercase;
   }
 
-  header nav a>span {
+  header nav a > span {
     border: solid white 1px;
     padding: 12px 33px;
     border-radius: 53px;
@@ -2274,15 +2196,11 @@ header #logo-lien {
     color: white;
   }
 
-
   header nav ul :nth-of-type(5):hover {
-
     background-color: transparent;
-
   }
 
-
-  header nav li a>span:hover {
+  header nav li a > span:hover {
     border: solid white 1px;
     background-color: #ff5722;
   }
@@ -2299,7 +2217,6 @@ header #logo-lien {
 
   .open header nav li {
     transform: translateX(0);
-
   }
 
   .bloc-insta-rose {
@@ -2322,18 +2239,14 @@ header #logo-lien {
     display: none;
   }
 
-
-
-
   .prestation img {
     margin-right: 2em;
     width: 85%;
   }
 
-  #like{
+  #like {
     font-size: 383%;
   }
-
 
   .avis {
     flex-wrap: wrap;
@@ -2362,21 +2275,20 @@ header #logo-lien {
     /* position: absolute; */
     left: 27px;
     top: 23em;
-}
+  }
 
-#retrouver h5 {
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #ffffff;
-  color: #ff9d4700;
-  font-size: 252%;
-  text-transform: uppercase;
-}
+  #retrouver h5 {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    color: #ff9d4700;
+    font-size: 252%;
+    text-transform: uppercase;
+  }
 
   .recrute-newsletter {
     width: 97%;
     /* margin: 21em auto 1em; */
-}
-
+  }
 
   #texte-itinÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©raire {
     padding-right: 34%;
@@ -2395,14 +2307,13 @@ header #logo-lien {
     border-radius: 6px;
   }
 
-  .location iframe{
+  .location iframe {
     margin: 0;
   }
 
   #map {
     display: none;
   }
-
 
   .recrute-newsletter {
     flex-direction: column;
@@ -2463,7 +2374,7 @@ header #logo-lien {
     transform: translateX(0px);
   }
 
-  .ClassicForfait:hover+.PremiumForfait {
+  .ClassicForfait:hover + .PremiumForfait {
     opacity: 1;
     transform: scale(1);
   }
@@ -2471,7 +2382,7 @@ header #logo-lien {
   /*Page A propos*/
   .Texte-presentation-salle {
     width: 96%;
-    background: #FFAC59;
+    background: #ffac59;
     color: white;
     margin: 8% auto;
     display: block;
@@ -2496,10 +2407,7 @@ header #logo-lien {
 
   .NotreSalle {
     padding: 0% 2%;
-
   }
-
-
 
   #women {
     width: 52%;
@@ -2531,9 +2439,6 @@ header #logo-lien {
   #texte-pub {
     display: none;
   }
-
-
-
 
   #modele {
     width: 60%;
@@ -2577,7 +2482,7 @@ header #logo-lien {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-}
+  }
 
   .product-container::-webkit-scrollbar {
     display: none;
@@ -2748,7 +2653,7 @@ header #logo-lien {
     /* padding: 3px 3em; */
   }
 
-  #like{
+  #like {
     margin-top: -40px;
   }
 
@@ -2796,24 +2701,17 @@ header #logo-lien {
 
   .texteNbtn {
     padding: 1em 0em 0 0em;
-}
+  }
 
-.texteNbtn p{
-  font-size: 11px;
-}
-
-  
-
-
-
-
+  .texteNbtn p {
+    font-size: 11px;
+  }
 
   /*tarif*/
 
   #tarif_fond {
     display: none;
   }
-
 
   /*Inscription*/
 
@@ -2849,7 +2747,6 @@ header #logo-lien {
     left: 11px;
     color: white;
   }
-
 
   .Articles_compile {
     display: none;
@@ -2891,7 +2788,7 @@ header #logo-lien {
     border-radius: 9px;
     display: flex;
     align-items: center;
-    transition: .9s;
+    transition: 0.9s;
     margin: 0 11% 3em;
   }
 
@@ -2899,7 +2796,6 @@ header #logo-lien {
     display: flex;
     padding: 0 0 0 147px;
   }
-
 
   .carre_texte img {
     position: absolute;
@@ -2910,11 +2806,6 @@ header #logo-lien {
     box-shadow: 12px 12px 21px #0000002b;
   }
 
-
-
-
-
-
   .modele {
     display: none;
   }
@@ -2924,324 +2815,280 @@ header #logo-lien {
   .titreNtexte {
     border-radius: 23px;
     margin-left: 0px;
-}
+  }
 
-
-
-.machine p, .machine2 p {
-    overflow:initial;
+  .machine p,
+  .machine2 p {
+    overflow: initial;
     height: auto;
-    
+  }
+
+  .machine,
+  .machine2 {
+    margin-bottom: 10em;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  #qr_code {
+    width: 24%;
+    left: 68%;
+    top: 26%;
+  }
+
+  #texte1 {
+    display: none;
+  }
+
+  #modele_pub {
+    width: 18em;
+  }
+  #dark-change {
+    right: 11%;
+    top: 50%;
+  }
+
+  #banniere_tarifs,
+  #A-propos-img,
+  #banniere_material {
+    margin-top: 9em;
+  }
 }
 
+/* --------------------------------------------------------- */
 
+/*Smartphone*/
 
+@media screen and (max-width: 425px) {
+  .nomNmail input {
+    padding: 11px 8%;
+    margin-top: 1em;
+  }
 
-.machine, .machine2 {
-  margin-bottom: 10em;
-  position: relative;
-  flex-direction: column-reverse;
-}
+  #foot_tarif {
+    margin-top: 73em;
+  }
 
-#qr_code {
-  width: 24%;
-  left: 68%;
-  top: 26%;
-}
-
-#texte1{
-  display: none;
-}
-
-#modele_pub {
-  width: 18em;
-}
-#dark-change {
-  right: 11%;
-  top: 50%;
-}
-
-#banniere_tarifs, #A-propos-img, #banniere_material {
-  margin-top: 9em;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* --------------------------------------------------------- */
-
-  /*Smartphone*/
-
-  @media screen and (max-width:425px) {
-    .nomNmail input {
-      padding: 11px 8%;
-      margin-top: 1em;
-    }
-
-
-    #foot_tarif {
-      margin-top: 73em;
-    }
-
-    .location {
-      /* height: 37em; */
+  .location {
+    /* height: 37em; */
   }
 
   .location-info {
     font-size: 76%;
     left: 10px;
     top: 28em;
-}
-    .candidature {
-      width: 99%;
-      position: relative;
-    }
-
-    #retrouver h5 {
-      -webkit-text-stroke: 1px;
-      -webkit-text-stroke-color: #000000;
-      color: #ff9d4700;
-      
+  }
+  .candidature {
+    width: 99%;
+    position: relative;
   }
 
-
-    .bloc_presta {
-      box-shadow: 3px 3px 0px #121736d4;
-      background-color: #f9f8ff;
-      margin-top: 2em;
-    }
-
-    .Allpresta {
-      margin-top: 2em;
-    }
-
-
-
-    #cv {
-      padding: 9px 2%;
-      position: absolute;
-      left: 21%;
-      width: 58%;
-    }
-
-    #like{
-      font-size: 234%;
-      text-align: center;
-    }
-
-    .candidature p,
-    .newsletter p {
-      padding: 0 0em;
-      margin: 2em;
-    }
-
-    .recrute-newsletter {
-      margin: 1em auto 1em;
+  #retrouver h5 {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;
+    color: #ff9d4700;
   }
 
-
-    /*A-vosmarque*/
-
-    .A-vos-marque {
-      width: 97%;
-      height: 78rem;
-      margin: 0 auto;
-    }
-
-    .prestation {
-      flex-wrap: wrap;
-      margin-top: 0em;
-    }
-
-    .prestation img {
-      width: 81%;
-      margin-top: 15px;
-      margin-left: 11%;
-    }
-
-    .muscle span,
-    .dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©tente span,
-    .maigre span {
-      position: absolute;
-      left: 15%;
-      top: 84%;
-      font-size: 192%;
-      text-transform: uppercase;
-    }
-
-    .A-vos-marque h4 {
-      font-size: 204%;
-    }
-
-    .Article_bloc {
-
-      width: 19em;
-      margin: 0 6% 3em;
-    }
-
-    .carre_texte img {
-      width: 44%;
-      right: 68%;
-      top: 23%;
-    }
-
-    .texte_bloc h1 {
-      font-size: 64%;
-    }
-
-    .texte_bloc h2 {
-      font-size: 103%;
-    }
-
-    .texte_bloc p {
-      font-size: 64%;
-    }
-
-    /* page_equipement-- */
-
-    #photo_paysage {
-      display: block;
-      width: 100%;
-    }
-
-    .titreNtexte {
-      margin:none
-   
+  .bloc_presta {
+    box-shadow: 3px 3px 0px #121736d4;
+    background-color: #f9f8ff;
+    margin-top: 2em;
   }
 
-
-    #material {
-      display: none;
-    }
-
-    .machine, .machine2 {
-      width: auto;
-      display: block;
-      /* height: 20em; */
-      margin: 3em 3em;
+  .Allpresta {
+    margin-top: 2em;
   }
 
-  .titreNtexte p{
+  #cv {
+    padding: 9px 2%;
+    position: absolute;
+    left: 21%;
+    width: 58%;
+  }
+
+  #like {
+    font-size: 234%;
+    text-align: center;
+  }
+
+  .candidature p,
+  .newsletter p {
+    padding: 0 0em;
+    margin: 2em;
+  }
+
+  .recrute-newsletter {
+    margin: 1em auto 1em;
+  }
+
+  /*A-vosmarque*/
+
+  .A-vos-marque {
+    width: 97%;
+    height: 78rem;
+    margin: 0 auto;
+  }
+
+  .prestation {
+    flex-wrap: wrap;
+    margin-top: 0em;
+  }
+
+  .prestation img {
+    width: 81%;
+    margin-top: 15px;
+    margin-left: 11%;
+  }
+
+  .muscle span,
+  .dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©tente
+    span,
+  .maigre span {
+    position: absolute;
+    left: 15%;
+    top: 84%;
+    font-size: 192%;
+    text-transform: uppercase;
+  }
+
+  .A-vos-marque h4 {
+    font-size: 204%;
+  }
+
+  .Article_bloc {
+    width: 19em;
+    margin: 0 6% 3em;
+  }
+
+  .carre_texte img {
+    width: 44%;
+    right: 68%;
+    top: 23%;
+  }
+
+  .texte_bloc h1 {
+    font-size: 64%;
+  }
+
+  .texte_bloc h2 {
+    font-size: 103%;
+  }
+
+  .texte_bloc p {
+    font-size: 64%;
+  }
+
+  /* page_equipement-- */
+
+  #photo_paysage {
+    display: block;
+    width: 100%;
+  }
+
+  .titreNtexte {
+    margin: none;
+  }
+
+  #material {
+    display: none;
+  }
+
+  .machine,
+  .machine2 {
+    width: auto;
+    display: block;
+    /* height: 20em; */
+    margin: 3em 3em;
+  }
+
+  .titreNtexte p {
     font-size: 1em;
   }
 
-  .machine p, .machine2 p {
+  .machine p,
+  .machine2 p {
     overflow: auto;
     /* width: 218px; */
     font-size: 9px;
-}
-    .intro_tarif h1,
-    .intro_equipement h1 {
-      margin-top: 23%;
-    }
+  }
+  .intro_tarif h1,
+  .intro_equipement h1 {
+    margin-top: 23%;
+  }
 
-    .machine img, .machine2 img {
-      display: none;
+  .machine img,
+  .machine2 img {
+    display: none;
   }
 
   #dark-change {
-   display: none;
-}
-
-/* ----A-propos---- */
-
-.Article_salle {
-  margin: 2em auto;
-}
-
-#Salle-titre {
-  font-size: 2em;
-}
-
-.Article_salle {
-  margin: 4em auto;
-}
-
-/* -----pop-up cookie----- */
-
-.bloc_cookies {
-  bottom: 2px;
-}
-
-
-.content {
-  padding: 8vw 10vw;
-}
-
-
-/* ------Tarif----- */
-
-.Allpresta{
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+    display: none;
   }
 
-  @media screen and (max-width:320px) {
-    .A-vos-marque {
-      height: 60em;
-    }
+  /* ----A-propos---- */
 
-    .location {
-      background: none;
-      /* margin-bottom: -19%; */
-      height: -156px;
-    }
+  .Article_salle {
+    margin: 2em auto;
+  }
 
-    #retrouver {
-      line-height: -32px;
+  #Salle-titre {
+    font-size: 2em;
+  }
+
+  .Article_salle {
+    margin: 4em auto;
+  }
+
+  /* -----pop-up cookie----- */
+
+  .bloc_cookies {
+    bottom: 2px;
+  }
+
+  .content {
+    padding: 8vw 10vw;
+  }
+
+  /* ------Tarif----- */
+
+  .Allpresta {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .A-vos-marque {
+    height: 60em;
+  }
+
+  .location {
+    background: none;
+    /* margin-bottom: -19%; */
+    height: -156px;
+  }
+
+  #retrouver {
+    line-height: -32px;
   }
 
   #retrouver h5 {
     font-size: 230%;
     line-height: 0px;
-}
-
-.location-info {
-  font-size: 64%;
-  /* left: 10px; */
-  /* top: 35em; */
-  margin-top: 4em;
-}
-
-.recrute-newsletter {
-  width: 97%;
-  margin: 3em auto 1em;
-}
-
-
-.contenue h5{
-  font-size: 123%
-}
-
   }
 
+  .location-info {
+    font-size: 64%;
+    /* left: 10px; */
+    /* top: 35em; */
+    margin-top: 4em;
+  }
 
+  .recrute-newsletter {
+    width: 97%;
+    margin: 3em auto 1em;
+  }
 
-
-
+  .contenue h5 {
+    font-size: 123%;
+  }
+}

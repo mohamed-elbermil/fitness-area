@@ -1,11 +1,11 @@
-
 <nav>
 
     <a href="../index.php"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
 
     <ul>
-        <li><a href="tarifs.php">Tarifs</a>
-            <a href="equipement.php">Equipement</a>
+        <li>
+            <a href="activite.php">Activités</a>
+            <a href="tarifs.php">Tarifs</a>
             <a href="A-Propos.php">
                 <NOBR>à propos</NOBR>
             </a>
@@ -21,6 +21,6 @@
     <div class="toggle">
         <i class="fa-solid fa-bars ouvrir"></i>
         <i class="fa-solid fa-xmark fermer"></i>
-    </div> 
-	
+    </div>
+
 </nav>
