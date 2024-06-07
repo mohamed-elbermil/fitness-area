@@ -474,7 +474,25 @@ main {
 
 /* SERVICES TRIO */
 
+.textNservices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title-top {
+  font-size: 2em;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title-top span {
+  color: #ff693a;
+}
+
 #cest-partie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3em 0;
 }
 
@@ -485,8 +503,8 @@ main {
 }
 
 .service-text {
-  margin: 0 2em;
   position: relative;
+  margin: 1em 2em 0 0;
 }
 
 .service-text img {
@@ -516,12 +534,12 @@ main {
   position: absolute;
   top: -110px;
   left: 19px;
+  transition: 0.4s;
 }
 
 .little-title p {
   margin: -15px 0;
   top: -105px;
-  font-size: 28px;
   left: 14px;
 }
 
@@ -536,6 +554,14 @@ main {
   top: -40px;
   font-size: 23px;
   left: 19px;
+  transition-duration: 0.4s ease-out;
+}
+.title-service-add {
+  transition-duration: 0.4s ease-out;
+  position: absolute;
+  top: -280px;
+  left: 85px;
+  font-size: 45px;
 }
 
 .en-savoir-plus {
@@ -567,6 +593,23 @@ main {
   margin: 0;
   overflow: hidden;
   cursor: context-menu;
+}
+
+.all-now {
+  display: flex;
+  animation: now 12s ease-in-out infinite;
+}
+
+@keyframes now {
+  0% {
+    transform: translate(-317px, 10px);
+  }
+  50% {
+    transform: translate(-16px, 10px);
+  }
+  100% {
+    transform: translate(-317px, 10px);
+  }
 }
 
 .Now {
@@ -615,7 +658,7 @@ main {
 
 /* ----------A vos marque----------------------- */
 .A-vos-marque {
-  background: linear-gradient(to right, rgb(9 18 69), rgb(187 193 232));
+  background: linear-gradient(to right, rgb(3 7 30), rgb(143 145 161));
   width: 97%;
   height: 28rem;
   color: white;
@@ -689,7 +732,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 7em 0;
+  margin: 2em 0;
+  background: #f6f5f4;
+  padding: 4em 0;
 }
 
 .title-promo {
@@ -707,6 +752,8 @@ main {
 .title-promo span {
   color: #ff693a;
   font-size: 20px;
+  background: #ffe2d9;
+  padding: 2px 9px;
 }
 
 .image-promo img {
@@ -721,15 +768,21 @@ main {
 .promo {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: baseline;
+  margin: 37px 0;
 }
 
 .promo i {
   color: #ff693a;
+  font-size: 2em;
 }
 
 .promo p {
-  margin: 0 12px;
+  margin: 0 22px;
+  font-size: 2em;
+  width: 24em;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 /* ---------VIDEO-------------- */
@@ -795,7 +848,7 @@ main {
 
 .Article_bloc {
   background-color: white;
-  /* box-shadow: 0 0 15px #00000054; */
+  box-shadow: 0 0 39px #00000024;
   width: 27em;
   height: 13em;
   position: relative;
@@ -803,8 +856,8 @@ main {
   display: flex;
   align-items: center;
   transition: 0.9s;
-  margin: 0 6% 3em;
-  border: solid 2px #ff693a;
+  margin: 0 6em 3em;
+  /* border: solid 2px #ff693a; */
 }
 
 .Article_bloc:hover {
@@ -842,7 +895,8 @@ main {
 }
 
 .btn_bloc {
-  background: linear-gradient(to right, #fd9128, rgb(231 87 133));
+  /* background: linear-gradient(to right, #fd9128, rgb(231 87 133)); */
+  background: #ff693a;
   width: 7em;
   height: 2em;
   text-align: center;
@@ -2859,7 +2913,23 @@ header #logo-lien {
 
 /*Smartphone*/
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 424px) {
+  .services-trio {
+    padding: 0px 8vw 22px 89vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+  .title-promo {
+    font-size: 2em;
+  }
+
+  #promo-instagram {
+    flex-direction: column;
+  }
+
   .nomNmail input {
     padding: 11px 8%;
     margin-top: 1em;
@@ -2869,15 +2939,6 @@ header #logo-lien {
     margin-top: 73em;
   }
 
-  .location {
-    /* height: 37em; */
-  }
-
-  .location-info {
-    font-size: 76%;
-    left: 10px;
-    top: 28em;
-  }
   .candidature {
     width: 99%;
     position: relative;
