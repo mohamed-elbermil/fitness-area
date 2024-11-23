@@ -60,11 +60,7 @@
 
 body {
   padding: 0;
-  background: #ffffff; /*Nouvelle couleur de fond */
-}
-
-.carousel {
-  padding-top: 10%;
+  background: #ffffff; 
 }
 
 .hamburger .bar,
@@ -193,7 +189,6 @@ body {
   justify-content: center;
   margin-top: 2em;
 }
-
 .btn {
   border: none;
   outline: none;
@@ -217,13 +212,11 @@ body {
 /* -----------HEADER----------------- */
 
 header {
-  position: fixed;
+  position: sticky;
   z-index: 5;
   width: 100%;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  margin-top: 4em;
-  height: 88px;
   color: #fff;
   padding: 0 2rem;
   transition: all 0.25s ease-in-out;
@@ -252,6 +245,7 @@ header nav li {
 }
 
 header nav ul li a {
+  font-size: 16px;
   padding: 2em 2em;
   color: white;
   text-decoration: none;
@@ -267,7 +261,6 @@ header nav ul :nth-of-type(5):hover {
 header nav ul li a:hover {
   background: #fb4b07;
   color: white;
-  /* border-radius: 99px; */
 }
 
 header nav input {
@@ -295,16 +288,12 @@ header nav input:hover {
   top: 7px;
   color: #fd7c00;
 }
-
 header #logo {
   width: 14em;
-  /* height: 5%; */
-  /* margin-right: 23em; */
   transform: translateY(-0.2em);
   transition: 0.4s;
   margin-left: 13%;
 }
-
 #logo2 {
   width: 14em;
   height: 5%;
@@ -315,7 +304,6 @@ header #logo:hover {
   background-size: cover;
   z-index: 2;
 }
-
 /* ----main---- */
 main {
   margin-top: -4em;
@@ -329,7 +317,6 @@ main {
 }
 
 #carouselExempleControls {
-  padding-top: 74px;
   margin-right: -148px;
 }
 
@@ -340,9 +327,7 @@ main {
 .carousel-control-next-icon {
   filter: invert(1);
 }
-
 /* -------------Offre------------------ */
-
 .fond_offre {
   display: flex;
   align-items: center;
@@ -467,8 +452,6 @@ main {
   left: 13px;
   font-size: 45px;
   text-transform: uppercase;
-  /* -webkit-text-stroke: 1px; */
-  /* -webkit-text-stroke-color: rgb(255 255 255); */
   color: #ffffff;
 }
 
@@ -560,7 +543,7 @@ main {
   transition-duration: 0.4s ease-out;
   position: absolute;
   top: -280px;
-  left: 85px;
+  left: 52px;
   font-size: 45px;
 }
 
@@ -569,6 +552,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 1em 0;
+  background: #ff693a;
 }
 
 .en-savoir-plus button {
@@ -791,7 +775,6 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 4em;
-  /* background: linear-gradient(to right, #dc3545, rgb(255 196 137)); */
   padding: 4em 0;
   width: 100%;
 }
@@ -814,26 +797,24 @@ main {
   position: absolute;
   z-index: -1;
   top: 70em;
-  margin-left: -36%;
-  /* animation: motiFall 2s ease-in-out; */
+  margin-left: -8%;
   animation-name: motifFall;
   animation-duration: 12s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  /* left: 35em; */
 }
 
 @keyframes motifFall {
   0% {
-    left: 35em;
+    left: 10%;
     rotate: 0deg;
   }
   50% {
-    left: 110em;
+    left: 70%;
     rotate: 180deg;
   }
   100% {
-    left: 35em;
+    left: 10%;
     rotate: 0deg;
   }
 }
@@ -850,14 +831,13 @@ main {
   background-color: white;
   box-shadow: 0 0 39px #00000024;
   width: 27em;
-  height: 13em;
+  padding: 21px 0;
   position: relative;
   border-radius: 9px;
   display: flex;
   align-items: center;
   transition: 0.9s;
   margin: 0 6em 3em;
-  /* border: solid 2px #ff693a; */
 }
 
 .Article_bloc:hover {
@@ -895,7 +875,6 @@ main {
 }
 
 .btn_bloc {
-  /* background: linear-gradient(to right, #fd9128, rgb(231 87 133)); */
   background: #ff693a;
   width: 7em;
   height: 2em;
@@ -991,10 +970,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /* height: 28em; */
   justify-content: center;
   overflow: hidden;
-  /* margin: 4em 0; */
   padding: 3em 0;
 }
 
@@ -1024,7 +1001,6 @@ main {
 
 .temoignage {
   cursor: context-menu;
-  height: 12em;
   border-radius: 10px;
   margin: 9px 5px;
   position: relative;
@@ -1041,22 +1017,15 @@ main {
   width: 65px;
   border-radius: 51px;
   box-shadow: 0px 2px 19px #00000061;
-  /* position: absolute; */
-  /* left: 71px; */
-  /* top: 15px; */
-  /* position: relative; */
 }
 
 .temoignage #nom {
-  /* position: absolute; */
   top: 5.2em;
   left: 85px;
   font-family: "Source Sans Pro", sans-serif;
-  /* text-align: center; */
 }
 
 .temoignage p {
-  /* position: absolute; */
   font-family: "Source Sans Pro regular", sans-serif;
   font-size: 19px;
   line-height: 1em;
@@ -1068,14 +1037,13 @@ main {
 .temoignage .nom1 {
   display: flex;
   justify-content: center;
-  padding-left: -176px; /* width: max-content; */
+  padding-left: -176px; 
   flex-direction: column;
   align-items: center;
 }
 
 .star {
   display: flex;
-  /* position: absolute; */
   left: 23px;
   top: 16em;
   margin-top: 1em;
@@ -1241,8 +1209,6 @@ footer img {
   color: #6d6e72;
 }
 
-/*PrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©sentation salle*/
-
 #Salle-titre {
   font-size: 5em;
   -webkit-text-stroke: 1px;
@@ -1278,7 +1244,6 @@ footer img {
   padding: 3px 20px;
   font-size: 20px;
   border-radius: 34px;
-  /* text-transform: uppercase; */
 }
 
 #inscrire1:hover {
@@ -1531,8 +1496,6 @@ footer img {
   top: 14%;
 }
 
-/* ------------------ */
-
 .hamburger,
 .mobile-nav {
   display: none;
@@ -1593,7 +1556,6 @@ header #logo-lien {
   padding: 0px 12px;
   position: absolute;
   left: 30%;
-  /* top: 60%; */
   font-size: 23px;
   border: solid white 2px;
   border-radius: 54px;
@@ -1659,14 +1621,8 @@ header #logo-lien {
   border-radius: 47px;
   transition: 0.4s;
   z-index: 1;
-  /* border: solid 1px #949494; */
   box-shadow: 0 0 22px #2125294d;
   z-index: -1;
-}
-
-.ClassicForfait:hover,
-.PremiumForfait:hover:hover {
-  /* box-shadow: 0 0 37px #00000085; */
 }
 
 .ClassicForfait h2 {
@@ -1975,11 +1931,8 @@ header #logo-lien {
   display: flex;
   width: 67%;
   margin: 5em auto;
-  /* border-radius: 7px; */
-  /* height: 18em; */
   color: black;
   background: white;
-  /* padding: 22px; */
   justify-content: center;
   align-items: center;
 }
@@ -2002,10 +1955,8 @@ header #logo-lien {
 .machine2 p {
   color: black;
   font-size: 74%;
-  /* overflow: auto; */
   height: 61%;
   text-align: justify;
-  /* font-weight: 500; */
   font-family: sans-serif;
 }
 
@@ -2035,13 +1986,10 @@ header #logo-lien {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
-  /* margin-top: 4px; */
   margin: -17px 0;
 }
 
 .titreNtexte span {
-  /* -webkit-text-stroke: 1px; */
-  /* -webkit-text-stroke-color: rgb(59, 58, 58); */
   color: #ff693a;
 }
 /* ----detente---- */
@@ -2140,6 +2088,12 @@ header #logo-lien {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #promo-instagram {
+    flex-direction: column;
+  }
+}
+
 /*Tablette*/
 
 @media screen and (max-width: 768px) {
@@ -2195,7 +2149,6 @@ header #logo-lien {
     font-size: 2em;
   }
 
-  /* Mettre image redimensionnÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© */
   .w-100 {
     width: 100% !important;
     height: auto;
@@ -2207,7 +2160,6 @@ header #logo-lien {
     padding-top: 0;
   }
 
-  /*banniÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨re*/
   #A-propos-img,
   #banniere_tarifs {
     width: 100%;
@@ -2320,13 +2272,11 @@ header #logo-lien {
 
   .location {
     background: none;
-    /* margin-bottom: 18%; */
   }
 
   .location-info {
     color: rgb(17, 17, 17);
     font-size: 91%;
-    /* position: absolute; */
     left: 27px;
     top: 23em;
   }
@@ -2341,7 +2291,6 @@ header #logo-lien {
 
   .recrute-newsletter {
     width: 97%;
-    /* margin: 21em auto 1em; */
   }
 
   #texte-itinÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©raire {
@@ -2390,10 +2339,6 @@ header #logo-lien {
     margin: 31px auto;
   }
 
-  /* .Offre {
-    margin: 0 auto;
-  } */
-
   .Offre article {
     width: 97%;
     margin: 0 auto;
@@ -2416,7 +2361,6 @@ header #logo-lien {
     display: block;
   }
 
-  /*Survol dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©placement forfait*/
   .ClassicForfait:hover,
   .PremiumForfait:hover {
     box-shadow: none;
@@ -2515,12 +2459,6 @@ header #logo-lien {
 
   #Salle-img {
     height: auto;
-  }
-
-  .product {
-    /* position: relative; */
-    /* overflow: hidden; */
-    /* margin: 0 2%; */
   }
 
   .product-category {
@@ -2699,12 +2637,9 @@ header #logo-lien {
 
   .temoignage {
     background-color: white;
-    /* width: 8em; */
     height: 15em;
     border-radius: 10px;
     margin: 2em 0 0 5%;
-    /* position: relative; */
-    /* padding: 3px 3em; */
   }
 
   #like {
@@ -2716,14 +2651,9 @@ header #logo-lien {
     width: 65px;
     border-radius: 51px;
     box-shadow: 0px 2px 19px #00000061;
-    /* position: absolute; */
-    /* left: -28px; */
-    /* top: 15px; */
-    /* position: relative; */
   }
 
   .temoignage #nom {
-    /* position: absolute; */
     top: 5.5em;
     left: 35%;
     font-family: "Source Sans Pro", sans-serif;
@@ -2731,7 +2661,6 @@ header #logo-lien {
   }
 
   .temoignage p {
-    /* position: absolute; */
     font-family: "Source Sans Pro regular", sans-serif;
     font-size: 18px;
     line-height: 1em;
@@ -2743,7 +2672,6 @@ header #logo-lien {
 
   .star {
     display: flex;
-    /* position: absolute; */
     left: 12%;
     top: 86%;
   }
@@ -2775,7 +2703,6 @@ header #logo-lien {
     margin: 3em auto;
   }
 
-  /*A-votre ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©coute*/
 
   .NotreSalle p {
     font-size: 94%;
@@ -3058,7 +2985,6 @@ header #logo-lien {
   .machine2 {
     width: auto;
     display: block;
-    /* height: 20em; */
     margin: 3em 3em;
   }
 
@@ -3069,7 +2995,6 @@ header #logo-lien {
   .machine p,
   .machine2 p {
     overflow: auto;
-    /* width: 218px; */
     font-size: 9px;
   }
   .intro_tarif h1,
@@ -3124,7 +3049,6 @@ header #logo-lien {
 
   .location {
     background: none;
-    /* margin-bottom: -19%; */
     height: -156px;
   }
 
@@ -3139,8 +3063,6 @@ header #logo-lien {
 
   .location-info {
     font-size: 64%;
-    /* left: 10px; */
-    /* top: 35em; */
     margin-top: 4em;
   }
 
