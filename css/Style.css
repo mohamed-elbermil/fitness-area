@@ -644,7 +644,7 @@ main {
 .A-vos-marque {
   background: linear-gradient(to right, rgb(3 7 30), rgb(143 145 161));
   width: 97%;
-  height: 28rem;
+  height: 36rem;
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   padding-top: 41px;
@@ -1379,125 +1379,80 @@ footer img {
   text-decoration: none;
 }
 
-/* ----PAGE-Inscription---- */
-.sinscrire {
-  background: linear-gradient(45deg, #623a2d, #d7481c);
-  width: 100%;
-  height: 84em;
-  padding: 0 11%;
-}
-.texte_inscription {
-  padding-top: 15em;
+/* INSCRIPTION */
+.form-contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10em;
+  font-size: 16px;
 }
 
-.texte_inscription h1 {
-  color: #ff7f00;
-  font-size: 1em;
+.iframe-container, .form-customer {
+  display: flex;
+  flex-direction: column;
+}
+
+.iframe-container {
+  margin-bottom: 1em;
+}
+
+.form-contact span {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
-.texte_inscription p {
-  color: white;
-  font-size: 2em;
-
-  line-height: 32px;
-
-  text-transform: uppercase;
+.form-contact p {
+  color: #2125297d;
 }
 
-.nomNmail input {
-  background: #ff9371;
-  color: #080808;
+.form-customer {
+  margin-left: 1em;
+}
+
+.form-customer input, .form-customer textarea {
   border: none;
-  padding: 11px 21px;
-  margin-right: 1em;
-  margin-top: 6%;
-  border-radius: 34px;
+  background: #f2f2f2;
+  margin-bottom: 14px;
+  padding: 12px 331px 12px 21px;
 }
 
-.input_inscription {
-  margin-top: 4em;
+.form-customer input:hover, .form-customer textarea:hover {
+  background: #e8e8e8;
 }
 
-.input_inscription ::placeholder {
-  color: #292929;
+.form-contact textarea {
+  height: 64px;
+  transition-duration: .5s;
 }
 
-.dateNtel input {
-  margin-top: 1em;
-  margin-right: 1em;
-  background: #ff9371;
+.form-contact textarea:focus {
+  height: 203px;
+}
+
+.form-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#send-btn {
+  background: #ff7c53;
   border: none;
-  padding: 11px 43px;
-  width: 268px;
-  height: 3em;
-  border-radius: 44px;
+  padding: 11px;
+  width: 9em;
+  font-size: 18px;
+  color: #fff;
+  transition-duration: .4s;
 }
 
-.forfait-select {
-  color: white;
-  margin-top: 2em;
+#send-btn:hover {
+  background: #ff6953;
 }
 
-.form-floating {
-  position: relative;
-  width: 32em;
-}
 
-.form-floating > .form-select {
-  padding-top: 29px;
-  padding-bottom: 0.625rem;
-  background: #fd7246;
-  color: white;
-  border: none;
-  border-radius: 15px;
-}
 
-.btn_sent {
-  width: 8em;
-  height: 2.3em;
-  border-radius: 322px;
-  margin-top: 2em;
-  color: #521d0d;
-  padding: 6px 26px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: solid #ff4f42 2px;
-  transition: 0.4s;
-  background: #ea5223;
-}
-
-.btn_sent:hover {
-  background: #ffffff;
-  border: solid 1px #fff;
-}
-
-.form-floating {
-  position: relative;
-  width: 100%;
-}
-
-#iframe_inscription {
-  border: 0;
-  width: 94%;
-  height: 25em;
-  border-radius: 6px;
-  margin-top: 3em;
-}
-
-#inscription_footer {
-  margin: 0px;
-}
-
-#Illustration_Flat {
-  width: 23%;
-  position: absolute;
-  left: 58%;
-  top: 14%;
-}
-
-.hamburger,
-.mobile-nav {
+label {
   display: none;
 }
 
@@ -2091,6 +2046,22 @@ header #logo-lien {
 @media screen and (max-width: 1024px) {
   #promo-instagram {
     flex-direction: column;
+  }
+  /* INSCRIPTION */
+  .form-contact {
+    flex-direction: column;
+  }
+
+  .form-customer {
+    margin: 0;
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
   }
 }
 
