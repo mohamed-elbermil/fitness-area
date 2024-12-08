@@ -1070,8 +1070,12 @@ footer {
   width: 100%;
   flex-wrap: wrap;
   padding: 5em 64px;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
+}
+
+footer a, p {
+  font-size: 18px;
 }
 
 #credit {
@@ -1083,11 +1087,31 @@ footer {
   font-family: inherit;
 }
 
-footer img {
-  width: 43px;
-  cursor: pointer;
-  margin-right: 0.2em;
-  margin-top: 0.3em;
+footer i {
+  font-size: 33px;
+  color: #fff;
+  margin: 0 14px;
+}
+
+.fa-brands.fa-facebook:hover {
+  color: #6ca3ff;
+}
+.fa-brands.fa-instagram:hover {
+  color: #ffb9a3;
+}
+.fa-brands.fa-youtube:hover {
+  color: #ff5c5c;
+}
+
+.reseaux {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
 }
 
 #reseaux {
@@ -1141,10 +1165,6 @@ footer img {
 }
 
 /*Page A_propos*/
-
-.a-propos {
-  margin: 32px 0;
-}
 
 .modele {
   z-index: 2;
