@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 
@@ -42,102 +42,33 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
     
 
-    <header class="nav_header">
-
-<nav>
-    <a href="./index.html"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
-    <ul>
-        <li>
-            <a href="activite.html">Activités</a>
-            <a href="tarifs.html">Tarifs</a>
-            <a href="A-Propos.html">
-                <NOBR>à propos</NOBR>
-            </a>
-            <a href="sinscrire.html"><span>
-                    <NOBR>Contact</NOBR>
-                </span></a>
-        </li>
-    </ul>
-    <div class="toggle">
-        <i class="fa-solid fa-bars ouvrir"></i>
-        <i class="fa-solid fa-xmark fermer"></i>
-    </div> 	
-</nav>
-
-
+<header class="nav_header">
+    <?php
+        include('./common/menu.php')
+    ?>
     </header>
-
     <main>
+        <div class="banner">
+            <div class="text_btn">
+                <span>Salle de sport à Lyon <br>
+                ton nouceau chez toi !
+                </span>  
+                <div class="call-to-action">
+                    <a href="#">Je m'inscris</a>
+                    <a href="#">Je réserve ma séance d'essai</a>
+                </div>          
 
-        <div class="container1" id="blur">
-
-
-            <!-- ------Carouselle------------- -->
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item" style="transition: .9s">
-                        <img src="./img/slide5.webp" class="d-block w-100" alt="slide5">
-                    </div>
-
-                    <div class="carousel-item active" style="transition: .9s;">
-                        <img src="./img/slide1.webp" class="d-block w-100" alt="slide1">
-                    </div>
-
-                    <div class="carousel-item" style="transition: .9s">
-                        <img src="./img/slide2.webp" class="d-block w-100" alt="slide2">
-                    </div>
-
-                    <div class="carousel-item" style="transition: .9s">
-                        <img src="./img/slide3.webp" class="d-block w-100" alt="slide3">
-                    </div>
-                    <div class="carousel-item" style="transition: .9s">
-                        <img src="./img/slide4.webp" class="d-block w-100" alt="slide4">
-                    </div>
-
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
-            <!-- ----------Maintenant 2 semaines offertes ----------- -->
-            <!-- <section class="fond_offre reveal">
-                <div class="Offre">
-                    <article>
-                        <h1>Maintenant <br> <span id="contour-lettre">2 semaines offertes !</span></h1>
-                        <p>
-                            Vous souhaitez tester avant d'acheter ? C'est possible avec Fitness-Area ! <br>
-                            Profitez des 2 semaines offertes pour essayer les nombreuses machines que vous propose la salle ainsi que ses nombreuses fonctionnalités. Les coachs restent à votre disposition en cas de besoins particuliers sur le plan physique, mentale et alimentaire. L'équipe Fitness-Area vous souhaite un bon entraînement !
-                        </p>
-
-                       <a href="sinscrire.html"class="btn_inscrire2">S'inscrire</a>
-                    </article>
-
-
-                </div>
-                <div class="bg-top">
-                    <a href="#">Consulter la boutique</a>
-                
-                </div>
-            </section> -->
+        </div>
 
             <!-- SECTION "C'est partie" -->
-            <section id="cest-partie">
+            <section id="cest-partie" class="bloc-element">
                 <div class="textNservices">
-
-                
-                <div class="title-top">
+                    <div class="title-top">
                     <p><span>Peu importe votre niveau</span></p>
                     <p>C'est partie !</p>
-                </div>
-                <div class="services-trio">
+                    </div>
+                    <div class="services-trio">
                     <!-- Musculation -->
                     <div class="service-text">
                         <a href="#">
@@ -199,7 +130,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 
             <!-- MAINTENANT -->
             <div class="maintenant">
-                <div class="all-now">
+                <div class="scrolling-animation">
                     <p class="Now">Maintenant</p>
                     <p class="Now">Maintenant</p>
                     <p class="Now">Maintenant</p>
@@ -216,17 +147,11 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                     <p class="Now">Maintenant</p>
                     <p class="Now">Maintenant</p>
                 </div>
-                    
-                
             </div>
-
             <!-- --------A VOS MARQUES------------------ -->
-            <section class="A-vos-marque reveal">
-                <h2>
-                    à vos marques... prêts ? partez !
-                </h2>
+            <section class="band-service">
+                <h2>à vos marques... prêts ? partez !</h2>
                 <h3>MOTIV</h3>
-
                 <div class="prestation">
                     <div class="muscle">
                         <a href="./muscler.html"><img src="./img/muscle.webp" alt="homme qui se muscle"></a>
@@ -302,18 +227,15 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 
 
             <!-- VIDEO -->
-            <div class="video">
+            <div class="publicity">
                 <video controls src="./img/pub.mp4" poster="./img/miniature.png" id="myvideo" muted="muted" alt="Publicité Fitness-Area"></video>
-
                 <img src="./img/motif1.png" alt="" id="motif1">
                 <img src="./img/motif1.png" alt="" id="motif2">
             </div>
-
-            
             <!-- --------Articles-------------- -->
-            <div class="Articles_compile">
+            <div class="all-articles">
                 <div class="article-side">
-                    <div class="Article_bloc">
+                    <div class="article_bloc">
                     <div class="carre_texte">
                         <img src="./img/detente.webp" alt="femme qui se détend">
                         <div class="texte_bloc">
@@ -327,7 +249,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                 </div>
 
 
-                <div class="Article_bloc">
+                <div class="article_bloc">
                     <div class="carre_texte">
                         <img src="./img/Habitude.webp" alt="femme qui s'étire">
                         <div class="texte_bloc">
@@ -342,7 +264,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                 </div>
                 
                 <div class="article-side">
-                    <div class="Article_bloc">
+                    <div class="article_bloc">
                     <div class="carre_texte">
                         <img src="./img/noix_cajoux.webp" alt="noix de cajoux posé sur la table">
                         <div class="texte_bloc">
@@ -355,7 +277,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                     </div>
                 </div>
 
-                <div class="Article_bloc">
+                <div class="article_bloc">
                     <div class="carre_texte">
                         <img src="./img/Muscle-article.webp" alt="biceps contracté">
                         <div class="texte_bloc">
@@ -367,30 +289,14 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                         </div>
                     </div>
                 </div>
-                
                 </div>
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
             <!-- TEMOIGNAGE -->
             <h3 id="like">Ils sont satisfaits</h3>
-
-
             <div class="avis">
-
                 <div class="temoignage">
 
-                    <img src="./img/pp-Celia.webp" alt="photo de profil d'utilsateur" id="pp">
+                    <img src="./img/profile/pp-Celia.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Célia</hn>
                     <p>"Une salle à la hauteur de mes attentes"</p>
                     <div class="star">
@@ -405,7 +311,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                 <div class="temoignage">
 
                     <div class="nom1">
-                        <img src="./img/pp-maxime.webp" alt="photo de profil d'utilsateur" id="pp">
+                        <img src="./img/profile/pp-maxime.webp" alt="photo de profil d'utilsateur" id="pp">
                         <hn id="nom">Maxime</hn>
                     </div>
                     <p>"Je ne suis pas déçu par cette salle"</p>
@@ -421,7 +327,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                 <div class="temoignage">
 
                     <div class="nom1">
-                        <img src="./img/pp-leon.webp" alt="photo de profil d'utilsateur" id="pp">
+                        <img src="./img/profile/pp-leon.webp" alt="photo de profil d'utilsateur" id="pp">
                         <hn id="nom">Léon</hn>
                     </div>
                     <p>"Excellent rapport qualité / prix"</p>
@@ -435,7 +341,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                 </div>
 
                 <div class="temoignage">
-                    <img src="./img/pp-Sandra.webp" alt="photo de profil d'utilsateur" id="pp">
+                    <img src="./img/profile/pp-Sandra.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Sandra</hn>
                     <p>"Salle très propre, tranquille."</p>
                     <div class="star">
@@ -550,39 +456,13 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 
             </section>
 
-            <!-- <section class="location">
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711857.218135778!2d4.345071696553824!3d45.81742129157116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea80d7d19023%3A0xd33f60057a76e78a!2sBusiness%20Web!5e0!3m2!1sfr!2sfr!4v1646231242405!5m2!1sfr!2sfr" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
-                <div class="location-info">
-                    <span id="retrouver">
-                        <h5>Nous retrouver à</h5>
-                    </span>
-                    <span id="adresse">Lorem Ipsum</span><br>
-                    <hn id="horaire">Fitness-Area vous ouvre ses portes du<br><span id="surlignement">lundi au vendredi de 6h30 à 22h00</span></hn><br>
-                    <div class="info-itineraire">
-                        <hn id="itinéraire">Information d'itinéraire :</hn>
-                        <p id="texte-itinéraire">Les lignes de transport suivantes ont des itinéraires qui passent près de Arrêt Porte des Lorem [C17] <br><span>Bus 52, 93, C17 </span><span>Train C26 </span><span>Métro: D</span><span>Tram T2</span></p>
-                    </div>
-
-                </div>
-            </section> -->
-            
-
-
-
-
-
-
-
             <section class="product">
 
                 <div class="product-container">
 
                     <div class="Bloc_carousel">
 
-                        <div class="Article_bloc">
+                        <div class="article_bloc">
                             <div class="carre_texte">
                                 <img src="./img/detente.webp" alt="femme détendu">
                                 <div class="texte_bloc">
@@ -599,7 +479,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 
                     <div class="Bloc_carousel">
 
-                        <div class="Article_bloc">
+                        <div class="article_bloc">
                             <div class="carre_texte">
                                 <img src="./img/Habitude.webp" alt="Femme qui s'étire">
                                 <div class="texte_bloc">
@@ -615,7 +495,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 
                     <div class="Bloc_carousel">
 
-                        <div class="Article_bloc">
+                        <div class="article_bloc">
                             <div class="carre_texte">
                                 <img src="./img/noix_cajoux.webp" alt="Noix de cajoux">
                                 <div class="texte_bloc">
@@ -631,7 +511,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
 
                     <div class="Bloc_carousel">
 
-                        <div class="Article_bloc">
+                        <div class="article_bloc">
                             <div class="carre_texte">
                                 <img src="./img/muscle.webp" alt="biceps contracté">
                                 <div class="texte_bloc">

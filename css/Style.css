@@ -212,7 +212,7 @@ body {
 /* -----------HEADER----------------- */
 
 header {
-  position: sticky;
+  position: fixed;
   z-index: 5;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -220,11 +220,9 @@ header {
   color: #fff;
   padding: 0 2rem;
   transition: all 0.25s ease-in-out;
-  background: #ff5722c7;
-  backdrop-filter: blur(29px);
 }
 
-.nav_header.scroll {
+header.scroll {
   background-color: #ff693a;
 }
 
@@ -251,6 +249,7 @@ header nav ul li a {
   text-decoration: none;
   font-family: "Source Sans Pro";
   transition-duration: 0.6s;
+  white-space: nowrap;
 }
 
 header nav ul :nth-of-type(5):hover {
@@ -304,29 +303,28 @@ header #logo:hover {
   background-size: cover;
   z-index: 2;
 }
-/* ----main---- */
-main {
-  margin-top: -4em;
+
+/* BANNER */
+.banner {
+  position: relative;
+  background: url("../img/banner/banner-material.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 56vh;
 }
 
-/* -------carousselle---------------- */
-
-.carousel-slide {
-  transition: transform 0.1s ease, opacity 0.5s ease-in-out;
-  animation: 10s slide infinite;
+.text_btn {
+  position: absolute;
+  bottom: 13em;
+  left: 4em;
 }
 
-#carouselExempleControls {
-  margin-right: -148px;
+.banner span {
+  font-size: 5em;
+  color: #fff;
+  text-decoration: none;
 }
 
-.carousel-control-prev-icon {
-  filter: invert(1);
-}
-
-.carousel-control-next-icon {
-  filter: invert(1);
-}
 /* -------------Offre------------------ */
 .fond_offre {
   display: flex;
@@ -472,11 +470,12 @@ main {
   color: #ff693a;
 }
 
-#cest-partie {
+.bloc-element {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3em 0;
+  padding: 2em;
 }
 
 .services-trio {
@@ -579,7 +578,7 @@ main {
   cursor: context-menu;
 }
 
-.all-now {
+.scrolling-animation{
   display: flex;
   animation: now 12s ease-in-out infinite;
 }
@@ -641,7 +640,7 @@ main {
 }
 
 /* ----------A vos marque----------------------- */
-.A-vos-marque {
+.band-service {
   background: linear-gradient(to right, rgb(3 7 30), rgb(143 145 161));
   width: 97%;
   height: 36rem;
@@ -653,13 +652,13 @@ main {
   margin: 0 auto;
 }
 
-.A-vos-marque h2 {
+.band-service h2 {
   font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
 }
 
-.A-vos-marque h3 {
+.band-service h3 {
   position: absolute;
   font-size: 17em;
   -webkit-text-stroke: 1px;
@@ -771,7 +770,7 @@ main {
 
 /* ---------VIDEO-------------- */
 
-.video {
+.publicity {
   display: flex;
   justify-content: center;
   margin-bottom: 4em;
@@ -779,13 +778,13 @@ main {
   width: 100%;
 }
 
-.video video {
+.publicity video {
   width: 53%;
   border-radius: 12px;
   box-shadow: 0 4px 76px #00000030;
 }
 
-.video #motif1 {
+.publicity #motif1 {
   width: 18em;
   position: absolute;
   z-index: -1;
@@ -820,14 +819,14 @@ main {
 }
 
 /* -------Articles------------------ */
-.Articles_compile {
+.all-articles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 7em;
 }
 
-.Article_bloc {
+.article_bloc {
   background-color: white;
   box-shadow: 0 0 39px #00000024;
   width: 27em;
@@ -846,7 +845,7 @@ main {
 
 .carre_texte {
   display: flex;
-  padding: 0 0 0 118px;
+  padding: 0 0 0 66px;
 }
 
 .carre_texte img {
@@ -2146,10 +2145,6 @@ header #logo-lien {
     margin-top: 8em;
   }
 
-  .carousel {
-    filter: none;
-    padding-top: 0;
-  }
 
   #A-propos-img,
   #banniere_tarifs {
@@ -2220,15 +2215,15 @@ header #logo-lien {
     display: none;
   }
 
-  .A-vos-marque h5 {
+  .band-service h5 {
     display: none;
   }
 
-  .video #motif1 {
+  .publicity #motif1 {
     display: none;
   }
 
-  .video #motif2 {
+  .publicity #motif2 {
     display: none;
   }
 
@@ -2249,15 +2244,15 @@ header #logo-lien {
     flex-wrap: wrap;
   }
 
-  .video video {
+  .publicity video {
     width: 97%;
   }
 
-  .video {
+  .publicity {
     padding: 12px 0;
   }
 
-  .Articles_compile {
+  .all-articles {
     margin-left: 11%;
   }
 
@@ -2720,11 +2715,11 @@ header #logo-lien {
     color: white;
   }
 
-  .Articles_compile {
+  .all-articles {
     display: none;
   }
 
-  .A-vos-marque {
+  .band-service {
     display: none;
   }
 
@@ -2751,7 +2746,7 @@ header #logo-lien {
     margin-right: 5em;
   }
 
-  .Article_bloc {
+  .article-bloc {
     background-color: white;
     box-shadow: 0px 1px 10px #00000047;
     width: 35em;
@@ -2902,7 +2897,7 @@ header #logo-lien {
 
   /*A-vosmarque*/
 
-  .A-vos-marque {
+  .band-service {
     width: 97%;
     height: 78rem;
     margin: 0 auto;
@@ -2930,11 +2925,11 @@ header #logo-lien {
     text-transform: uppercase;
   }
 
-  .A-vos-marque h4 {
+  .band-service h4 {
     font-size: 204%;
   }
 
-  .Article_bloc {
+  .article-bloc {
     width: 19em;
     margin: 0 6% 3em;
   }
@@ -3034,7 +3029,7 @@ header #logo-lien {
 }
 
 @media screen and (max-width: 320px) {
-  .A-vos-marque {
+  .band-service {
     height: 60em;
   }
 
