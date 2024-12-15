@@ -215,19 +215,15 @@ header {
   z-index: 5;
   width: 100%;
   text-transform: uppercase;
-  color: #fff;
-  padding: 0 2rem;
+  padding: 1.3em 2rem;
   transition: all 0.25s ease-in-out;
 }
-
 header.scroll {
   background-color: var(--primary-color);
 }
-
 .toggle {
   display: none;
 }
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -239,48 +235,22 @@ header nav li {
   align-items: center;
   margin-right: 13em;
 }
-
-header nav ul li a {
+header nav a {
+  color: #fff;
   font-size: 16px;
-  padding: 2em 2em;
-  color: white;
+  padding: 12px 40px;
+  border-radius: 114px;
   text-decoration: none;
   font-family: var(--font-family);
   font-weight: var(--font-bold);
   transition-duration: 0.6s;
   white-space: nowrap;
 }
-
-
+header nav a:nth-child(5) {
+  background: #f03900;
+}
 header nav ul li a:hover {
   background: #fb4b07;
-  color: white;
-}
-
-header nav input {
-  height: 32px;
-  width: 281px;
-  border-radius: 44px;
-  border: none;
-  box-shadow: 0 2px 19px #ffffff57;
-  padding: 16px 21px;
-  margin-right: 94px;
-  transition: 0.4s;
-}
-
-header nav input:hover {
-  background: #ffffff87;
-}
-
-.box {
-  position: relative;
-}
-
-.fa {
-  position: absolute;
-  right: 112px;
-  top: 7px;
-  color: #fd7c00;
 }
 header #logo {
   width: 14em;
@@ -288,15 +258,9 @@ header #logo {
   transition: 0.4s;
   margin-left: 13%;
 }
-#logo2 {
-  width: 14em;
-  height: 5%;
-}
-
 header #logo:hover {
   transform: translateY(-0.3em);
   background-size: cover;
-  z-index: 2;
 }
 
 /* BANNER */
