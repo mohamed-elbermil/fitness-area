@@ -1,0 +1,10 @@
+/* variables globales */
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+:root {
+    --primary-color:#ff693a;
+    --secondary-color:#191919;
+    --font-family:'Source Sans Pro', sans-serif;
+    --font-size : 16px;
+    --border-radius : 16px;
+    --font-bold: 600;
+}

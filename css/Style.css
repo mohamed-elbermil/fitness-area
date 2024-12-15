@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: var(--font-family);
 }
 
 /* ----Barre de progression------- */
@@ -117,7 +118,6 @@ body {
   margin: 118px auto 16px;
   padding: 55px 158px;
   font-size: 7em;
-  font-family: "Source Sans Pro", sans-serif;
   background-color: #ffb473;
   color: #fff;
   border-radius: 29px;
@@ -160,7 +160,6 @@ body {
 .content p {
   color: #ffffff;
   font-size: 14px;
-  font-family: "Raleway";
 }
 
 #cookies {
@@ -215,7 +214,6 @@ header {
   position: fixed;
   z-index: 5;
   width: 100%;
-  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
   padding: 0 2rem;
@@ -223,7 +221,7 @@ header {
 }
 
 header.scroll {
-  background-color: #ff693a;
+  background-color: var(--primary-color);
 }
 
 .toggle {
@@ -247,15 +245,12 @@ header nav ul li a {
   padding: 2em 2em;
   color: white;
   text-decoration: none;
-  font-family: "Source Sans Pro";
+  font-family: var(--font-family);
+  font-weight: var(--font-bold);
   transition-duration: 0.6s;
   white-space: nowrap;
 }
 
-header nav ul :nth-of-type(5):hover {
-  padding: 2em 2em;
-  background: #0b0e16;
-}
 
 header nav ul li a:hover {
   background: #fb4b07;
@@ -352,14 +347,13 @@ header #logo:hover {
   color: white;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 3em;
 }
 
 .Offre article h1 span {
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #d60;
-  color: #191919;
+  color: var(--secondary-color);
 }
 
 .Offre article p {
@@ -373,7 +367,7 @@ header #logo:hover {
 }
 
 .btn_inscrire2 {
-  background: #ff693a;
+  background: var(--primary-color);
   color: white;
   padding: 8px 25px;
   border: none;
@@ -415,7 +409,7 @@ header #logo:hover {
 }
 
 .bg-top a:hover {
-  background: #ff693a;
+  background: var(--primary-color);
 }
 
 #instagram_logo {
@@ -467,7 +461,7 @@ header #logo:hover {
   font-weight: bold;
 }
 .title-top span {
-  color: #ff693a;
+  color: var(--primary-color);
 }
 
 .bloc-element {
@@ -528,7 +522,7 @@ header #logo:hover {
 .little-title span {
   -webkit-text-stroke: 0.7px;
   -webkit-text-stroke-color: #fff;
-  color: #19191900;
+  color: var(--secondary-color)00;
 }
 
 .title-service {
@@ -551,11 +545,11 @@ header #logo:hover {
   display: flex;
   justify-content: center;
   margin: 1em 0;
-  background: #ff693a;
+  background: var(--primary-color);
 }
 
 .en-savoir-plus button {
-  background: #ff693a;
+  background: var(--primary-color);
   text-transform: uppercase;
   font-weight: bolder;
   border: none;
@@ -567,10 +561,10 @@ header #logo:hover {
 
 .maintenant {
   display: flex;
-  color: #191919;
-  font-weight: 500;
+  color: var(--secondary-color);
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: var(--font-family);
+  font-weight: var(--font-bold);
   font-size: 2em;
   width: 97%;
   margin: 0;
@@ -621,7 +615,6 @@ header #logo:hover {
   color: rgb(25 25 25);
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.5em;
 }
 
@@ -645,7 +638,6 @@ header #logo:hover {
   width: 97%;
   height: 36rem;
   color: white;
-  font-family: "Source Sans Pro", sans-serif;
   padding-top: 41px;
   position: relative;
   border-radius: 9px;
@@ -698,6 +690,7 @@ header #logo:hover {
 
 .prestation span {
   position: absolute;
+  font-weight: var(--font-bold);
   left: 13%;
   top: 78%;
   font-size: 1.3em;
@@ -733,7 +726,7 @@ header #logo:hover {
 }
 
 .title-promo span {
-  color: #ff693a;
+  color: var(--primary-color);
   font-size: 20px;
   background: #ffe2d9;
   padding: 2px 9px;
@@ -756,7 +749,7 @@ header #logo:hover {
 }
 
 .promo i {
-  color: #ff693a;
+  color: var(--primary-color);
   font-size: 2em;
 }
 
@@ -874,7 +867,7 @@ header #logo:hover {
 }
 
 .btn_bloc {
-  background: #ff693a;
+  background: var(--primary-color);
   width: 7em;
   height: 2em;
   text-align: center;
@@ -942,7 +935,7 @@ header #logo:hover {
 }
 
 #surlignement {
-  background-color: #ff693a;
+  background-color: var(--primary-color);
   border-radius: 29px;
   padding: 0 1em;
 }
@@ -987,7 +980,6 @@ header #logo:hover {
   width: 100%;
   font-size: 5em;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
   margin-top: 26px;
   border-radius: 9px;
   -webkit-text-stroke: 1px;
@@ -1000,7 +992,7 @@ header #logo:hover {
 
 .temoignage {
   cursor: context-menu;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   margin: 9px 5px;
   position: relative;
   display: flex;
@@ -1021,11 +1013,9 @@ header #logo:hover {
 .temoignage #nom {
   top: 5.2em;
   left: 85px;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .temoignage p {
-  font-family: "Source Sans Pro regular", sans-serif;
   font-size: 19px;
   line-height: 1em;
   color: #161a26;
@@ -1064,7 +1054,7 @@ header #logo:hover {
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: #191919;
+  background-color: var(--secondary-color);
   color: white;
   width: 100%;
   flex-wrap: wrap;
@@ -1083,7 +1073,6 @@ footer a, p {
   bottom: 1em;
   color: #ffffff7a;
   left: 32px;
-  font-family: inherit;
 }
 
 footer i {
@@ -1119,7 +1108,6 @@ footer i {
   text-transform: uppercase;
   font-size: 2em;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 #a-propos {
@@ -1127,7 +1115,6 @@ footer i {
   text-transform: uppercase;
   font-size: 2em;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .a-propos a {
@@ -1146,7 +1133,6 @@ footer i {
   text-transform: uppercase;
   font-size: 2em;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .coordonnee a {
@@ -1255,7 +1241,7 @@ footer i {
 }
 
 .texteNbtn #inscrire1 {
-  background-color: #ff693a;
+  background-color: var(--primary-color);
   text-align: center;
   color: white;
   border: none;
@@ -1501,7 +1487,7 @@ header #logo-lien {
 }
 
 .invitation {
-  background: linear-gradient(178deg, #ff693a, red);
+  background: linear-gradient(178deg, var(--primary-color), red);
   display: flex;
   align-items: center;
   color: white;
@@ -1522,7 +1508,6 @@ header #logo-lien {
   color: #17171700;
   text-transform: uppercase;
   line-height: 63px;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .btn_inscrire3 {
@@ -1608,7 +1593,7 @@ header #logo-lien {
 }
 
 .price {
-  background: #ff693a;
+  background: var(--primary-color);
   width: 100%;
   height: 12%;
   text-align: center;
@@ -1634,7 +1619,7 @@ header #logo-lien {
 }
 
 .btn_orange {
-  background: #ff693a;
+  background: var(--primary-color);
   padding: 12px 4em;
   font-size: 22px;
   color: white;
@@ -1762,7 +1747,7 @@ header #logo-lien {
 
 .btn_plus {
   position: absolute;
-  background-color: #ff693a;
+  background-color: var(--primary-color);
   width: 8em;
   height: 40px;
   bottom: 1em;
@@ -1931,7 +1916,6 @@ header #logo-lien {
   font-size: 74%;
   height: 61%;
   text-align: justify;
-  font-family: sans-serif;
 }
 
 .titreNtexte {
@@ -1964,7 +1948,7 @@ header #logo-lien {
 }
 
 .titreNtexte span {
-  color: #ff693a;
+  color: var(--primary-color);
 }
 /* ----detente---- */
 
@@ -2096,7 +2080,7 @@ header #logo-lien {
   }
 
   header {
-    background-color: #ff693a;
+    background-color: var(--primary-color);
   }
 
   header nav {
@@ -2642,12 +2626,10 @@ header #logo-lien {
   .temoignage #nom {
     top: 5.5em;
     left: 35%;
-    font-family: "Source Sans Pro", sans-serif;
     text-align: center;
   }
 
   .temoignage p {
-    font-family: "Source Sans Pro regular", sans-serif;
     font-size: 18px;
     line-height: 1em;
     color: #161a26;
