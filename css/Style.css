@@ -302,22 +302,57 @@ header #logo:hover {
 /* BANNER */
 .banner {
   position: relative;
-  background: url("../img/banner/banner-material.webp");
+  background: url("../img/banner/banner-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -26em;
   height: 56vh;
 }
 
 .text_btn {
   position: absolute;
-  bottom: 13em;
+  bottom: 8em;
   left: 4em;
 }
 
 .banner span {
-  font-size: 5em;
+  font-size: var(--font-size-banner);
+  font-weight: var(--font-black);
+  text-shadow: 0 4px 17px #0000009e;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  line-height: 61px;
+}
+
+.call-to-action {
+  margin-top: 35px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.call-to-action a {
+  color: #fff;
+  margin-right: 3px;
+  padding: 10px 24px;
+  border-radius: 64px;
+  transition-duration: .4s;
+}
+
+.call-to-action a:nth-child(1) {
+  background: var(--primary-color);
+}
+.call-to-action a:nth-child(1):hover {
+  background: var(--hover-primary-color);
+}
+
+.call-to-action a:nth-child(2) {
+  background: #F5F5F5;
+  color: #000000;
+}
+.call-to-action a:nth-child(2):hover {
+  background: #d1d1d1;
+  color: #000000;
 }
 
 /* -------------Offre------------------ */
@@ -452,7 +487,7 @@ header #logo:hover {
 .textNservices {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .title-top {
   font-size: 2em;
@@ -471,6 +506,20 @@ header #logo:hover {
   margin: 3em 0;
   padding: 2em;
 }
+
+.bg-bloc {
+  background: var(--secondary-color);
+}
+
+.element-decoration-1 {
+  background: linear-gradient(45deg, #FF693A, #F6BCA9);
+  border-radius: 34px;
+  padding: 19px;
+  margin: 5px 0;
+}
+
+
+
 
 .services-trio {
   display: flex;
@@ -498,23 +547,25 @@ header #logo:hover {
 }
 
 .text-services {
+  font-size: 27px;
   position: absolute;
   width: 11em;
   text-transform: uppercase;
-  font-size: 27px;
   font-weight: bolder;
   color: #fff;
 }
 
 .little-title {
+  opacity: 0;
   position: absolute;
-  top: -110px;
+  top: -77px;
   left: 19px;
   transition: 0.4s;
 }
 
 .little-title p {
-  margin: -15px 0;
+  font-size: 27px;
+  margin: -12px 0;
   top: -105px;
   left: 14px;
 }
@@ -522,7 +573,7 @@ header #logo:hover {
 .little-title span {
   -webkit-text-stroke: 0.7px;
   -webkit-text-stroke-color: #fff;
-  color: var(--secondary-color)00;
+  color: transparent;
 }
 
 .title-service {
@@ -533,11 +584,13 @@ header #logo:hover {
   transition-duration: 0.4s ease-out;
 }
 .title-service-add {
+  opacity: 1;
   transition-duration: 0.4s ease-out;
   position: absolute;
-  top: -280px;
+  top: -209px;
   left: 52px;
   font-size: 45px;
+  text-shadow: 0 0 17px rgba(0, 0, 0, 0.536);
 }
 
 .en-savoir-plus {
@@ -545,16 +598,17 @@ header #logo:hover {
   display: flex;
   justify-content: center;
   margin: 1em 0;
-  background: var(--primary-color);
 }
 
-.en-savoir-plus button {
+.en-savoir-plus a {
   background: var(--primary-color);
   text-transform: uppercase;
   font-weight: bolder;
   border: none;
   color: #fff;
-  padding: 8px 18px;
+  padding: 14px 33px;
+  border-radius: 44px;
+  font-size: 16px;
 }
 
 /* -----Maintenant------------------ */
@@ -634,7 +688,7 @@ header #logo:hover {
 
 /* ----------A vos marque----------------------- */
 .band-service {
-  background: linear-gradient(to right, rgb(3 7 30), rgb(143 145 161));
+  background: linear-gradient(to bottom, #171B31, #8A8C9D);
   width: 97%;
   height: 36rem;
   color: white;
@@ -644,21 +698,22 @@ header #logo:hover {
   margin: 0 auto;
 }
 
-.band-service h2 {
-  font-size: 2.5em;
+.title-band {
+  font-size: 3.2em;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
+  font-weight: var(--font-bold);
 }
 
 .band-service h3 {
   position: absolute;
   font-size: 17em;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #fff;
-  color: #17171700;
+  color: #ffffff17;
   left: 49%;
   transform: translate(-50%, -50%);
   top: 50%;
+  font-size: 33em;
 }
 
 .prestation {

@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness-Area - Vous accueil du Lundi au Vendredi</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./img/favicon.ico">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -80,7 +78,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                         
                         <div class="little-title">
                             <p>C'est</p>
-                            <p><span> partie</span></p>
+                            <span> partie</span>
                         </div>
                         <div class="title-service">
                             <p>Musculation</p>
@@ -98,7 +96,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                         
                         <div class="little-title">
                             <p>C'est</p>
-                            <p><span> partie</span></p>
+                            <span> partie</span>
                         </div>
                         <div class="title-service">
                             <p>Détente</p>
@@ -115,7 +113,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                         
                         <div class="little-title">
                             <p>C'est</p>
-                            <p><span> partie</span></p>
+                            <span> partie</span>
                         </div>
                         <div class="title-service">
                             <p>Préparation mentale</p>
@@ -124,7 +122,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                     </div>
                 </div>
                 <div class="en-savoir-plus">
-                    <button>En savoir +</button>
+                    <a href="#">En savoir +</a>
                 </div>
             </div>
             </section>
@@ -151,7 +149,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
             </div>
             <!-- --------A VOS MARQUES------------------ -->
             <section class="band-service">
-                <h2>à vos marques... prêts ? partez !</h2>
+                <h2 class="title-band">à vos marques... prêts ? partez !</h2>
                 <h3>MOTIV</h3>
                 <div class="prestation">
                     <div class="muscle">
@@ -219,13 +217,79 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                             <p>Planifier vos séances et suivez vos progrès de près</p>
                         </div>
                         <div class="en-savoir-plus">
-                            <button class="en-savoir-plus">Visitez notre instagram</button>
+                            <a href="#" class="en-savoir-plus">Visitez notre instagram</a>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <section id="cest-partie" class="bloc-element bg-bloc">
+                <div class="textNservices">
+                    <p class="title-band">1 100m² d'activités rien que pour toi !</p>
+                    <div class="services-trio">
+                    <!-- Musculation -->
+                    <div class="service-text">
+                        <a href="#">
+                            <img src="./img/musculation.webp" alt="service de musculation">
+                        </a>
+                        <div class="text-services">
 
+                        
+                        <div class="little-title">
+                            <p>C'est</p>
+                            <span> partie</span>
+                        </div>
+                        <div class="title-service">
+                            <p>Musculation</p>
+                        </div>
+                    </div>
+                    <div class="element-decoration-1"></div>
+                    </div>
+
+                    <!-- Détente -->
+                    <div class="service-text">
+                        
+                        <div class="element-decoration-1"></div>
+                        <a href="#">
+                            <img src="./img/detente-service.webp" alt="service de détente">                            
+                        </a>
+                        <div class="text-services">
+
+                        
+                        <div class="little-title">
+                            <p>C'est</p>
+                            <span> partie</span>
+                        </div>
+                        <div class="title-service">
+                            <p>Détente</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Préparation mentale -->
+                    <div class="service-text">
+                        <a href="#">
+                            <img src="./img/mentale.webp" alt="service de préparation mentale">
+                        </a>
+                        <div class="text-services">
+
+                        
+                        <div class="little-title">
+                            <p>C'est</p>
+                            <span> partie</span>
+                        </div>
+                        <div class="title-service">
+                            <p>Préparation mentale</p>
+                        </div>
+                        
+                    </div>
+                    <div class="element-decoration-1"></div>
+                    </div>
+                </div>
+                <div class="en-savoir-plus">
+                    <a href="#">En savoir +</a>
+                </div>
+            </div>
+            </section>
 
             <!-- VIDEO -->
             <div class="publicity">
@@ -577,11 +641,6 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
     </footer>
     </div>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script src="./js/index.js"></script>
     <script src="./js/animation-title.js"></script>

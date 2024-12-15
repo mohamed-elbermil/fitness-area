@@ -6,5 +6,10 @@
     --font-family:'Source Sans Pro', sans-serif;
     --font-size : 16px;
     --border-radius : 16px;
-    --font-bold: 600;
+    --font-bold: 700;
+    /*HOVER*/
+    --hover-primary-color:#ff5925;
+    /*BANNER*/
+    --font-size-banner :60px;
+    --font-black: 800;
 }

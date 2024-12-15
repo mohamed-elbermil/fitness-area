@@ -1,5 +1,5 @@
 <nav>
-    <a href="./index.html"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
+    <a href="./index.php"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
     <ul>
         <li>
             <a href="formule.php">formules</a>
