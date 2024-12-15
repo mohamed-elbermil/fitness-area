@@ -453,15 +453,6 @@ header #logo:hover {
   flex-direction: column;
   align-items: center;
 }
-.title-top {
-  font-size: 2em;
-  line-height: 19px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.title-top span {
-  color: var(--primary-color);
-}
 
 .bloc-element {
   display: flex;
@@ -543,7 +534,7 @@ header #logo:hover {
 .title-service {
   position: absolute;
   top: -40px;
-  font-size: 23px;
+  font-size: 18px;
   left: 19px;
   transition-duration: 0.4s ease-out;
 }
@@ -668,6 +659,10 @@ header #logo:hover {
   text-transform: uppercase;
   text-align: center;
   font-weight: var(--font-bold);
+}
+
+#title-bg-white {
+  color: var(--secondary-color);
 }
 
 .band-service h3 {
@@ -1082,9 +1077,6 @@ footer {
   position: relative;
 }
 
-footer a, p {
-  font-size: 18px;
-}
 
 #credit {
   font-size: 66%;
@@ -1097,7 +1089,7 @@ footer a, p {
 footer i {
   font-size: 33px;
   color: #fff;
-  margin: 0 14px;
+  margin-right: 19px;
 }
 
 .fa-brands.fa-facebook:hover {
@@ -1110,10 +1102,10 @@ footer i {
   color: #ff5c5c;
 }
 
-.reseaux {
+.bloc-footer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .social-media {
@@ -1121,51 +1113,25 @@ footer i {
   align-items: center;
 }
 
-#reseaux {
+.title-footer {
   color: white;
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
-#a-propos {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2em;
-  text-transform: uppercase;
-}
 
-.a-propos a {
+.bloc-footer a, .bloc-footer p {
   display: block;
+  font-size: 16px;
   text-decoration: none;
   color: white;
 }
 
-.a-propos a:hover {
+.bloc-footer a:hover {
   color: #f48728;
-}
-
-#coordonnee {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-.coordonnee a {
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.coordonnee a:hover {
-  color: #f48728;
-}
-
-.coordonnee p {
-  margin-top: 0.1em;
 }
 
 /*Page A_propos*/

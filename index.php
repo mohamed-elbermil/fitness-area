@@ -63,7 +63,7 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
             <!-- SECTION "C'est partie" -->
             <section id="cest-partie" class="bloc-element">
                 <div class="textNservices">
-                    <div class="title-top">
+                    <div class="title-band" id="title-bg-white">
                     <p><span>Peu importe votre niveau</span></p>
                     <p>C'est partie !</p>
                     </div>
@@ -608,8 +608,8 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
     </main>
 
     <footer>
-        <div class="reseaux">
-            <hn id="reseaux">Réseaux</hn><br>
+        <div class="bloc-footer">
+            <hn class="title-footer">Réseaux</hn><br>
             <div class="social-media">
                 <a href="https://www.instagram.com/fitnessarea8/?hl=fr" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
@@ -618,14 +618,14 @@ _iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrows
                 <a href="https://www.youtube.com/watch?v=pzeNhG7iZhg&ab_channel=FitnessArea" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div> 
-        <div class="a-propos">
-            <hn id="a-propos">à propos</hn><br>
+        <div class="bloc-footer">
+            <hn class="title-footer">à propos</hn><br>
             <a href="#">Fonctionnement</a>
             <a href="#">Règles sanitaires</a>
             <a href="A-Propos.php">Notre équipe</a>  
         </div>
-        <div class="coordonnee">
-            <hn id="coordonnee">coordonnee</hn><br>
+        <div class="bloc-footer">
+            <hn class="title-footer">coordonnee</hn><br>
             <a href="04.XX.68.32.16">04.XX.68.32.16</a>
             <a href="mailto:contact@fitness-area.fr
                 ">contact@fitness-area.fr
