@@ -61,7 +61,7 @@
 
 body {
   padding: 0;
-  background: #ffffff; 
+  background: #ffffff;
 }
 
 .hamburger .bar,
@@ -300,7 +300,7 @@ header #logo:hover {
   margin-right: 3px;
   padding: 10px 24px;
   border-radius: 64px;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 
 .call-to-action a:nth-child(1) {
@@ -311,7 +311,7 @@ header #logo:hover {
 }
 
 .call-to-action a:nth-child(2) {
-  background: #F5F5F5;
+  background: #f5f5f5;
   color: #000000;
 }
 .call-to-action a:nth-child(2):hover {
@@ -467,14 +467,11 @@ header #logo:hover {
 }
 
 .element-decoration-1 {
-  background: linear-gradient(45deg, #FF693A, #F6BCA9);
+  background: linear-gradient(45deg, #ff693a, #f6bca9);
   border-radius: 34px;
   padding: 19px;
   margin: 5px 0;
 }
-
-
-
 
 .services-trio {
   display: flex;
@@ -581,7 +578,7 @@ header #logo:hover {
   cursor: context-menu;
 }
 
-.scrolling-animation{
+.scrolling-animation {
   display: flex;
   animation: now 12s ease-in-out infinite;
 }
@@ -643,7 +640,7 @@ header #logo:hover {
 
 /* ----------A vos marque----------------------- */
 .band-service {
-  background: linear-gradient(to bottom, #171B31, #8A8C9D);
+  background: linear-gradient(to bottom, #171b31, #8a8c9d);
   width: 97%;
   height: 36rem;
   color: white;
@@ -791,21 +788,19 @@ header #logo:hover {
   box-shadow: 0 4px 76px #00000030;
 }
 
-.publicity #motif1 {
+.motif {
   width: 18em;
+  fill: none;
+  stroke: var(--primary-color);
+  filter: drop-shadow(13px 14px 9px rgba(0, 0, 0, 0.2));
+  stroke-miterlimit: 10;
+  stroke-width: 40px;
   position: absolute;
   z-index: -1;
-  margin: 12em 0 0 31%;
-}
-
-#motif2 {
-  width: 18em;
-  position: absolute;
-  z-index: -1;
-  top: 70em;
+  top: 50em;
   margin-left: -8%;
   animation-name: motifFall;
-  animation-duration: 12s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -816,7 +811,7 @@ header #logo:hover {
     rotate: 0deg;
   }
   50% {
-    left: 70%;
+    left: 85%;
     rotate: 180deg;
   }
   100% {
@@ -1040,7 +1035,7 @@ header #logo:hover {
 .temoignage .nom1 {
   display: flex;
   justify-content: center;
-  padding-left: -176px; 
+  padding-left: -176px;
   flex-direction: column;
   align-items: center;
 }
@@ -1076,7 +1071,6 @@ footer {
   align-items: flex-start;
   position: relative;
 }
-
 
 #credit {
   font-size: 66%;
@@ -1122,8 +1116,8 @@ footer i {
   font-weight: 800;
 }
 
-
-.bloc-footer a, .bloc-footer p {
+.bloc-footer a,
+.bloc-footer p {
   display: block;
   font-size: 16px;
   text-decoration: none;
@@ -1378,7 +1372,8 @@ footer i {
   font-size: 16px;
 }
 
-.iframe-container, .form-customer {
+.iframe-container,
+.form-customer {
   display: flex;
   flex-direction: column;
 }
@@ -1400,20 +1395,22 @@ footer i {
   margin-left: 1em;
 }
 
-.form-customer input, .form-customer textarea {
+.form-customer input,
+.form-customer textarea {
   border: none;
   background: #f2f2f2;
   margin-bottom: 14px;
   padding: 12px 331px 12px 21px;
 }
 
-.form-customer input:hover, .form-customer textarea:hover {
+.form-customer input:hover,
+.form-customer textarea:hover {
   background: #e8e8e8;
 }
 
 .form-contact textarea {
   height: 64px;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .form-contact textarea:focus {
@@ -1433,14 +1430,12 @@ footer i {
   width: 9em;
   font-size: 18px;
   color: #fff;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 
 #send-btn:hover {
   background: #ff6953;
 }
-
-
 
 label {
   display: none;
@@ -2114,7 +2109,6 @@ header #logo-lien {
     margin-top: 8em;
   }
 
-
   #A-propos-img,
   #banniere_tarifs {
     width: 100%;
@@ -2655,7 +2649,6 @@ header #logo-lien {
     height: 17em;
     margin: 3em auto;
   }
-
 
   .NotreSalle p {
     font-size: 94%;
