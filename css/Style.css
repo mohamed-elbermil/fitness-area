@@ -215,7 +215,7 @@ header {
   z-index: 5;
   width: 100%;
   text-transform: uppercase;
-  padding: 1.3em 2rem;
+  padding: 0.3em 2rem;
   transition: all 0.25s ease-in-out;
 }
 header.scroll {
@@ -317,6 +317,30 @@ header #logo:hover {
 .call-to-action a:nth-child(2):hover {
   background: #d1d1d1;
   color: #000000;
+}
+
+.incitation {
+  display: block;
+  color: #ffff;
+  font-family: var(--font-family-2);
+  font-size: 24px;
+  position: absolute;
+  right: 2em;
+  bottom: -2em;
+}
+
+.hidden-element {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 2em;
+  bottom: -2em;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.hover-element:hover + .hidden-element {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* -------------Offre------------------ */

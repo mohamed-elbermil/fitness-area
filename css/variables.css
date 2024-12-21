@@ -1,15 +1,19 @@
 /* variables globales */
-@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+@import url("https://fonts.cdnfonts.com/css/source-sans-pro");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Manrope:wght@200..800&display=swap");
+
 :root {
-    --primary-color:#ff693a;
-    --secondary-color:#191919;
-    --font-family:'Source Sans Pro', sans-serif;
-    --font-size : 16px;
-    --border-radius : 16px;
-    --font-bold: 700;
-    /*HOVER*/
-    --hover-primary-color:#ff5925;
-    /*BANNER*/
-    --font-size-banner :60px;
-    --font-black: 800;
+  --primary-color: #ff693a;
+  --secondary-color: #191919;
+  --font-family: "Source Sans Pro", sans-serif;
+  --font-family-2: "Covered By Your Grace", serif;
+
+  --font-size: 16px;
+  --border-radius: 16px;
+  --font-bold: 700;
+  /*HOVER*/
+  --hover-primary-color: #ff5925;
+  /*BANNER*/
+  --font-size-banner: 60px;
+  --font-black: 800;
 }

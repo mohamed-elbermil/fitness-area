@@ -77,7 +77,8 @@
                 </span>
                 <div class="call-to-action">
                     <a href="#">Je m'inscris</a>
-                    <a href="#">Je réserve ma séance d'essai</a>
+                    <a href="#" class="hover-element">Je réserve ma séance d'essai</a>
+                    <p class="incitation hidden-element">Tu verras, c'est chouette !</p>
                 </div>
 
             </div>
