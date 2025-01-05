@@ -89,25 +89,25 @@
                     <caption>Horaires d'ouverture du club</caption>
                     <thead>
                         <tr>
-                            <th scope="col">Lundi</th>
-                            <th scope="col">Mardi</th>
-                            <th scope="col">Mercredi</th>
-                            <th scope="col">Jeudi</th>
-                            <th scope="col">Vendredi</th>
-                            <th scope="col" class="active-day">Samedi</th>
-                            <th scope="col">Dimanche</th>
+                            <th data-day="1"scope="col">Lundi</th>
+                            <th data-day="2"scope="col">Mardi</th>
+                            <th data-day="3"scope="col">Mercredi</th>
+                            <th data-day="4"scope="col">Jeudi</th>
+                            <th data-day="5"scope="col">Vendredi</th>
+                            <th data-day="6"scope="col">Samedi</th>
+                            <th data-day="0"scope="col">Dimanche</th>
                         </tr>
                     </thead>
 
                     <tbody>
                     <tr>
-                        <td>06:00 - 23:00</td>
-                        <td>06:00 - 23:00</td>
-                        <td>06:00 - 23:00</td>
-                        <td>06:00 - 23:00</td>
-                        <td>06:00 - 23:00</td>
-                        <td class="active-day">06:00 - 23:00</td>
-                        <td>06:00 - 23:00</td>
+                        <td data-day="1">06:00 - 23:00</td>
+                        <td data-day="2">06:00 - 23:00</td>
+                        <td data-day="3">06:00 - 23:00</td>
+                        <td data-day="4">06:00 - 23:00</td>
+                        <td data-day="5">06:00 - 23:00</td>
+                        <td data-day="6">06:00 - 23:00</td>
+                        <td data-day="0">06:00 - 23:00</td>
                     </tr>
                     </tbody>
                 </table>    
@@ -743,6 +743,7 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/animation-title.js"></script>
+    
 
 
 </body>

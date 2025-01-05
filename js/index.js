@@ -10,6 +10,35 @@ window.onload = () => {
   });
 };
 
+// Fuseau horaire pour activer la classe "active-day"
+
+// 1. Obtenir la date actuelle à Paris
+const parisDate = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Paris" }));
+
+// 2. Trouver le jour actuel
+const currentDay = parisDate.getDay(); // 0 = Dimanche, 1 = Lundi, ..., 6 = Samedi
+
+// 3. Sélectionner toutes les cellules du tableau
+const tableCells = document.querySelectorAll('tbody td');
+const dayCells = document.querySelectorAll('th');
+
+// 4. Appliquer la classe "active-day" au jour correspondant
+tableCells.forEach(cell => {
+  const day = parseInt(cell.getAttribute('data-day'), 10); // Récupère l'attribut `data-day`
+  if (day === currentDay) {
+    cell.classList.add('active-day'); // Ajoute la classe au jour correspondant
+  }
+});
+dayCells.forEach(cell => {
+  const day = parseInt(cell.getAttribute('data-day'), 10); // Récupère l'attribut `data-day`
+  if (day === currentDay) {
+    cell.classList.add('active-day'); // Ajoute la classe au jour correspondant
+  }
+});
+
+
+
+
 // ---Vidéo play/pause-----
 let video = document.getElementById("myvideo");
 video.addEventListener("mouseover", () => {
