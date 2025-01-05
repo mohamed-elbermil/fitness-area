@@ -83,6 +83,43 @@
 
             </div>
         </div>
+        <section id="horaire">
+            <div class="planning">
+                <table>
+                    <caption>Horaires d'ouverture du club</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Lundi</th>
+                            <th scope="col">Mardi</th>
+                            <th scope="col">Mercredi</th>
+                            <th scope="col">Jeudi</th>
+                            <th scope="col">Vendredi</th>
+                            <th scope="col" class="active-day">Samedi</th>
+                            <th scope="col">Dimanche</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>06:00 - 23:00</td>
+                        <td>06:00 - 23:00</td>
+                        <td>06:00 - 23:00</td>
+                        <td>06:00 - 23:00</td>
+                        <td>06:00 - 23:00</td>
+                        <td class="active-day">06:00 - 23:00</td>
+                        <td>06:00 - 23:00</td>
+                    </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </section>
+        
+        <!-- SECTION "IFRAME" -->
+        <div class="iframe-home">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.2132881454221!2d4.837379569701368!3d45.734039698192475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea24e07c8567%3A0xacd405ad60f5ed29!2s1%20Rue%20de%20l&#39;Effort%2C%2069007%20Lyon!5e0!3m2!1sfr!2sfr!4v1736089323521!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
 
         <!-- SECTION "C'est partie" -->
         <section id="cest-partie" class="bloc-element">

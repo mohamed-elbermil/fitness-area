@@ -470,6 +470,13 @@ header #logo:hover {
   color: #ffffff;
 }
 
+/* IFRAME -HOME */
+.iframe-home iframe {
+  width: 100%;
+  height: 500px;
+  border:0;
+}
+
 /* SERVICES TRIO */
 
 .textNservices {
@@ -812,6 +819,10 @@ header #logo:hover {
   box-shadow: 0 4px 76px #00000030;
 }
 
+#cest-partie {
+  position: relative;
+}
+
 .motif {
   width: 18em;
   fill: none;
@@ -821,7 +832,7 @@ header #logo:hover {
   stroke-width: 40px;
   position: absolute;
   z-index: -1;
-  top: 50em;
+  top: 20em;
   margin-left: -8%;
   animation-name: motifFall;
   animation-duration: 5s;
@@ -963,8 +974,37 @@ header #logo:hover {
 }
 
 #horaire {
-  font-size: 135%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-transform: uppercase;
+}
+
+
+table {
+  font-size: var(--font-size);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+caption {
+  font-size: 2em;
+  padding: 10px;
+
+  font-weight: var(--font-bold);
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+th, td {
+  text-align: left;
+  padding: 18px;
+}
+
+.active-day {
+  background-color: #C4E3D4;
+  color:#06894C;
 }
 
 #surlignement {
