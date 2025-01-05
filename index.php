@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="en-savoir-plus">
-                    <a href="#">En savoir +</a>
+                    <a href="#">Voir les abonnements</a>
                 </div>
             </div>
         </section>
@@ -286,7 +286,46 @@
                 </div>
             </div>
         </section>
+        
+        <!-- SECTION - INFORMATIONS PRATIQUES -->
+         <section id="infos-club" class="bloc-element">
+            <div class="title-band" id="title-bg-white">
+                <p><span>Informations pratiques</span></p>
+                    <div class="icon-text-container">
+                        <div class="bloc-infos-icon">
+                            <div class="icon-text">
+                                <i class="fa-solid fa-temperature-three-quarters"></i>
+                                <p>climatisation</p>
+                            </div>
+                            <div class="icon-text">
+                                <i class="fa-solid fa-wifi"></i>
+                                <p>Wifi</p>
+                            </div>
+                        </div>
+                        <div class="bloc-infos-icon">
+                            <div class="icon-text">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                <p>Café offert</p><br>
+                            </div>
+                            <div class="icon-text">
+                                <i class="fa-solid fa-shower"></i>
+                                <p>Douche individuelle</p>
+                            </div>
+                        </div>
+                        <div class="bloc-infos-icon">
+                            <div class="icon-text">
+                                <i class="fa-solid fa-car"></i>
+                                <p>Parking</p>
+                            </div>  
+                            <div class="icon-text">
+                                <i class="fa-solid fa-music"></i>
+                                <p>Musique inspirante</p>
+                            </div>
 
+                        </div>
+                    </div>
+            </div>
+         </section>
         <section id="cest-partie" class="bloc-element bg-bloc">
             <div class="textNservices">
                 <p class="title-band">1 100m² d'activités rien que pour toi !</p>
@@ -658,16 +697,14 @@
 
         </section>
 
-
-
-
-
-
-
-
-
-
+        <section id="contact-us">
+            <div class="bg-contact-us">
+                <a href="#">Contactez le club</a>
+            </div>
+        </section>
     </main>
+
+
 
     <footer>
         <div class="bloc-footer">

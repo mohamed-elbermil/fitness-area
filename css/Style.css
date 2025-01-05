@@ -482,7 +482,7 @@ header #logo:hover {
 .textNservices {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .bloc-element {
@@ -607,6 +607,7 @@ header #logo:hover {
   margin: 0;
   overflow: hidden;
   cursor: context-menu;
+  height: 50px;
 }
 
 .scrolling-animation {
@@ -691,6 +692,11 @@ header #logo:hover {
 
 #title-bg-white {
   color: var(--secondary-color);
+  text-align: left;
+}
+
+#title-bg-white span {
+  color: var(--primary-color);
 }
 
 .band-service h3 {
@@ -801,6 +807,36 @@ header #logo:hover {
   width: 24em;
   font-weight: 700;
   line-height: 36px;
+}
+
+/* INFOS PRATIQUE */
+.bloc-infos-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon-text-container {
+  cursor: context-menu;
+  width: 813px;
+  margin-top: 1em;
+  display: flex;
+}
+
+.icon-text {
+  display: flex;
+  margin-right: 3em;
+  color: #3B3B3B;
+}
+
+.icon-text p {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.icon-text i {
+  font-size: 23px;
+  margin-right: 13px;
 }
 
 /* ---------VIDEO-------------- */
@@ -982,6 +1018,7 @@ header #logo:hover {
 
 
 table {
+  cursor: context-menu;
   font-size: var(--font-size);
   width: 100%;
   border-collapse: collapse;
@@ -1121,6 +1158,42 @@ th, td {
 #scrollez {
   display: none;
 }
+
+/* CONTACTEZ-NOUS (bas de page) */
+#contact-us {
+  height: 20em;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-contact-us {
+  position: relative;
+  background: url(../img/banner/material.jpg);
+  background-position-y: -67em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15em;
+  width: 90%;
+  border-radius: 19px;
+}
+
+.bg-contact-us a {
+  height: 180px;
+  background: #ff693a;
+  transition-duration: .4s;
+  padding: 77px;
+  border-radius: 0 19px 19px 0;
+  position: absolute;
+  right: 0px;
+  font-size: 29px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.bg-contact-us a:hover {
+  background: #f03900;
+}
+
 
 /* ----------Footer------------------- */
 
@@ -2033,6 +2106,10 @@ header #logo-lien {
 /* -------Media Query bloc------------ */
 
 @media screen and (max-width: 1459px) {
+  .banner {
+    background-position-y:0;
+  }
+
   .Offre {
     height: auto;
   }
@@ -2091,6 +2168,9 @@ header #logo-lien {
 }
 
 @media screen and (max-width: 1024px) {
+  .banner {
+    background-position-y:0;
+  }
   #promo-instagram {
     flex-direction: column;
   }
