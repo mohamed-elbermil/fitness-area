@@ -19,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Fav icon -->
-<link rel="icon" href="./img/favicon.ico">
+    <!-- Fav icon -->
+    <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/Style.css">
 </head>
@@ -28,28 +28,31 @@
 
 <body id="body" class="dark-mode">
     <header class="nav_header">
+        <?php
+        include('./common/menu.php')
+        ?>
+    </header>
+    <nav>
+        <a href="./index.html"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
+        <ul>
+            <li><a href="tarifs.html">Tarifs</a>
+                <a href="equipement.html">Equipement</a>
+                <a href="A-Propos.html">
+                    <NOBR>à propos</NOBR>
+                </a>
+                <a href="sinscrire.html"><span>
+                        <NOBR>Contact</NOBR>
+                    </span></a>
+            </li>
+        </ul>
+        <div class="toggle">
+            <i class="fa-solid fa-bars ouvrir"></i>
+            <i class="fa-solid fa-xmark fermer"></i>
+        </div>
+    </nav>
 
-        <nav>
-            <a href="./index.html"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
-            <ul>
-                <li><a href="tarifs.html">Tarifs</a>
-                    <a href="equipement.html">Equipement</a>
-                    <a href="A-Propos.html">
-                        <NOBR>à propos</NOBR>
-                    </a>
-                    <a href="sinscrire.html"><span>
-                            <NOBR>Contact</NOBR>
-                        </span></a>
-                </li>
-            </ul>
-            <div class="toggle">
-                <i class="fa-solid fa-bars ouvrir"></i>
-                <i class="fa-solid fa-xmark fermer"></i>
-            </div> 	
-        </nav>
-        
-        
-            </header>
+
+    </header>
     <main>
         <img src="./img/banniere_materiel.png" alt="bannière équipement" id="banniere_material">
         <div class="intro_equipement">
@@ -114,13 +117,13 @@
         </div>
 
 
- 
 
 
-<!-- Avis et commentaires -->
-<?php
-    include_once('./common/avis.php')
-?>
+
+        <!-- Avis et commentaires -->
+        <?php
+        include_once('./common/avis.php')
+        ?>
 
 
 
@@ -130,37 +133,11 @@
 
     </main>
     <footer>
-        <div class="reseaux">
-            <hn id="reseaux">Réseaux</hn><br>
-            <div class="social-media">
-                <a href="https://www.instagram.com/fitnessarea8/?hl=fr" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.facebook.com/Fitness-Area-104959968986758" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/watch?v=pzeNhG7iZhg&ab_channel=FitnessArea" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div> 
-        <div class="a-propos">
-            <hn id="a-propos">à propos</hn><br>
-            <a href="#">Fonctionnement</a>
-            <a href="#">Règles sanitaires</a>
-            <a href="A-Propos.php">Notre équipe</a>  
-        </div>
-        <div class="coordonnee">
-            <hn id="coordonnee">coordonnee</hn><br>
-            <a href="04.XX.68.32.16">04.XX.68.32.16</a>
-            <a href="mailto:contact@fitness-area.fr
-                ">contact@fitness-area.fr
-            </a>
-            <p>Ouvert du Lundi au Dimanche
-                de 6h30 à 22h00
-            </p> 
-        </div>
-        </div>
-        <p id="credit">© 2021-2022 SOBLIM® - Agence Web digital.
-    
-            Les visuels présentés sont protégés par le droit d’auteur français. Certains visuels peuvent être assortis d’une licence de diffusion. Sauf mention contraire, toute reproduction est interdite. Ce site fictif a été réalisé dans le cadre d'une formation réalisé chez Web force 3</p>
+        <?php
+        include('./common/footer.php')
+        ?>
     </footer>
+
     </div>
 
 

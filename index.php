@@ -89,31 +89,31 @@
                     <caption>Horaires d'ouverture du club</caption>
                     <thead>
                         <tr>
-                            <th data-day="1"scope="col">Lundi</th>
-                            <th data-day="2"scope="col">Mardi</th>
-                            <th data-day="3"scope="col">Mercredi</th>
-                            <th data-day="4"scope="col">Jeudi</th>
-                            <th data-day="5"scope="col">Vendredi</th>
-                            <th data-day="6"scope="col">Samedi</th>
-                            <th data-day="0"scope="col">Dimanche</th>
+                            <th data-day="1" scope="col">Lundi</th>
+                            <th data-day="2" scope="col">Mardi</th>
+                            <th data-day="3" scope="col">Mercredi</th>
+                            <th data-day="4" scope="col">Jeudi</th>
+                            <th data-day="5" scope="col">Vendredi</th>
+                            <th data-day="6" scope="col">Samedi</th>
+                            <th data-day="0" scope="col">Dimanche</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                    <tr>
-                        <td data-day="1">06:00 - 23:00</td>
-                        <td data-day="2">06:00 - 23:00</td>
-                        <td data-day="3">06:00 - 23:00</td>
-                        <td data-day="4">06:00 - 23:00</td>
-                        <td data-day="5">06:00 - 23:00</td>
-                        <td data-day="6">06:00 - 23:00</td>
-                        <td data-day="0">06:00 - 23:00</td>
-                    </tr>
+                        <tr>
+                            <td data-day="1">06:00 - 23:00</td>
+                            <td data-day="2">06:00 - 23:00</td>
+                            <td data-day="3">06:00 - 23:00</td>
+                            <td data-day="4">06:00 - 23:00</td>
+                            <td data-day="5">06:00 - 23:00</td>
+                            <td data-day="6">06:00 - 23:00</td>
+                            <td data-day="0">06:00 - 23:00</td>
+                        </tr>
                     </tbody>
-                </table>    
+                </table>
             </div>
         </section>
-        
+
         <!-- SECTION "IFRAME" -->
         <div class="iframe-home">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.2132881454221!2d4.837379569701368!3d45.734039698192475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea24e07c8567%3A0xacd405ad60f5ed29!2s1%20Rue%20de%20l&#39;Effort%2C%2069007%20Lyon!5e0!3m2!1sfr!2sfr!4v1736089323521!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -286,46 +286,46 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- SECTION - INFORMATIONS PRATIQUES -->
-         <section id="infos-club" class="bloc-element">
+        <section id="infos-club" class="bloc-element">
             <div class="title-band" id="title-bg-white">
                 <p><span>Informations pratiques</span></p>
-                    <div class="icon-text-container">
-                        <div class="bloc-infos-icon">
-                            <div class="icon-text">
-                                <i class="fa-solid fa-temperature-three-quarters"></i>
-                                <p>climatisation</p>
-                            </div>
-                            <div class="icon-text">
-                                <i class="fa-solid fa-wifi"></i>
-                                <p>Wifi</p>
-                            </div>
+                <div class="icon-text-container">
+                    <div class="bloc-infos-icon">
+                        <div class="icon-text">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                            <p>climatisation</p>
                         </div>
-                        <div class="bloc-infos-icon">
-                            <div class="icon-text">
-                                <i class="fa-solid fa-mug-hot"></i>
-                                <p>Café offert</p><br>
-                            </div>
-                            <div class="icon-text">
-                                <i class="fa-solid fa-shower"></i>
-                                <p>Douche individuelle</p>
-                            </div>
-                        </div>
-                        <div class="bloc-infos-icon">
-                            <div class="icon-text">
-                                <i class="fa-solid fa-car"></i>
-                                <p>Parking</p>
-                            </div>  
-                            <div class="icon-text">
-                                <i class="fa-solid fa-music"></i>
-                                <p>Musique inspirante</p>
-                            </div>
-
+                        <div class="icon-text">
+                            <i class="fa-solid fa-wifi"></i>
+                            <p>Wifi</p>
                         </div>
                     </div>
+                    <div class="bloc-infos-icon">
+                        <div class="icon-text">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <p>Café offert</p><br>
+                        </div>
+                        <div class="icon-text">
+                            <i class="fa-solid fa-shower"></i>
+                            <p>Douche individuelle</p>
+                        </div>
+                    </div>
+                    <div class="bloc-infos-icon">
+                        <div class="icon-text">
+                            <i class="fa-solid fa-car"></i>
+                            <p>Parking</p>
+                        </div>
+                        <div class="icon-text">
+                            <i class="fa-solid fa-music"></i>
+                            <p>Musique inspirante</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-         </section>
+        </section>
         <section id="cest-partie" class="bloc-element bg-bloc">
             <div class="textNservices">
                 <p class="title-band">1 100m² d'activités rien que pour toi !</p>
@@ -707,43 +707,15 @@
 
 
     <footer>
-        <div class="bloc-footer">
-            <hn class="title-footer">Réseaux</hn><br>
-            <div class="social-media">
-                <a href="https://www.instagram.com/fitnessarea8/?hl=fr" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.facebook.com/Fitness-Area-104959968986758" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/watch?v=pzeNhG7iZhg&ab_channel=FitnessArea" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="bloc-footer">
-            <hn class="title-footer">à propos</hn><br>
-            <a href="#">Fonctionnement</a>
-            <a href="#">Règles sanitaires</a>
-            <a href="A-Propos.php">Notre équipe</a>
-        </div>
-        <div class="bloc-footer">
-            <hn class="title-footer">coordonnee</hn><br>
-            <a href="04.XX.68.32.16">04.XX.68.32.16</a>
-            <a href="mailto:contact@fitness-area.fr
-                ">contact@fitness-area.fr
-            </a>
-            <p>Ouvert du Lundi au Dimanche
-                de 6h30 à 22h00
-            </p>
-        </div>
-        </div>
-        <p id="credit">© 2021-2022 SOBLIM® - Agence Web digital.
-
-            Les visuels présentés sont protégés par le droit d’auteur français. Certains visuels peuvent être assortis d’une licence de diffusion. Sauf mention contraire, toute reproduction est interdite. Ce site fictif a été réalisé dans le cadre d'une formation réalisé chez Web force 3</p>
+        <?php
+        include('./common/footer.php')
+        ?>
     </footer>
     </div>
 
-
     <script src="./js/index.js"></script>
     <script src="./js/animation-title.js"></script>
-    
+
 
 
 </body>
