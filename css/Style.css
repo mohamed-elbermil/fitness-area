@@ -272,6 +272,21 @@ header #logo:hover {
   background-position-y: -26em;
   height: 56vh;
 }
+.banner-form {
+  position: relative;
+  background: url("../img/banner/banner-form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -26em;
+  height: 56vh;
+}
+
+.heading-label {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: var(--font-bold);
+}
 
 .text_btn {
   position: absolute;
@@ -279,7 +294,13 @@ header #logo:hover {
   left: 4em;
 }
 
-.banner span {
+.text_btn p {
+  font-size: 24px;
+  color: var(--text-on-dark);
+  width: 73%;
+}
+
+.banner h1 {
   font-size: var(--font-size-banner);
   font-weight: var(--font-black);
   text-shadow: 0 4px 17px #0000009e;
@@ -343,132 +364,99 @@ header #logo:hover {
   visibility: visible;
 }
 
-/* -------------Offre------------------ */
-.fond_offre {
+/* -------------FORMULES------------------ */
+.all-formules {
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #0B0B16;
+  color: var(--text-on-dark);
+  margin-right: 2em;
+  border-radius: 55px;
+  padding: 40px 25px;
+}
+
+.form>.call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
+.form span {
+  font-size: 48px;
+}
+
+.form p {
+  font-size: 128px;  
+  font-weight: var(--font-bold);
+}
+
+.offre p {
+  background: #FF9B7B;
+  color: black;
+  border-radius: 55px;
+  font-size: 24px;
+  padding: 18px;
+  text-align: center;
+}
+
+.all-options {
+  margin-top: 20px;
+}
+
+.option {
+  line-height: 55px;
+}
+
+.option i {
+  font-size: 24px;
+  margin-right: 14px;
+}
+
+.fa-solid.fa-xmark {
+  color: #f44336;
+}
+
+.all-options span {
+  font-size: 24px;
+}
+
+/* services inclus */
+.all-round-services {
+  display: flex;
+}
+
+.services-inclus {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 31px 2em;
+  flex-direction: column;
+  margin: 11em 0;
 }
 
-.Offre article {
-  padding-bottom: -1%;
-}
-
-.Offre {
+.round-service {
   display: flex;
-  flex: 1;
-  position: relative;
-  margin-right: 1em;
-  background: linear-gradient(to right, rgb(22 26 38), rgb(9 12 20));
-  padding: 1em 1em;
-  padding-bottom: -1%;
-  border-radius: 21px;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2em;
 }
 
-.Offre article h1 {
-  color: white;
-  font-weight: 500;
+.round-service img {
+  width: 20em;
+  border-radius: 33em;
+  filter: brightness(1.2);
+}
+
+.services-inclus span {
+  color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 3em;
+  font-weight: 900;
+  font-size: 19px;
 }
 
-.Offre article h1 span {
-  -webkit-text-stroke: 2px;
-  -webkit-text-stroke-color: #d60;
-  color: var(--secondary-color);
-}
 
-.Offre article p {
-  color: white;
-  font-size: 16px;
-}
-
-.btn_inscrire2:hover {
-  background: #ca441b;
-  color: white;
-}
-
-.btn_inscrire2 {
-  background: var(--primary-color);
-  color: white;
-  padding: 8px 25px;
-  border: none;
-  text-decoration: none;
-  transition: 0.4s;
-  text-decoration: none;
-  color: white;
-  border-radius: 44px;
-}
-
-.bg-top {
-  background: url(../img/bg-top.png);
-  background-size: cover;
-  border-radius: 9px;
-  display: flex;
-  flex: 1;
-  height: 315px;
-  position: relative;
-  filter: brightness(0.8);
-  transition-duration: 0.4s;
-}
-
-.bg-top:hover {
-  filter: brightness(1);
-}
-
-.bg-top a {
-  position: absolute;
-  transition-duration: 0.4s;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 1em;
-  border: solid #fff 2px;
-  border-radius: 30px;
-  color: #fff;
-  padding: 6px 2em;
-  backdrop-filter: blur(15px);
-  text-decoration: none;
-}
-
-.bg-top a:hover {
-  background: var(--primary-color);
-}
-
-#instagram_logo {
-  position: absolute;
-  border-radius: 24px;
-  width: 23%;
-  right: 6%;
-  top: 27%;
-  transition: transform 1s cubic-bezier(1, 0, 0.17, 1);
-  animation: slideUp 3s;
-  transition-delay: 1s;
-}
-
-@keyframes slideUp {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 23%;
-  }
-}
-
-#model_smart {
-  position: absolute;
-  width: 19em;
-  bottom: 0;
-}
-
-#Notre-insta {
-  position: absolute;
-  top: 0em;
-  left: 13px;
-  font-size: 45px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 
 /* IFRAME -HOME */
 .iframe-home iframe {
@@ -1174,7 +1162,7 @@ th, td {
 .bg-contact-us {
   position: relative;
   background: url(../img/banner/material.jpg);
-  background-position-y: -67em;
+  background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 15em;
@@ -1652,248 +1640,8 @@ header #logo-lien {
   text-decoration: none;
 }
 
-.intro_tarif h1,
-.intro_equipement h1,
-.intro_A-propos h1 {
-  margin-top: 2%;
-  text-transform: uppercase;
-  font-weight: lighter;
-}
+/* --- */
 
-.intro_tarif {
-  text-align: center;
-}
-
-.intro_tarif p {
-  margin-top: 2em;
-}
-
-#NosForfaits {
-  font-size: 4em;
-  margin-top: 4%;
-  text-align: center;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: rgb(59, 58, 58);
-  color: white;
-  text-transform: uppercase;
-  text-decoration: underline rgb(239 126 23);
-  text-underline-position: under;
-}
-
-.NosForfaits {
-  font-size: 1em;
-}
-
-.AllForfait {
-  margin-top: 9%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.ClassicForfait,
-.PremiumForfait {
-  position: relative;
-  background-color: white;
-  width: 21em;
-  height: 39em;
-  padding: 30px 20px 0 20px;
-  margin: 0 24px 2em 24px;
-  border-radius: 47px;
-  transition: 0.4s;
-  z-index: 1;
-  box-shadow: 0 0 22px #2125294d;
-  z-index: -1;
-}
-
-.ClassicForfait h2 {
-  font-size: 22px;
-  text-transform: uppercase;
-  text-align: center;
-  color: 46474D;
-  color: #46474d;
-}
-
-.price {
-  background: var(--primary-color);
-  width: 100%;
-  height: 12%;
-  text-align: center;
-  padding-top: 13px;
-  font-size: 23px;
-  color: white;
-  position: absolute;
-  left: 0;
-  line-height: 21px;
-}
-
-.price span,
-.price2 span {
-  font-size: 13px;
-  color: #524d4b;
-}
-
-.option {
-  margin-top: 7em;
-  font-size: 16px;
-  font-weight: 500;
-  color: #46474d;
-}
-
-.btn_orange {
-  background: var(--primary-color);
-  padding: 12px 4em;
-  font-size: 22px;
-  color: white;
-  border-radius: 0px 0 44px 44px;
-  position: absolute;
-  bottom: 4px;
-  left: 6px;
-  cursor: pointer;
-  text-transform: uppercase;
-  width: 96%;
-  margin-bottom: 3px;
-  transition-duration: 0.4s;
-}
-
-.btn_orange:hover {
-  background: #f35523;
-}
-
-.yes {
-  display: flex;
-  position: relative;
-  margin-bottom: 16px;
-  justify-content: space-between;
-}
-
-.yes i {
-  font-size: 25px;
-  position: absolute;
-  top: 4px;
-  left: 92%;
-}
-
-.no {
-  display: flex;
-  position: relative;
-  margin-bottom: 16px;
-  justify-content: space-between;
-}
-
-.no i {
-  font-size: 25px;
-  position: absolute;
-  top: 4px;
-  left: 92%;
-}
-
-.prix {
-  display: flex;
-}
-
-.prix #figure {
-  font-weight: 400;
-  margin-left: 3em;
-}
-
-.PremiumForfait h2 {
-  font-size: 22px;
-  text-transform: uppercase;
-  text-align: center;
-  color: 46474D;
-  color: #46474d;
-}
-
-.price2 {
-  background: #e91e63;
-  width: 100%;
-  height: 12%;
-  text-align: center;
-  padding-top: 13px;
-  font-size: 23px;
-  color: white;
-  position: absolute;
-  left: 0;
-  line-height: 21px;
-}
-
-.btn_red {
-  background: #e91e63;
-  padding: 12px 4em;
-  font-size: 22px;
-  color: white;
-  border-radius: 0px 0 44px 44px;
-  position: absolute;
-  bottom: 4px;
-  left: 6px;
-  cursor: pointer;
-  text-transform: uppercase;
-  width: 96%;
-}
-
-.btn_red:hover {
-  background: #dc3545;
-}
-
-.Allpresta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6em;
-}
-
-.bloc_presta {
-  position: relative;
-  background-color: white;
-  color: black;
-  width: 18em;
-  border-radius: 9px;
-  height: 28em;
-  margin: 5px;
-}
-
-.bloc_presta img {
-  position: absolute;
-  width: 18em;
-  border-radius: 9px 9px 0 0;
-}
-
-.bloc_presta p {
-  position: absolute;
-  top: 14em;
-  padding: 0 1em;
-  font-size: 16px;
-}
-
-.btn_plus {
-  position: absolute;
-  background-color: var(--primary-color);
-  width: 8em;
-  height: 40px;
-  bottom: 1em;
-  text-align: center;
-  padding: 7px 7px;
-  border-radius: 7px;
-  left: 74px;
-  cursor: pointer;
-}
-
-.btn_plus a {
-  color: white;
-  text-decoration: none;
-}
-
-.fond_tarif {
-  background-color: #161a26;
-  width: 100%;
-  height: 23em;
-}
-
-#fond-homme {
-  width: 100%;
-}
 
 #guenage {
   height: 25em;
