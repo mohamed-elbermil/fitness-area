@@ -373,11 +373,10 @@ header #logo:hover {
 }
 
 .form {
-  background-color: #0B0B16;
-  color: var(--text-on-dark);
   margin-right: 2em;
   border-radius: 55px;
   padding: 40px 25px;
+  box-shadow: 0 0 22px #00000036;
 }
 
 .form>.call-to-action {

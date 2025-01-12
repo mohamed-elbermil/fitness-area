@@ -28,7 +28,7 @@
 
     <div id="barre" style="width: 984.211px;"></div>
 
-    <header class="nav_header">
+    <header class="nav_header scroll">
         <?php
         include('./common/menu.php')
         ?>
@@ -171,7 +171,7 @@
 
 
 
-    <script src="/js/tarif.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 
