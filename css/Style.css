@@ -277,7 +277,7 @@ header #logo:hover {
   background: url("../img/banner/banner-form.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -26em;
+  background-position-y: top;
   height: 56vh;
 }
 
