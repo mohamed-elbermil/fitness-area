@@ -22,18 +22,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/variables.css">
 </head>
 
 <body>
 
     <div id="barre" style="width: 96.9574px;"></div>
 
-
-    <header class="nav_header">
+    <header class="nav_header scroll">
         <?php
         include('./common/menu.php')
         ?>
     </header>
+
 
     <nav>
         <a href="./index.html"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
