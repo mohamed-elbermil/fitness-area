@@ -34,8 +34,9 @@
 
         gtag('config', 'G-C4W2GDNN33');
     </script>
-
-    <link rel="stylesheet" href="./css/Style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/variables.css">
 
 </head>
 <div id="barre" style="width: 96.9574px;"></div>
@@ -43,7 +44,7 @@
 <body>
 
 
-    <header class="nav_header">
+    <header class="nav_header scroll">
         <?php
         include('./common/menu.php')
         ?>

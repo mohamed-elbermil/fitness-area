@@ -1,9 +1,13 @@
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: var(--font-family);
+}
+
+ul {
+  margin: 0;
 }
 
 /* ----Barre de progression------- */
@@ -251,6 +255,7 @@ header nav a:nth-child(5) {
 }
 header nav ul li a:hover {
   background:var(--hover-primary-color);
+  color: var(--text-on-dark);
 }
 header #logo {
   width: 14em;
