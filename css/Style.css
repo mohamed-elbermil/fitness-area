@@ -277,6 +277,9 @@ header #logo:hover {
   background-position-y: -26em;
   height: 70vh;
 }
+.banner span {
+  color: var(--primary-color);
+}
 .banner-form {
   position: relative;
   background: url("../img/banner/banner-form.jpg");

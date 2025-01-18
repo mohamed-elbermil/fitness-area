@@ -72,8 +72,8 @@
     <main>
         <div class="banner">
             <div class="text_btn">
-                <h1>Salle de sport à Lyon <br>
-                    ton nouveau chez toi !
+                <h1>Salle de <span>sport</span> à Lyon <br>
+                    ton nouveau <span>chez toi !</span>
                 </h1>
                 <div class="call-to-action">
                     <a href="./contact.php">Je m'inscris</a>
