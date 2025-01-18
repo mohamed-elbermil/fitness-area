@@ -40,7 +40,7 @@
             <div class="text_btn">
                 <span class="heading-label">Abonnements</span>
                 <h1>Découvrez nos formules<br>d’abonnement !
-</h1>
+                </h1>
                 <p>Des formules <strong>tout inclus et sans engagement</strong> pour accéder au sport premium et à des services incomparables.</p>
 
             </div>
@@ -54,31 +54,31 @@
                 <div class="offre">
                     <p>Profitez de 2 semaines offertes</p>
                 </div>
-                    <div class="all-options">
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-                             <span>Accès illimité au club 7j/7</span>
-                         </div>
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-                             <span>Accès au cours collectifs</span>
-                         </div>
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-                             <span>Equipements high-tech & connectés</span>
-                         </div>
-                         <div class="option">
-                         <i class="fa-solid fa-xmark"></i>                             <span>Accès au hammam & sauna</span>
-                         </div>
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
+                <div class="all-options">
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Accès illimité au club 7j/7</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Accès au cours collectifs</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Equipements high-tech & connectés</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-xmark"></i> <span>Accès au hammam & sauna</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
 
-                             <span>Sans engagement annuel</span>
-                         </div>
+                        <span>Sans engagement annuel</span>
                     </div>
-                    <div class="call-to-action">
-                        <a href="./contact.php">Je m'inscris</a>
-                    </div>
+                </div>
+                <div class="call-to-action">
+                    <a href="./contact.php">Je m'inscris</a>
+                </div>
             </div>
             <!-- 2ème Offre -->
             <div class="form">
@@ -87,73 +87,52 @@
                 <div class="offre">
                     <p>Profitez de 3 semaines offertes</p>
                 </div>
-                    <div class="all-options">
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-                             <span>Accès illimité au club 7j/7</span>
-                         </div>
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-                             <span>Accès au cours collectifs</span>
-                         </div>
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-                             <span>Equipements high-tech & connectés</span>
-                         </div>
-                         <div class="option">
-                         <i class="fa-solid fa-check"></i>
-                         <span>Accès au hammam & sauna</span>
-                         </div>
-                         <div class="option">
-                            <i class="fa-solid fa-check"></i>
-
-                             <span>Sans engagement annuel</span>
-                         </div>
-
+                <div class="all-options">
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Accès illimité au club 7j/7</span>
                     </div>
-                    <div class="call-to-action">
-                        <a href="./contact.php">Je m'inscris</a>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Accès au cours collectifs</span>
                     </div>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Equipements high-tech & connectés</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Accès au hammam & sauna</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>Sans engagement annuel</span>
+                    </div>
+
+                </div>
+                <div class="call-to-action">
+                    <a href="./contact.php">Je m'inscris</a>
+                </div>
             </div>
         </div>
 
         <!-- TRIO BLOC -->
         <section id="cest-partie" class="bloc-element bg-bloc">
             <?php
-                include ("./common/trio-bloc.php")
+            include("./common/trio-bloc.php")
             ?>
         </section>
 
         <!-- SERVICES INCLUS -->
-         <section class="services-inclus">
-            <div class="all-round-services">
-                <div class="round-service">
-                    <img src="./img/services/woman-smile.webp" alt="services inclus"><br>
-                    <span>Tout inclus</span>
-                </div>
-                <div class="round-service">
-                    <img src="./img/services/man-course.webp" alt="services inclus"><br>
-                    <span>Sans engagement</span>
-                </div>
-                <div class="round-service">
-                    <img src="./img/services/man-shape.webp" alt="services inclus"><br>
-                    <span>Large choix</span>
-                </div>
-                <div class="round-service">
-                    <img src="./img/services/haltère.webp" alt="services inclus"><br>
-                    <span>Qualité de service</span>
-                </div>
-
-            </div>
-            <div class="call-to-action">
-                        <a href="./contact.php">Je m'inscris</a>
-                    </div>
-
-
-         </section>
-         <section id="contact-us">
+        <section class="services-inclus">
             <?php
-                include('./common/contact-us.php')
+            include('./common/our-values.php')
+            ?>
+        </section>
+        <section id="contact-us">
+            <?php
+            include('./common/contact-us.php')
             ?>
         </section>
     </main>

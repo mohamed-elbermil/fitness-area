@@ -1,14 +1,11 @@
-<!DOCTYPE html>
 <html lang="fr">
-
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness-Area - Coaching</title>
+    <title>Fitness-Area - Concept</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,29 +15,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Fav icon -->
     <link rel="icon" href="./img/favicon.ico">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/Style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/variables.css">
 </head>
-<div id="barre" style="width: 96.9574px;"></div>
 
-<body id="body" class="dark-mode">
+<body>
+
+    <div id="barre" style="width: 984.211px;"></div>
+
     <header class="nav_header scroll">
         <?php
         include('./common/menu.php')
         ?>
     </header>
 
+
+    <main>
+        <div class="banner banner-form">
+            <div class="text_btn">
+                <span class="heading-label">Concept</span>
+                <h1>Découvrez nos formules<br>d’abonnement !
+                </h1>
+                <p>Des formules <strong>tout inclus et sans engagement</strong> pour accéder au sport premium et à des services incomparables.</p>
+
+            </div>
+        </div>
+        <section class="description-text-image">
+            <div class="bloc-text">
+
+                <h2>Des espaces uniques !</h2>
+                <p>Avec Fitness Park, améliore ta condition physique, tonifie ton corps et développe ta masse musculaire. Grâce à des espaces adaptés sur plus de 1000m², façonne tes entraînements à la perfection . Avec Fitness Park, améliore ta condition physique, tonifie ton corps et développe ta masse musculaire. Grâce à des espaces adaptés sur plus de 1000m², façonne tes entraînements à la perfection :Avec Fitness Park, améliore ta condition physique, tonifie ton corps et développe ta masse musculaire. Grâce à des espaces adaptés sur plus de 1000m², façonne tes entraînements à la perfection . Avec Fitness Park, améliore ta condition physique, tonifie ton</p>
+                <div class="call-to-action">
+                    <a href="./contact.php">Je m'inscris</a>
+                </div>
+            </div>
+            <img src="./img/eat.png" alt="">
+        </section>
+
+        <section>
+            <div class="session">
+
+                <h3 class="text-border title-band">Nos cours</h3>
+                <div class="all-session">
+                    <a href="#"><img src="./img/eat.png" alt=""></a>
+                    <a href="#"><img src="./img/eat.png" alt=""></a>
+                    <a href="#"><img src="./img/eat.png" alt=""></a>
+                    <a href="#"><img src="./img/eat.png" alt=""></a>
+                    <a href="#"><img src="./img/eat.png" alt=""></a>
+                    <a href="#"><img src="./img/eat.png" alt=""></a>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVICES INCLUS -->
+        <section class="services-inclus">
+            <?php
+            include('./common/our-values.php')
+            ?>
+        </section>
+        <section id="contact-us">
+            <?php
+            include('./common/contact-us.php')
+            ?>
+        </section>
+    </main>
     <footer>
         <?php
         include('./common/footer.php')
         ?>
     </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+    <script src="/js/index.js"></script>
 
 </body>
 

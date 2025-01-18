@@ -254,7 +254,7 @@ header nav a:nth-child(5) {
   background: #f03900;
 }
 header nav ul li a:hover {
-  background:var(--hover-primary-color);
+  background: var(--hover-primary-color);
   color: var(--text-on-dark);
 }
 header #logo {
@@ -384,7 +384,7 @@ header #logo:hover {
   box-shadow: 0 0 22px #00000036;
 }
 
-.form>.call-to-action {
+.form > .call-to-action {
   display: flex;
   justify-content: center;
 }
@@ -394,12 +394,12 @@ header #logo:hover {
 }
 
 .form p {
-  font-size: 128px;  
+  font-size: 128px;
   font-weight: var(--font-bold);
 }
 
 .offre p {
-  background: #FF9B7B;
+  background: #ff9b7b;
   color: black;
   border-radius: 55px;
   font-size: 24px;
@@ -460,13 +460,11 @@ header #logo:hover {
   font-size: 19px;
 }
 
-
-
 /* IFRAME -HOME */
 .iframe-home iframe {
   width: 100%;
   height: 500px;
-  border:0;
+  border: 0;
 }
 
 /* SERVICES TRIO */
@@ -577,7 +575,7 @@ header #logo:hover {
 
 .en-savoir-plus a {
   background: var(--primary-color);
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   text-transform: uppercase;
   font-weight: bolder;
   border: none;
@@ -630,41 +628,6 @@ header #logo:hover {
   flex-basis: auto;
   margin-right: 2em;
   font-size: 26px;
-}
-
-/* ------carte fitnesss-pass---------------------- */
-
-.carte-fidelite {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3% 21% 3% 21%;
-  width: 62%;
-}
-
-.carte-texte {
-  margin-left: 2em;
-}
-
-.carte-fidelite h3 {
-  color: rgb(25 25 25);
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 2.5em;
-}
-
-.carte-fidelite span {
-  color: #ff7f00;
-}
-
-.carte-fidelite p {
-  font-size: 104%;
-}
-
-.carte-fidelite img {
-  width: 284px;
-  border-radius: 32px;
-  box-shadow: 0 10px 40px #00000054;
 }
 
 /* ----------A vos marque----------------------- */
@@ -822,7 +785,7 @@ header #logo:hover {
 .icon-text {
   display: flex;
   margin-right: 3em;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .icon-text p {
@@ -962,6 +925,58 @@ header #logo:hover {
   color: white;
 }
 
+/* PAGE - CONCEPT */
+.description-text-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 3em;
+}
+.bloc-text {
+  flex: 1;
+}
+.description-text-image img {
+  flex: 1;
+  border-radius: var(--border-radius);
+}
+.description-text-image img {
+  width: 30em;
+  margin-left: 11em;
+}
+.session {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--secondary-color);
+  padding: 1em 0 4em 0;
+}
+.session::after {
+  content: "";
+  position: absolute;
+  bottom: -211px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 440px;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+}
+.session h3 {
+  color: var(--secondary-color);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  padding: 25px 0;
+}
+.all-session {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.all-session img {
+  width: 25em;
+  margin: 5px;
+}
 /* ----------Localisation----------- */
 .location {
   background: #009688;
@@ -1013,7 +1028,6 @@ header #logo:hover {
   text-transform: uppercase;
 }
 
-
 table {
   cursor: context-menu;
   font-size: var(--font-size);
@@ -1031,14 +1045,15 @@ caption {
   margin-bottom: 18px;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 18px;
 }
 
 .active-day {
-  background-color: #C4E3D4;
-  color:#06894C;
+  background-color: #c4e3d4;
+  color: #06894c;
 }
 
 #surlignement {
@@ -1177,7 +1192,7 @@ th, td {
 .bg-contact-us a {
   height: 180px;
   background: var(--primary-color);
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   padding: 77px;
   border-radius: 0 19px 19px 0;
   position: absolute;
@@ -1188,9 +1203,8 @@ th, td {
   color: #fff;
 }
 .bg-contact-us a:hover {
-  background:var(--hover-primary-color);
+  background: var(--hover-primary-color);
 }
-
 
 /* ----------Footer------------------- */
 
@@ -1646,7 +1660,6 @@ header #logo-lien {
 
 /* --- */
 
-
 #guenage {
   height: 25em;
   width: 100%;
@@ -1864,7 +1877,7 @@ header #logo-lien {
 
 @media screen and (max-width: 1459px) {
   .banner {
-    background-position-y:0;
+    background-position-y: 0;
   }
 
   .Offre {
@@ -1926,7 +1939,7 @@ header #logo-lien {
 
 @media screen and (max-width: 1024px) {
   .banner {
-    background-position-y:0;
+    background-position-y: 0;
   }
   #promo-instagram {
     flex-direction: column;
