@@ -73,8 +73,8 @@
         <div class="banner">
             <div class="text_btn">
                 <h1>Salle de sport à Lyon <br>
-                    ton nouceau chez toi !
-    </h1>
+                    ton nouveau chez toi !
+                </h1>
                 <div class="call-to-action">
                     <a href="./contact.php">Je m'inscris</a>
                     <a href="#" class="hover-element">Je réserve ma séance d'essai</a>
@@ -328,7 +328,7 @@
         </section>
         <section id="cest-partie" class="bloc-element bg-bloc">
             <?php
-                include ("./common/trio-bloc.php")
+            include("./common/trio-bloc.php")
             ?>
         </section>
 
@@ -637,7 +637,7 @@
 
         <section id="contact-us">
             <?php
-                include('./common/contact-us.php')
+            include('./common/contact-us.php')
             ?>
         </section>
     </main>

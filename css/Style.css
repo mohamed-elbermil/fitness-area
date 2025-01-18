@@ -271,11 +271,11 @@ header #logo:hover {
 /* BANNER */
 .banner {
   position: relative;
-  background: url("../img/banner/banner-home.jpg");
+  background: url(../img/banner/banner-home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -26em;
-  height: 56vh;
+  height: 70vh;
 }
 .banner-form {
   position: relative;
@@ -283,7 +283,7 @@ header #logo:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: top;
-  height: 56vh;
+  height: 70vh;
 }
 
 .heading-label {
@@ -295,8 +295,8 @@ header #logo:hover {
 
 .text_btn {
   position: absolute;
-  bottom: 8em;
-  left: 4em;
+  bottom: 3em;
+  left: 3em;
 }
 
 .text_btn p {
