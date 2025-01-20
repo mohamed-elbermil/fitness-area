@@ -28,7 +28,7 @@
 
 <div id="barre" style="width: 96.9574px;"></div>
 
-<body id="body">
+<body>
 
 
 
