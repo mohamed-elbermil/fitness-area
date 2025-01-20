@@ -1,5 +1,5 @@
         <div class="reseaux">
-            <hn id="reseaux">Réseaux</hn><br>
+            <span>Réseaux</span><br>
             <div class="social-media">
                 <a href="https://www.instagram.com/fitnessarea8/?hl=fr" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
@@ -9,13 +9,13 @@
             </div>
         </div>
         <div class="a-propos">
-            <hn id="a-propos">à propos</hn><br>
+            <span>à propos</span><br>
             <a href="#">Fonctionnement</a>
             <a href="#">Règles sanitaires</a>
             <a href="A-Propos.php">Notre équipe</a>
         </div>
         <div class="coordonnee">
-            <hn id="coordonnee">coordonnee</hn><br>
+            <span>coordonnee</span><br>
             <a href="04.XX.68.32.16">04.XX.68.32.16</a>
             <a href="mailto:contact@fitness-area.fr
                 ">contact@fitness-area.fr
