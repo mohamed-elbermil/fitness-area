@@ -1346,6 +1346,13 @@ footer i {
 .social-media {
   display: flex;
   align-items: center;
+  margin-top: 15px;
+}
+.element-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 15px;
 }
 
 .title-footer {

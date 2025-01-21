@@ -1,5 +1,5 @@
         <div class="reseaux">
-            <span>Réseaux</span><br>
+            <span>Réseaux</span>
             <div class="social-media">
                 <a href="https://www.instagram.com/fitnessarea8/?hl=fr" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
@@ -9,20 +9,25 @@
             </div>
         </div>
         <div class="a-propos">
-            <span>à propos</span><br>
-            <a href="#">Fonctionnement</a>
-            <a href="#">Règles sanitaires</a>
-            <a href="A-Propos.php">Notre équipe</a>
+            <span>à propos</span>
+            <div class="element-footer">
+                <a href="#">Fonctionnement</a>
+                <a href="#">Règles sanitaires</a>
+                <a href="A-Propos.php">Notre équipe</a>
+
+            </div>
         </div>
         <div class="coordonnee">
-            <span>coordonnee</span><br>
-            <a href="04.XX.68.32.16">04.XX.68.32.16</a>
-            <a href="mailto:contact@fitness-area.fr
+            <span>coordonnee</span>
+            <div class="element-footer">
+                <a href="04.XX.68.32.16">04.XX.68.32.16</a>
+                <a href="mailto:contact@fitness-area.fr
                 ">contact@fitness-area.fr
-            </a>
-            <p>Ouvert du Lundi au Dimanche
-                de 6h30 à 22h00
-            </p>
+                </a>
+                <p>Ouvert du Lundi au Dimanche
+                    de 6h30 à 22h00
+                </p>
+            </div>
         </div>
         </div>
         <p id="credit">© 2021-2022 SOBLIM® - Agence Web digital.
