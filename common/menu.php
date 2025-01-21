@@ -9,9 +9,18 @@
             <a href="contact.php">contact</a>
         </li>
     </ul>
-    <div class="toggle">
+    <div class="menu-bg"></div>
+    <div class="menu-burger">☰</div>
+    <div class="menu-items">
+        <a href="formule.php">formules</a>
+        <a href="coaching.php">coaching</a>
+        <a href="concept.php">concept</a>
+        <a href="a-propos.php">à propos</a>
+        <a href="contact.php">contact</a>
+    </div>
+    <!-- <div class="toggle">
         <i class="fa-solid fa-bars ouvrir"></i>
         <i class="fa-solid fa-xmark fermer"></i>
-    </div> 	
+    </div> -->
 </nav>
 </nav>

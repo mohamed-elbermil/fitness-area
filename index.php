@@ -650,7 +650,25 @@
         ?>
     </footer>
     </div>
+    <script>
+        // Déclaration des variables
+        const menuBurger = document.querySelector('.menu-burger');
+        const menuItems = document.querySelector('.menu-items');
+        const menuBg = document.querySelector('.menu-bg');
+        const toggleElements = [menuBg, menuItems, menuBurger];
 
+        // Ajout de l'événement click
+        menuBurger.addEventListener('click', toggleMenu);
+        menuItems.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            // Ajoute ou enlève la classe 'fs' aux éléments
+            toggleElements.forEach(element => element.classList.toggle('fs'));
+
+            // Change le texte du menu burger
+            menuBurger.textContent = menuBurger.textContent === "☰" ? "✕" : "☰";
+        }
+    </script>
     <script src="./js/index.js"></script>
     <script src="./js/animation-title.js"></script>
 
