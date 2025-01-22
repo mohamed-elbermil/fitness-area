@@ -38,8 +38,8 @@
     <main>
         <div class="banner banner-form">
             <div class="text_btn">
-                <span class="heading-label">Abonnements</span>
-                <h1>Découvrez nos formules<br>d’abonnement !
+                <span class="heading-label">Coachs</span>
+                <h1>Découvrez vos<br>Coach !
                 </h1>
                 <p>Des formules <strong>tout inclus et sans engagement</strong> pour accéder au sport premium et à des services incomparables.</p>
 
@@ -48,11 +48,43 @@
 
         <!-- Team -->
         <section class="team-band">
-            <h1>VOTRE ÉQUIPE L'Appart de fitness-area</h1>
-            <div class="team-bloc-band">
-                <div class="card-element">
-                    <a href="">
+            <div class="bloc-band">
+                <h1>VOTRE <span>ÉQUIPE</span> de fitness-area</h1>
+                <div class="team-bloc-band">
+                    <div class="card-element">
+                        <a href="">
 
+                            <div class="card-img">
+                                <img src="./img/coach/coach-1.png" alt="coach fitness-area">
+                            </div>
+                            <div class="element-title-img">
+                                <p>Julien</p>
+                                <span>Coach de musculation</span>
+                                <div class="social-media-coach">
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="calendar-coach">
+                                <button class="btn-reserved">Réserver avec ce coach</button>
+                                <div class="more-infos">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="card-element">
                         <div class="card-img">
                             <img src="./img/coach/coach-1.png" alt="coach fitness-area">
                         </div>
@@ -74,59 +106,36 @@
                             </div>
 
                         </div>
-                    </a>
 
-                </div>
-                <div class="card-element">
-                    <div class="card-img">
-                        <img src="./img/coach/coach-1.png" alt="coach fitness-area">
                     </div>
-                    <div class="element-title-img">
-                        <p>Julien</p>
-                        <span>Coach de musculation</span>
-                        <div class="social-media-coach">
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </div>
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
+                    <div class="card-element">
+                        <div class="card-img">
+                            <img src="./img/coach/coach-1.png" alt="coach fitness-area">
+                        </div>
+                        <div class="element-title-img">
+                            <p>Julien</p>
+                            <span>Coach de musculation</span>
+                            <div class="social-media-coach">
+                                <div class="round-icon-border">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="round-icon-border">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="round-icon-border">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
 
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
-                <div class="card-element">
-                    <div class="card-img">
-                        <img src="./img/coach/coach-1.png" alt="coach fitness-area">
-                    </div>
-                    <div class="element-title-img">
-                        <p>Julien</p>
-                        <span>Coach de musculation</span>
-                        <div class="social-media-coach">
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </div>
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
 
-
-                        </div>
-
-                    </div>
 
                 </div>
-
-
 
             </div>
 
