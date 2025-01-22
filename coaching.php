@@ -85,53 +85,72 @@
 
                     </div>
                     <div class="card-element">
-                        <div class="card-img">
-                            <img src="./img/coach/coach-1.png" alt="coach fitness-area">
-                        </div>
-                        <div class="element-title-img">
-                            <p>Julien</p>
-                            <span>Coach de musculation</span>
-                            <div class="social-media-coach">
-                                <div class="round-icon-border">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div class="round-icon-border">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </div>
-                                <div class="round-icon-border">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </div>
+                        <a href="">
 
+                            <div class="card-img">
+                                <img src="./img/coach/coach-2.png" alt="coach fitness-area">
+                            </div>
+                            <div class="element-title-img">
+                                <p>Sarah</p>
+                                <span>Coach de musculation</span>
+                                <div class="social-media-coach">
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+
+
+                                </div>
 
                             </div>
-
-                        </div>
+                            <div class="calendar-coach">
+                                <button class="btn-reserved">Réserver avec ce coach</button>
+                                <div class="more-infos">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
                     <div class="card-element">
-                        <div class="card-img">
-                            <img src="./img/coach/coach-1.png" alt="coach fitness-area">
-                        </div>
-                        <div class="element-title-img">
-                            <p>Julien</p>
-                            <span>Coach de musculation</span>
-                            <div class="social-media-coach">
-                                <div class="round-icon-border">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div class="round-icon-border">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </div>
-                                <div class="round-icon-border">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </div>
+                        <a href="">
 
+                            <div class="card-img">
+                                <img src="./img/coach/coach-3.png" alt="coach fitness-area">
+                            </div>
+                            <div class="element-title-img">
+                                <p>Thomas</p>
+                                <span>Coach de musculation</span>
+                                <div class="social-media-coach">
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <div class="round-icon-border">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+
+
+                                </div>
 
                             </div>
-
-                        </div>
+                            <div class="calendar-coach">
+                                <button class="btn-reserved">Réserver avec ce coach</button>
+                                <div class="more-infos">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
+
 
 
 

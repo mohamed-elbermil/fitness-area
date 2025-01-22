@@ -608,7 +608,7 @@ header #logo:hover {
   justify-content: space-evenly;
 }
 .more-infos i {
-  color: #fe5824;
+  color: #e06943;
   font-size: 38px;
 }
 .services-trio {
@@ -1480,6 +1480,9 @@ footer i {
 .card-element:hover .element-title-img p {
   color: #ff693a;
 }
+.card-element:hover .element-title-img span {
+  color: #ffffff;
+}
 .card-element span {
   text-transform: uppercase;
   font-weight: 700;
@@ -1492,6 +1495,7 @@ footer i {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: rgb(255 255 255);
   color: #000000;
+  margin-top: 12px;
 }
 .element-title-img {
   display: flex;
