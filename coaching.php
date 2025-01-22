@@ -51,8 +51,7 @@
             <div class="bloc-band">
                 <h1>VOTRE <span>ÉQUIPE</span> de fitness-area</h1>
                 <div class="team-bloc-band">
-                    <div class="card-element">
-                        <a href="">
+                    <div class="card-element"tabindex="0">
 
                             <div class="card-img">
                                 <img src="./img/coach/coach-1.png" alt="coach fitness-area">
@@ -81,11 +80,9 @@
                                     <i class="fa-solid fa-circle-info"></i>
                                 </div>
                             </div>
-                        </a>
 
                     </div>
                     <div class="card-element">
-                        <a href="">
 
                             <div class="card-img">
                                 <img src="./img/coach/coach-2.png" alt="coach fitness-area">
@@ -114,12 +111,9 @@
                                     <i class="fa-solid fa-circle-info"></i>
                                 </div>
                             </div>
-                        </a>
 
                     </div>
                     <div class="card-element">
-                        <a href="">
-
                             <div class="card-img">
                                 <img src="./img/coach/coach-3.png" alt="coach fitness-area">
                             </div>
@@ -147,7 +141,7 @@
                                     <i class="fa-solid fa-circle-info"></i>
                                 </div>
                             </div>
-                        </a>
+
 
                     </div>
 
