@@ -1432,6 +1432,11 @@ footer i {
 }
 .card-element:hover {
   box-shadow: 0 0 90px #0000004f;
+  background-color: #ff693a;
+}
+
+.card-element:hover .element-title-img p {
+  color: #ff693a;
 }
 .card-element span {
   text-transform: uppercase;
@@ -1445,6 +1450,12 @@ footer i {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: rgb(255 255 255);
   color: #000000;
+}
+.element-title-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 .card-img {
   overflow: hidden;

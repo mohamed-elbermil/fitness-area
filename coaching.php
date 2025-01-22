@@ -51,27 +51,30 @@
             <h1>VOTRE ÉQUIPE L'Appart de fitness-area</h1>
             <div class="team-bloc-band">
                 <div class="card-element">
-                    <div class="card-img">
-                        <img src="./img/coach/coach-1.png" alt="coach fitness-area">
-                    </div>
-                    <div class="element-title-img">
-                        <p>Julien</p>
-                        <span>Coach de musculation</span>
-                        <div class="social-media-coach">
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </div>
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="round-icon-border">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
+                    <a href="">
 
+                        <div class="card-img">
+                            <img src="./img/coach/coach-1.png" alt="coach fitness-area">
+                        </div>
+                        <div class="element-title-img">
+                            <p>Julien</p>
+                            <span>Coach de musculation</span>
+                            <div class="social-media-coach">
+                                <div class="round-icon-border">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="round-icon-border">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="round-icon-border">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+
+
+                            </div>
 
                         </div>
-
-                    </div>
+                    </a>
 
                 </div>
                 <div class="card-element">
