@@ -36,26 +36,6 @@
     </header>
 
 
-    <nav>
-        <a href="./index.html"> <img src="./img/Logo-blanc.png" alt="Logo" id="logo"></a>
-        <ul>
-            <li>
-                <a href="tarifs.html">Tarifs</a>
-                <a href="equipement.html">Equipement</a>
-                <a href="A-Propos.html">
-                    <NOBR>à propos</NOBR>
-                </a>
-                <a href="sinscrire.html">
-                    <span>
-                        <NOBR>Contact</NOBR>
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    </header>
-
-
     <main>
         <div class="form-contact">
             <div class="map">

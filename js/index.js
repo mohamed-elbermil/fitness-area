@@ -72,8 +72,6 @@ video.addEventListener("mouseout", () => {
 });
 // --
 
-// ---
-
 // NAVBAR - APPLICATION DE CSS AU SCROLL
 const nav = document.querySelector(".nav_header");
 
@@ -84,6 +82,8 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scroll");
   }
 });
+
+// LES COACHS - BOUCLE
 
 
 
