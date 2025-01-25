@@ -3,7 +3,7 @@
                 <div class="services-trio">
                     <div class="service-text">
                         <a href="#">
-                            <img src="./img/musculation.webp" alt="service de musculation">
+                            <img src="./img/old-man.png" alt="service de musculation">
                         </a>
                         <div class="text-services">
 
@@ -24,7 +24,7 @@
 
                         <div class="element-decoration-1"></div>
                         <a href="#">
-                            <img src="./img/detente-service.webp" alt="service de détente">
+                            <img src="./img/woman-musculation.png" alt="service de détente">
                         </a>
                         <div class="text-services">
 
@@ -41,7 +41,7 @@
                     <!-- Préparation mentale -->
                     <div class="service-text">
                         <a href="#">
-                            <img src="./img/mentale.webp" alt="service de préparation mentale">
+                            <img src="./img/musculation.jpg" alt="service de préparation mentale">
                         </a>
                         <div class="text-services">
 

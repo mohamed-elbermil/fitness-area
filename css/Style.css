@@ -321,7 +321,7 @@ header nav li {
   align-items: center;
   margin-right: 13em;
 }
-header nav a {
+.nav-link {
   color: #fff;
   font-size: 16px;
   padding: 12px 40px;
@@ -332,10 +332,13 @@ header nav a {
   transition-duration: 0.6s;
   white-space: nowrap;
 }
-header nav a:nth-child(5) {
+.nav-link.active{
+  background: #3a1a10;
+}
+.nav-link:nth-child(5) {
   background: #f03900;
 }
-header nav ul li a:hover {
+.nav-link:hover {
   background: var(--hover-primary-color);
   color: var(--text-on-dark);
 }
