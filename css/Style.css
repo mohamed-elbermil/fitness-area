@@ -1800,7 +1800,7 @@ footer i {
 }
 
 .form-contact textarea:focus {
-  height: 203px;
+  height: 240px;
 }
 
 .form-company {
@@ -1817,6 +1817,7 @@ footer i {
   font-size: 18px;
   color: #fff;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 #send-btn:hover {
