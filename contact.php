@@ -52,10 +52,6 @@
                 </a>
             </li>
         </ul>
-        <div class="toggle">
-            <i class="fa-solid fa-bars ouvrir"></i>
-            <i class="fa-solid fa-xmark fermer"></i>
-        </div>
     </nav>
     </header>
 
@@ -114,7 +110,7 @@
         ?>
     </footer>
 
-
+<script src="./js/index.js"></script>
 </body>
 
 </html>
