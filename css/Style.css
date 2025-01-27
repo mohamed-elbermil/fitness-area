@@ -768,9 +768,9 @@ header #logo:hover {
 .band-service {
   background: linear-gradient(to bottom, #171b31, #8a8c9d);
   width: 97%;
-  height: 36rem;
+  /* height: 36rem; */
   color: white;
-  padding-top: 41px;
+  padding: 40px;
   position: relative;
   border-radius: 9px;
   margin: 0 auto;
@@ -800,7 +800,7 @@ header #logo:hover {
   left: 49%;
   transform: translate(-50%, -50%);
   top: 50%;
-  font-size: 33em;
+  font-size: 17em;
 }
 
 .prestation {
