@@ -339,6 +339,7 @@ header nav li {
 }
 .nav-link:nth-child(5) {
   background: #f03900;
+  color: #fff;
 }
 .nav-link:hover {
   background: var(--hover-primary-color);
@@ -1806,7 +1807,7 @@ footer i {
 }
 
 .form-contact textarea:focus {
-  height: 240px;
+  height: 232px;
 }
 
 .form-company {
@@ -2156,5 +2157,35 @@ header #logo-lien {
   }
   .banner {
     background-position-y: 0;
+  }
+  .banner h1 {
+    line-height: 38px;
+    font-size: 33px;
+  }
+  .bloc-band h1 {
+    font-size: 22px;
+  }
+  .description-text-image {
+    flex-direction: column-reverse;
+    margin: 3em 5px;
+  }
+  .description-text-image img {
+    margin: 0 0 1em 0;
+    width: 100%;
+  }
+  .session::after {
+    display: none;
+  }
+  .form-contact {
+    flex-direction: column;
+    gap: 34px;
+    margin: 0;
+  }
+  .form-company,
+  .form-customer {
+    margin: 1em 1em;
+  }
+  .iframe-container iframe {
+    width: 100%;
   }
 }
