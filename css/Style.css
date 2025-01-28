@@ -2178,7 +2178,7 @@ header #logo-lien {
   }
   .form-contact {
     flex-direction: column;
-    gap: 34px;
+    /* gap: 34px; */
     margin: 0;
   }
   .iframe-container iframe {
@@ -2188,12 +2188,15 @@ header #logo-lien {
   .form-customer textarea {
     width: 100%;
   }
+  .form-customer {
+    margin-bottom: 30px;
+  }
   .form-company {
-    border-radius: 43px 0 0 0;
-    z-index: 44;
+    border-radius: 43px 43px 0 0;
+    z-index: 1;
     position: relative;
     top: -43px;
     background: #fff;
-    padding: 22px;
+    padding: 27px 27px 0;
   }
 }
