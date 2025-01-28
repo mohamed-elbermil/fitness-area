@@ -2181,11 +2181,19 @@ header #logo-lien {
     gap: 34px;
     margin: 0;
   }
-  .form-company,
-  .form-customer {
-    margin: 1em 1em;
-  }
   .iframe-container iframe {
     width: 100%;
+  }
+  .form-customer input,
+  .form-customer textarea {
+    width: 100%;
+  }
+  .form-company {
+    border-radius: 43px 0 0 0;
+    z-index: 44;
+    position: relative;
+    top: -43px;
+    background: #fff;
+    padding: 22px;
   }
 }
