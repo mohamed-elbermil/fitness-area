@@ -347,7 +347,7 @@ header nav li {
 header #logo {
   width: 14em;
   transition: 0.4s;
-  margin-right: 2em;
+  margin: 0 2em;
 }
 header #logo:hover {
   transform: translateY(-0.3em);
