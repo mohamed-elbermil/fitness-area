@@ -1530,15 +1530,21 @@ footer i {
   align-items: center;
   color: #fff;
 }
-.card-img {
+.card-container {
   overflow: hidden;
   height: 300px;
   width: 300px;
+  border-radius: 12px 12px 0 0;
 }
 .card-element img {
-  border-radius: 12px 12px 0 0;
   width: 100%;
+  transition: .4s;
 }
+
+.card-element:hover img {
+  width: 105%;
+}
+
 
 .social-media-coach {
   display: flex;

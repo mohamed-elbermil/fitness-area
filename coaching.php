@@ -40,8 +40,11 @@
                 <div class="team-bloc-band">
                     <div class="card-element"tabindex="0">
 
-                            <div class="card-img">
-                                <img src="./img/coach/coach-1.png" alt="coach fitness-area">
+                            <div class="card-container">
+                                <div class="card-img">
+                                    <img src="./img/coach/coach-1.png" alt="coach fitness-area">
+
+                                </div>
                             </div>
                             <div class="element-title-img">
                                 <p>Julien</p>
@@ -71,8 +74,11 @@
                     </div>
                     <div class="card-element">
 
-                            <div class="card-img">
-                                <img src="./img/coach/coach-2.png" alt="coach fitness-area">
+                            <div class="card-container">
+                                <div class="card-img">
+
+                                    <img src="./img/coach/coach-2.png" alt="coach fitness-area">
+                                </div>
                             </div>
                             <div class="element-title-img">
                                 <p>Sarah</p>
@@ -101,8 +107,10 @@
 
                     </div>
                     <div class="card-element">
-                            <div class="card-img">
-                                <img src="./img/coach/coach-3.png" alt="coach fitness-area">
+                            <div class="card-container">
+                                <div class="card-img">
+                                    <img src="./img/coach/coach-3.png" alt="coach fitness-area">
+                                </div>
                             </div>
                             <div class="element-title-img">
                                 <p>Thomas</p>
