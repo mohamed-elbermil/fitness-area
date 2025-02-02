@@ -1,0 +1,48 @@
+@import url("../../../css/Style.css");
+@import url("../../../css/variables.css");
+body {
+    font-family: var(--font-family);
+}
+
+.form-container {
+    display: flex;
+}
+
+.form-container img {
+    height: 100vh;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+input {
+    font-size: 15px;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 43px;
+    border: solid 1px #919191;
+}
+input::placeholder {
+    color: #919191;
+    font-weight: 300;
+}
+
+input:nth-last-child(1) {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: navajowhite;
+}
