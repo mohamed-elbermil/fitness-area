@@ -333,9 +333,7 @@ header nav {
   font-weight: var(--font-bold);
   border-radius: 114px;
 }
-.nav-left li {
-  padding: 12px 40px;
-}
+
 .connexion {
   margin: 0 24px;
 
@@ -353,6 +351,13 @@ header nav ul{
   display: flex;
   align-items: center;
   list-style-type: none;
+}
+
+header nav ul a {
+  text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 12px 29px;
 }
 .nav-link a {
   color: #fff;
@@ -378,6 +383,7 @@ header nav ul{
 header #logo {
   width: 14em;
   transition: 0.4s;
+  margin-right: 22px;
 }
 header #logo:hover {
   transform: translateY(-0.3em);
