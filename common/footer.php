@@ -24,6 +24,7 @@
                 <a href="mailto:contact@fitness-area.fr
                 ">contact@fitness-area.fr
                 </a>
+                <a href="contact.php">contact</a>
                 <p>Ouvert du Lundi au Dimanche
                     de 6h30 à 22h00
                 </p>
