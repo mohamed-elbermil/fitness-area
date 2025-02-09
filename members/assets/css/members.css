@@ -24,12 +24,19 @@ h1 {
 }
 
 .form-container form {
-    display: flex;
+    display: flex
+;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
     position: relative;
+    background: #ffffff;
+    border-radius: 51px;
+    position: relative;
+    z-index: 94;
+    left: -52px;
+    box-shadow: -45px 0 51px #00000045;
 }
 
 .input-container {
@@ -82,11 +89,11 @@ input:nth-last-child(1) {
 .return {
     color: var(--primary-color);
     border-radius: 53px;
-    padding: 11px 50px;
+    padding: 10px 18px;
     position: absolute;
     top: 24px;
-    left: 60px;
-    font-size: 24px;
+    left: 24px;
+    font-size: 22px;
     border: solid 1px;
 }
 .return:hover {
@@ -97,5 +104,15 @@ input:nth-last-child(1) {
 @media screen and (max-width:768px) {
     .bg-left {
         display: none;
+    }
+    .form-container form {
+        left:0;
+        box-shadow: none;
+    }
+    input {
+        width: 95%;
+    }
+    .input-container {
+        align-items: center;
     }
 }
