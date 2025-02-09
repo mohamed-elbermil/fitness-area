@@ -68,6 +68,24 @@ input:nth-last-child(1) {
     font-weight: 700;
     border: navajowhite;
 }
+.message-1 {
+    display: none;
+}
+.message-1 i {
+    animation: message .9s infinite ease-in-out;
+    font-size: 14px;
+    color: #ffb407;
+    margin-top: 10px;
+}
+#name:focus + .message-1 {
+    display: inline-block;
+    margin-left: 11px;
+}
+@keyframes message {
+    0% {transform: rotate(1deg);}
+    50% {transform: rotate(60deg);}
+    100% {transform: rotate(1deg);}
+}
 .cgu {
     margin: 2em 0;
     display: flex;
@@ -99,6 +117,11 @@ input:nth-last-child(1) {
 .return:hover {
     background: var(--primary-color);
     color: #fff;
+}
+
+/* ---Media queries */
+#google-one-tap-button {
+    width: 100%;
 }
 
 @media screen and (max-width:768px) {
