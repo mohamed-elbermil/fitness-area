@@ -14,7 +14,7 @@
 <body>
     <div class="form-container">
         <div class="bg-left"></div>
-        <form action="register.php" method="post">
+        <form action="register_process.php" method="POST">
             <div class="input-container">
                 <a href="../index.php" class="return">Retour à l'accueil</a>
                 <h1>Création de votre compte</h1>
@@ -34,7 +34,7 @@
                     <input type="checkbox" name="cgu" id="cgu" required>
                     <p>J'accepte les <a href="#">conditions d'utilisations</a></p>
                 </div>
-                <input type="submit" placeholder="Envoyer">
+                <input type="submit" value="Envoyer" name="send">
             </div>
             <div id="g_id_onload"
      data-client_id="YOUR_GOOGLE_CLIENT_ID"
@@ -43,68 +43,9 @@
      data-your_own_param_2_to_login="any_value">
 </div>
        
-   
-        </form>
+    </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-    flatpickr("input[type='date']", {
-        dateFormat: "d-m-Y",
-        theme: "light" // Il existe aussi "dark", "material_blue", etc.
-    });
-
-</script>
-
-<script>
-  window.onload = function () {
-    google.accounts.id.initialize({
-      client_id: "46907862741-kcj3cvf04djkmja2mreii8cf0krshsr4.apps.googleusercontent.com", // Remplace par ton Client ID
-      callback: handleCredentialResponse
-    });
-
-    // Affiche le popup One Tap automatiquement
-    google.accounts.id.prompt();
-
-    // Affiche le bouton de connexion sur la page
-    google.accounts.id.renderButton(
-      document.getElementById("google-one-tap-button"), {
-        theme: "outline",        // Style du bouton
-        size: "large",           // Taille du bouton
-        type: "standard",        // Type de bouton (standard ou autre)
-        shape: "rectangular"     // Forme du bouton (rectangulaire)
-      }
-    );
-  };
-  function handleCredentialResponse(response) {
-    console.log("Token JWT reçu :", response.credential);
-    const data = parseJwt(response.credential);
-    console.log("Utilisateur connecté :", data);
-    // Afficher un message de bienvenue
-    document.getElementById("welcome").innerHTML =
-      "Bienvenue " + data.name + " (" + data.email + ")";
-  }
-  // Fonction pour décoder le JWT
-  function parseJwt(token) {
-    let base64Url = token.split(".")[1];
-    let base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
-    return JSON.parse(atob(base64));
-  }
-</script>
-
-<script>
-    const tel = document.getElementById('tel');
-    tel.addEventListener("input", function(){
-        inputValue = this.value.replace(/\D/g, "");
-        if (inputValue.length > 10) {
-            inputValue = inputValue.slice(0,10);
-        }
-        formattedValue = inputValue.replace(/(\d{2})(?=\d)/g, "$1 ");
-        this.value = formattedValue;   
-    })
-
-
-</script>
-
- 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./assets/js/members.js"></script>
 </body>
 </html>
