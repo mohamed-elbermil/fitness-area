@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +30,6 @@
                     <a href="#" class="hover-element">Je réserve ma séance d'essai</a>
                     <p class="incitation hidden-element">Tu verras, c'est chouette !</p>
                 </div>
-
             </div>
         </div>
         <section id="horaire">
@@ -49,7 +47,6 @@
                             <th data-day="0" scope="col">Dimanche</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td data-day="1">06:00 - 23:00</td>
@@ -64,14 +61,10 @@
                 </table>
             </div>
         </section>
-
-        <!-- SECTION "IFRAME" -->
         <div class="iframe-home">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.2132881454221!2d4.837379569701368!3d45.734039698192475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea24e07c8567%3A0xacd405ad60f5ed29!2s1%20Rue%20de%20l&#39;Effort%2C%2069007%20Lyon!5e0!3m2!1sfr!2sfr!4v1736089323521!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-
-
         <!-- SECTION "C'est partie" -->
         <section id="cest-partie" class="bloc-element">
             <svg viewBox="0 0 514.72 200.68" class="motif">
@@ -89,8 +82,6 @@
                             <img src="./img/musculation.webp" alt="service de musculation">
                         </a>
                         <div class="text-services">
-
-
                             <div class="little-title">
                                 <p>C'est</p>
                                 <span> partie</span>
@@ -100,15 +91,12 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Détente -->
                     <div class="service-text">
                         <a href="#">
                             <img src="./img/detente-service.webp" alt="service de détente">
                         </a>
                         <div class="text-services">
-
-
                             <div class="little-title">
                                 <p>C'est</p>
                                 <span> partie</span>
@@ -124,8 +112,6 @@
                             <img src="./img/mentale.webp" alt="service de préparation mentale">
                         </a>
                         <div class="text-services">
-
-
                             <div class="little-title">
                                 <p>C'est</p>
                                 <span> partie</span>
@@ -141,7 +127,6 @@
                 </div>
             </div>
         </section>
-
         <!-- MAINTENANT -->
         <div class="maintenant">
             <div class="scrolling-animation">
@@ -183,31 +168,22 @@
             </div>
         </section>
         <!-- A-vos-marque Carousel -->
-
         <section class="product">
-
             <div class="product-container">
-
                 <div class="Bloc_prestation">
                     <a href="./muscler.html"><img src="./img/muscle.webp" alt="maigrir" id="muscle_img"></a>
                     <span id="muscle">Se muscler</span>
-
                 </div>
-
-
                 <div class="Bloc_prestation">
-
                     <a href="./detente.html"><img src="./img/detente.webp" alt="maigrir"></a>
                     <span>Se détendre</span>
                 </div>
-
                 <div class="Bloc_prestation">
                     <a href="./depasser.html"><img src="./img/depasser.webp" alt="se dépasser"></a>
                     <span>Se dépasser</span>
                 </div>
             </div>
         </section>
-
         <!-- PROMOTION DES RESEAUX SOCIAUX -->
         <section id="promo-instagram">
             <div class="image-promo">
@@ -237,7 +213,6 @@
                 </div>
             </div>
         </section>
-
         <!-- SECTION - INFORMATIONS PRATIQUES -->
         <section id="infos-club" class="bloc-element">
             <div class="title-band" id="title-bg-white">
@@ -272,7 +247,6 @@
                             <i class="fa-solid fa-music"></i>
                             <p>Musique inspirante</p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -282,7 +256,6 @@
             include("./common/trio-bloc.php")
             ?>
         </section>
-
         <!-- VIDEO -->
         <div class="publicity">
             <video controls src="./img/pub.mp4" poster="./img/miniature.png" id="myvideo" muted="muted" alt="Publicité Fitness-Area"></video>
@@ -298,12 +271,9 @@
                             <h2>5 astuces pour maigrir</h2>
                             <p>Boire régulièrement est le meilleur moyen d'éviter la déshydratation. Buvez de l'eau avant, pendant et après l'exercice...</p>
                             <div class="btn_bloc"><a href="#">En savoir +</a></div>
-
                         </div>
                     </div>
                 </div>
-
-
                 <div class="article_bloc">
                     <div class="carre_texte">
                         <img src="./img/Habitude.webp" alt="femme qui s'étire">
@@ -312,12 +282,10 @@
                             <h2>Les bonnes habitudes du quotidien</h2>
                             <p>Il est parfois difficile d'être heureux au quotidien. Nous avons tous des engagements qui incluent le travail, la technologie etc... </p>
                             <div class="btn_bloc"><a href="#">En savoir +</a></div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="article-side">
                 <div class="article_bloc">
                     <div class="carre_texte">
@@ -325,13 +293,11 @@
                         <div class="texte_bloc">
                             <h1>24 Avril 2022</h1>
                             <h2>Nos conseils nutrition !</h2>
-                            <p>Pour fonctionner correctement, le corps humain a besoin d’énergie. Ces besoins énergétiques sont couverts par les aliments... </p>
+                            <p>Pour fonctionner correctement, le corps humain a besoin d’énergie. Ces besoins énergétiques sont couverts par les aliments...</p>
                             <div class="btn_bloc"><a href="#">En savoir +</a></div>
-
                         </div>
                     </div>
                 </div>
-
                 <div class="article_bloc">
                     <div class="carre_texte">
                         <img src="./img/Muscle-article.webp" alt="biceps contracté">
@@ -340,7 +306,6 @@
                             <h2>5 astuces pour se muscler</h2>
                             <p>Bien sûr, il faut faire des efforts pour obtenir des résultats, mais avec quelques astuces et conseils, vous pourrez gagner du muscle plus rapidement...</p>
                             <div class="btn_bloc"><a href="#">En savoir +</a></div>
-
                         </div>
                     </div>
                 </div>
@@ -350,7 +315,6 @@
         <h3 id="like">Ils sont satisfaits</h3>
         <div class="avis">
             <div class="temoignage">
-
                 <img src="./img/profile/pp-Celia.webp" alt="photo de profil d'utilsateur" id="pp">
                 <hn id="nom">Célia</hn>
                 <p>"Une salle à la hauteur de mes attentes"</p>
@@ -362,9 +326,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-
             <div class="temoignage">
-
                 <div class="nom1">
                     <img src="./img/profile/pp-maxime.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Maxime</hn>
@@ -378,9 +340,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-
             <div class="temoignage">
-
                 <div class="nom1">
                     <img src="./img/profile/pp-leon.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Léon</hn>
@@ -394,7 +354,6 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-
             <div class="temoignage">
                 <img src="./img/profile/pp-Sandra.webp" alt="photo de profil d'utilsateur" id="pp">
                 <hn id="nom">Sandra</hn>
@@ -407,18 +366,11 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-
-
-
         </div>
-
         <!-- Témoignage carousel pour smartphone -->
         <section class="product">
-
             <div class="product-container">
-
                 <div class="temoignage">
-
                     <img src="./img/pp-Celia.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Célia</hn>
                     <p>"Une salle à la hauteur de mes attentes"</p>
@@ -430,10 +382,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-
-
                 <div class="temoignage">
-
                     <img src="./img/pp-maxime.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Maxime</hn>
                     <p>"Une salle à la hauteur de mes attentes"</p>
@@ -445,9 +394,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-
                 <div class="temoignage">
-
                     <div class="nom1">
                         <img src="./img/pp-leon.webp" alt="photo de profil d'utilsateur" id="pp">
                         <hn id="nom">Léon</hn>
@@ -461,9 +408,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-
                 <div class="temoignage">
-
                     <div class="nom1">
                         <img src="./img/pp-Sandra.webp" alt="photo de profil d'utilsateur" id="pp">
                         <hn id="nom">Sandra</hn>
@@ -477,7 +422,6 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-
                 <div class="temoignage">
                     <img src="./img/pp-mounir.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Mounir</hn>
@@ -490,8 +434,6 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-
-
                 <div class="temoignage">
                     <img src="./img/pp.webp" alt="photo de profil d'utilsateur" id="pp">
                     <hn id="nom">Mohamed</hn>
@@ -504,19 +446,11 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-
-
             </div>
-
-
         </section>
-
         <section class="product">
-
             <div class="product-container">
-
                 <div class="Bloc_carousel">
-
                     <div class="article_bloc">
                         <div class="carre_texte">
                             <img src="./img/detente.webp" alt="femme détendu">
@@ -525,15 +459,11 @@
                                 <h2>5 astuces pour maigrir</h2>
                                 <p>Boire régulièrement est le meilleur moyen d'éviter la déshydratation. Buvez de l'eau...</p>
                                 <div class="btn_bloc"><a href="https://www.cosmopolitan.fr/,5-astuces-pour-perdre-du-poids-facilement,1990408.asp" target="blank">En savoir +</a></div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="Bloc_carousel">
-
                     <div class="article_bloc">
                         <div class="carre_texte">
                             <img src="./img/Habitude.webp" alt="Femme qui s'étire">
@@ -542,14 +472,11 @@
                                 <h2>Les bonnes habitudes du quotidien</h2>
                                 <p>Il est parfois difficile d'être heureux au quotidien. Nous avons tous des engagements...</p>
                                 <div class="btn_bloc"><a href="https://www.brunet.ca/sante/conseils-sante/20-bonnes-habitudes-a-prendre-pour-etre-en-sante/" target="blank">En savoir +</a></div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="Bloc_carousel">
-
                     <div class="article_bloc">
                         <div class="carre_texte">
                             <img src="./img/noix_cajoux.webp" alt="Noix de cajoux">
@@ -558,14 +485,11 @@
                                 <h2>Nos conseils nutrition !</h2>
                                 <p>Pour fonctionner correctement, le corps humain a besoin d’énergie...</p>
                                 <div class="btn_bloc"><a href="https://nutritionnisteurbain.ca/actualite/10-conseils-simples-12-nutritionnistes-bien-manger/" target="blank">En savoir +</a></div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="Bloc_carousel">
-
                     <div class="article_bloc">
                         <div class="carre_texte">
                             <img src="./img/muscle.webp" alt="biceps contracté">
@@ -574,38 +498,24 @@
                                 <h2>5 astuces pour se muscler</h2>
                                 <p>Bien sûr, il faut faire des efforts pour obtenir des résultats, mais avec quelques...</p>
                                 <div class="btn_bloc"><a href="https://dicodusport.fr/blog/musculation-5-astuces-pour-prendre-du-muscle-rapidement/" target="blank">En savoir +</a></div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
         </section>
-
         <section id="contact-us">
             <?php
             include('./common/contact-us.php')
             ?>
         </section>
     </main>
-
-
-
     <footer>
         <?php
         include('./common/footer.php')
         ?>
     </footer>
     </div>
-
     <script src="./js/index.js"></script>
-
-
-
 </body>
-
 </html>
