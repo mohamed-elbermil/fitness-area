@@ -1,6 +1,6 @@
 <div class="textNservices">
                 <p class="title-band">1 100m² d'activités rien que pour toi !</p>
-                <div class="services-trio">
+                <div class="services-trio wrapper">
                     <div class="service-text">
                         <a href="#">
                             <img src="./img/old-man.png" alt="service de musculation">

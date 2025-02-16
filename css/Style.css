@@ -663,7 +663,6 @@ header #logo:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .service-text {
@@ -842,7 +841,9 @@ header #logo:hover {
   position: absolute;
   justify-content: center;
   width: 100%;
+
 }
+
 
 .prestation img {
   width: 194px;
@@ -871,11 +872,10 @@ header #logo:hover {
   text-transform: uppercase;
 }
 
-.maigre,
-.detente,
-.muscle {
+.item {
   position: relative;
 }
+
 
 /* PROMO INSTAGRAM */
 #promo-instagram {
@@ -1021,7 +1021,6 @@ header #logo:hover {
 .all-articles {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 7em;
 }
 
@@ -1391,7 +1390,7 @@ footer span {
   font-weight: 700;
 }
 
-footer a, p {
+footer a, footer p {
   color: #767676;
 }
 
@@ -1830,8 +1829,7 @@ footer i {
   border: none;
   background: #f2f2f2;
   margin-bottom: 14px;
-  padding: 12px 331px 12px 21px;
-}
+  padding: 12px 0 12px 21px;}
 
 .form-customer input:hover,
 .form-customer textarea:hover {
@@ -2149,8 +2147,57 @@ header #logo-lien {
   }
 }
 @media screen and (max-width: 768px) {
+  .bg-contact-us a {
+    height: auto;
+    right: 50px;
+    top: 58px;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 50px;
+}
+  .avis {
+    display: block;
+  }
+  .planning thead{
+    font-size: 7px;
+  }
+  .planning tbody{
+    font-size: 4px;
+  }
+  .motif {
+    display: none;
+  }
+  .bloc-element {
+    display: block;
+  }
+  .band-service h3 {
+    display: none;
+  }
+  .wrapper {
+    overflow-x: auto;
+    justify-content: initial;
+  }
+  .wrapper::-webkit-scrollbar {
+    height: 0;
+  }
+  .title-promo p {
+    width: auto;
+    font-size: 34px;
+}
+  .en-savoir-plus {
+    width: auto;
+  }
+  .en-savoir-plus a {
+    padding: 14px 33px; 
+  }
+  .promo {
+    font-size: 7px;
+  }
   .band-service h3 {
     font-size: 17px;
+  }
+  .incitation.hidden-element {
+    display: none;
   }
   #promo-instagram {
     flex-direction: column;
@@ -2163,9 +2210,6 @@ header #logo-lien {
   header nav ul,
   .element-decoration-1 {
     display: none;
-  }
-  .services-trio {
-    flex-wrap: wrap;
   }
   .publicity video {
     width: 93%;
@@ -2226,6 +2270,7 @@ header #logo-lien {
     width: 100%;
   }
   .form-customer {
+    width: 92%;
     margin-bottom: 30px;
   }
   .form-company {

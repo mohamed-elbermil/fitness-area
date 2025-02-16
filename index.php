@@ -82,7 +82,7 @@
                     <p><span>Peu importe votre niveau</span></p>
                     <p>C'est partie !</p>
                 </div>
-                <div class="services-trio">
+                <div class="services-trio wrapper">
                     <!-- Musculation -->
                     <div class="service-text">
                         <a href="#">
@@ -166,17 +166,17 @@
         <section class="band-service">
             <h2 class="title-band">à vos marques... prêts ? partez !</h2>
             <h3>MOTIV</h3>
-            <div class="prestation">
-                <div class="muscle">
+            <div class="prestation wrapper">
+                <div class="item">
                     <a href="./muscler.html"><img src="./img/muscle.webp" alt="homme qui se muscle"></a>
                     <span>Se muscler</span>
                 </div>
 
-                <div class="detente">
+                <div class="item">
                     <a href="./detente.html"><img src="./img/detente.webp" alt="femme qui se détend "></a>
                     <span>Se détendre</span>
                 </div>
-                <div class="maigre">
+                <div class="item">
                     <a href="maigrir.html"><img src="./img/depasser.webp" alt="couple qui souhaite maigrir"></a>
                     <span>Se dépasser</span>
                 </div>
@@ -288,7 +288,7 @@
             <video controls src="./img/pub.mp4" poster="./img/miniature.png" id="myvideo" muted="muted" alt="Publicité Fitness-Area"></video>
         </div>
         <!-- --------Articles-------------- -->
-        <div class="all-articles">
+        <div class="all-articles wrapper">
             <div class="article-side">
                 <div class="article_bloc">
                     <div class="carre_texte">
