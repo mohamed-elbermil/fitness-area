@@ -8,7 +8,6 @@
   --text-on-dark: #ffffff;
   --font-family: "Source Sans Pro", sans-serif;
   --font-family-2: "Covered By Your Grace", serif;
-
   --font-size: 16px;
   --border-radius: 16px;
   --font-bold: 700;
@@ -17,4 +16,5 @@
   /*BANNER*/
   --font-size-banner: 60px;
   --font-black: 800;
+  --padding-mobile: 2em;
 }

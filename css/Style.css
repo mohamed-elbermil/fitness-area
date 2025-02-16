@@ -608,7 +608,6 @@ header #logo:hover {
   justify-content: center;
   align-items: center;
   margin: 3em 0;
-  padding: 2em;
 }
 
 .bloc-band h1 {
@@ -886,6 +885,9 @@ header #logo:hover {
   background: #f6f5f4;
   padding: 4em 0;
 }
+.text-promo,.bloc-element, .all-articles,.avis {
+  padding: var(--padding-mobile)
+}
 
 .title-promo {
   text-transform: uppercase;
@@ -901,9 +903,10 @@ header #logo:hover {
 
 .title-promo span {
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 19px;
   background: #ffe2d9;
-  padding: 2px 9px;
+  padding: 9px 16px;
+  border-radius: 53px;
 }
 
 .image-promo img {
@@ -1251,7 +1254,6 @@ td {
   width: 100%;
   justify-content: center;
   overflow: hidden;
-  padding: 3em 0;
 }
 
 #Gif-like {
