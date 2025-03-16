@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #FF693A;
+    --secondary-color: #FF9F84;
+    --white: #fff;
+    --black: #000000;
+    --icon-color: #C84419;
+    /* --border-radius-- */
+    --border-radius-full: 50px;
+    --border-radius-medium: 20px;
+    /* --padding/margin-- */
+    --padding-globale:2em;
+
+}

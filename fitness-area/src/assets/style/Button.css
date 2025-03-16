@@ -1,0 +1,45 @@
+@import './variables.css';
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 15px;
+    border:none;
+    border-radius: var(--border-radius-full);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-subscribe {
+    background: var(--primary-color);
+    color: var(--black);
+}
+.btn-join {
+    border: solid 1px var(--white);
+    color: var(--white);
+    background: #ffffff33;
+    backdrop-filter: blur(21px);
+}
+
+.btn-join::after {
+    content: '\f061';
+    font-family: 'FontAwesome'; 
+    opacity: 0;
+    transition: .4s ;
+}
+
+.btn-join:hover::after{
+    opacity: 1;
+    margin-left: 7px;
+}
+
+.btn-member{
+    background: var(--primary-color);
+    color: var(--black);
+}
+.btn-member::after {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    transform: rotate(321deg) !important;
+    display: inline-block;
+    margin-left: 6px;
+}
