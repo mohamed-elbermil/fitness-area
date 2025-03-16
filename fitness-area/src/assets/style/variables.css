@@ -7,7 +7,9 @@
     /* --border-radius-- */
     --border-radius-full: 50px;
     --border-radius-medium: 20px;
+    --border-radius-video: 3vw;
     /* --padding/margin-- */
     --padding-globale:2em;
-
+    /* --spacing-- */
+    --spacing-verticale: 60px 2em;
 }

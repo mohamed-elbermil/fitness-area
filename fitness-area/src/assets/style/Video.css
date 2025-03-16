@@ -1,0 +1,27 @@
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing-verticale);
+}
+
+.video video {
+    position: relative;
+    z-index: 2;
+    border-radius: var(--border-radius-video);
+    box-shadow: 0 0 70px #0000001c;
+    width: 50%;
+}
+
+.video span {
+    position: absolute;
+    z-index: 1;
+    font-size: 26vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #e0e0e0;
+    transition: filter 0.3s ease;
+}
+.video video:hover + span{
+    filter: blur(15px);
+}

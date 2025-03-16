@@ -1,5 +1,6 @@
 import Header from './assets/components/Header'
-import Button from './assets/components/Button'
+import MainContent from './assets/components/MainContent'
+import Video from './assets/components/Video'
 import './App.css'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <Header></Header>
-
+      <MainContent></MainContent>
+      <Video></Video>
     </>
   )
 }
