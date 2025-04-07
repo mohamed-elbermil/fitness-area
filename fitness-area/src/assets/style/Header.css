@@ -28,6 +28,16 @@ header {
   top: 0;
 }
 
+.nav a {
+  padding: 14px;
+  border-radius: 44px;
+  transition-duration: .4s;
+}
+
+.nav a:hover {
+  background: var(--primary-color);
+}
+
 nav img {
   width: 14em;
   margin-right: 17em;
