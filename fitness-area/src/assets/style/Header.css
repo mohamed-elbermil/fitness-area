@@ -8,7 +8,7 @@ header {
   margin: 2em;
 }
 
-nav {
+.nav {
   position: fixed;
   z-index: 9999;
   width: 97%;
@@ -17,6 +17,15 @@ nav {
   align-items: center;
   padding: 2em;
   color: #fff;
+  transition: .4s;
+}
+
+.nav.active {
+  background: #171717;
+  width: 100%;
+  padding: 2em 4em;
+  left: 0;
+  top: 0;
 }
 
 nav img {

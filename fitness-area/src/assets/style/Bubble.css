@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.bubble {
+    background: var(--disabled-1);
+    padding: 2em;
+    margin: 1em;
+    border-radius: 54px;
+    transition-duration: .5s;
+}
+
+.bubble.active, .bubble:hover {
+    background: #FFCEBF;
+}

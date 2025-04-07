@@ -1,12 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Button from './Button';
 import '../style/Header.css'
 
 function Header() {
+    const [scrolling, setScrolling] = useState(false);
+    const handleScroll = () => {
+        if (window.scrollY > 500 ) {
+            setScrolling(true)
+        } else {
+            setScrolling(false)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
    return (
     <header>
         <div className="nav-banner">
-            <nav>
+            <nav className={`nav ${scrolling ? 'active': ''}`}>
                 <div className="nav-left">
                     <a href="#">Accueil</a>
                     <a href="#">Formules</a>
