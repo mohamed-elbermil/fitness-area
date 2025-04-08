@@ -1,0 +1,64 @@
+@import url("../style/TabSwitcher.css");
+
+h2 {
+  margin: 2em 0;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  margin: 15em 0;
+}
+
+.containers button {
+  padding: 9px 25px;
+  border-radius: 90px;
+  border: solid 1px black;
+  color: #000000;
+  font-size: 22px;
+  margin-right: 1em;
+}
+
+.containers button:hover {
+  transition-duration: 0.4s;
+  background: var(--primary-color);
+}
+
+.active-button {
+  background: var(--primary-color);
+  color: #ffffff !important;
+  border: none !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.all-images {
+  display: flex;
+}
+
+img {
+  width: 17em;
+  border-radius: var(--border-radius-full);
+}
+
+.images:hover p {
+  transition-duration: 0.4s;
+  opacity: 1;
+}
+
+.images img:hover {
+  transition: 0.4s ease-in-out;
+  margin-bottom: 2em;
+  filter: brightness(1.2);
+}
+
+.images {
+  width: 18em;
+}
+
+.images p {
+  opacity: 0;
+  height: 0;
+}
