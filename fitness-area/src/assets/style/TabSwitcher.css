@@ -1,8 +1,13 @@
 @import url("../style/TabSwitcher.css");
 
 h2 {
-  margin: 2em 0;
-}
+  font-size: 3em;
+  margin: 1em 0;
+  width: 100%;}
+
+  .all-bloc {
+    width: 69em;
+  }
 
 .containers {
   display: flex;

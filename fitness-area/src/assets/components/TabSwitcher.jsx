@@ -10,6 +10,9 @@ function TabSwitcher() {
 
   return (
     <div className="containers">
+      <div className="all-bloc">
+
+      
       <div>
         <button
           className={selected === "activity" ? "active-button" : ""}
@@ -35,7 +38,7 @@ function TabSwitcher() {
 
       {selected === "activity" && (
         <>
-          <h2>phrase au hasardhbdejkbefkfjez</h2>
+          <h2>2phrase au hasardhbdejkbefkfjez</h2>
           <div className="all-images">
             <div className="images">
               <img src={image2} alt="" />
@@ -117,6 +120,7 @@ function TabSwitcher() {
           </div>
         </>
       )}
+    </div>
     </div>
   );
 }
