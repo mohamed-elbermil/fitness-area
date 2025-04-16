@@ -9,9 +9,13 @@
     cursor: pointer;
 }
 
-.btn-subscribe {
+.btn-subscribe, .btn-member {
     background: var(--primary-color);
     color: var(--black);
+    transition-duration: .4s;
+}
+.btn-subscribe:hover,.btn-member:hover {
+    background: var(--hover);
 }
 .btn-join {
     border: solid 1px var(--white);
@@ -32,10 +36,6 @@
     margin-left: 7px;
 }
 
-.btn-member{
-    background: var(--primary-color);
-    color: var(--black);
-}
 .btn-member::after {
     content: '\f061';
     font-family: 'FontAwesome';

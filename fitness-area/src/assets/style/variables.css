@@ -1,6 +1,7 @@
 :root {
     --primary-color: #FF693A;
     --secondary-color: #FF9F84;
+    --hover: #ffddd2;
     --disabled-1:#e0e0e0;
     --white: #fff;
     --black: #000000;
@@ -13,4 +14,7 @@
     --padding-globale:2em;
     /* --spacing-- */
     --spacing-verticale: 60px 2em;
+    /* --font-- */
+    --font-paragraph:16px
+
 }

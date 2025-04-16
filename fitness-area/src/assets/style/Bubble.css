@@ -11,6 +11,8 @@
     margin: 1em;
     border-radius: 54px;
     transition-duration: .5s;
+    color: #000000b8;
+    font-size: 13px;
 }
 
 .bubble.active, .bubble:hover {
