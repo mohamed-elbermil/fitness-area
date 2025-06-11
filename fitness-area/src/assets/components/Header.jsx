@@ -4,22 +4,6 @@ import "../style/Header.css";
 import Navbar from "../components/Navbar";
 
 function Header() {
-  const [scrolling, setScrolling] = useState(false);
-  const handleScroll = () => {
-    if (window.scrollY > 500) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <header>
       <div className="nav-banner">
