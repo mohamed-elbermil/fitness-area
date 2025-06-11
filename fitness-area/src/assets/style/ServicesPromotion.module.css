@@ -1,0 +1,42 @@
+.container {
+    background: #171717;
+    color: #fff;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 20px;
+}
+
+.title {
+    margin-bottom: 12em;
+}
+
+.all_bloc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc {
+    background: #ffffffd1;
+    color: black;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 1em;
+    width: 43em;
+}
+
+.bloc p {
+    margin-top: 5em;
+    font-size: 16px;
+}
+
+i {
+    background: var(--primary-color);
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    color: var(--icon);
+}
