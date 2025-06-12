@@ -56,7 +56,7 @@ export default function Formule() {
                   className={`location-tab ${location === loc ? "active" : ""}`}
                   onClick={() => setLocation(loc)}
                 >
-                  {loc === "hors_paris" ? "HORS PARIS" : "PARIS"}
+                  {loc === "hors_paris" ? "Lyon" : "PARIS"}
                 </button>
               ))}
             </div>

@@ -231,7 +231,7 @@
 }
 
 .location-tab.active {
-  background: linear-gradient(to right, #ef4444, #dc2626);
+  background: var(--primary-color);
   color: white;
   box-shadow: 0 8px 15px rgba(239, 68, 68, 0.3);
   transform: scale(1.05);
@@ -263,7 +263,7 @@
 }
 
 .price-amount {
-  background: linear-gradient(to right, #ef4444, #ec4899, #a855f7);
+  background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -280,7 +280,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(to right, #ef4444, #dc2626);
+  background:var(--primary-color);
   padding: 12px 32px;
   border-radius: 24px;
   font-weight: 700;
@@ -335,7 +335,7 @@
 .benefit-icon {
   width: 28px;
   height: 28px;
-  color: #ec4899;
+  color: var(--primary-color);
 }
 
 .benefit-text {
@@ -490,7 +490,6 @@
   background: rgba(255, 255, 255, 0.15);
   padding: 8px 16px;
   border-radius: 24px;
-  color: #dc2626;
   user-select: none;
   text-align: center;
 }
