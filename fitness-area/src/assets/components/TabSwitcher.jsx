@@ -119,7 +119,7 @@ const TabSwitcher = () => {
         <div className="text-center mb-16 lg:mb-20">
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6">
             Votre parcours{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="primary-color">
               fitness
             </span>
           </h2>
@@ -137,11 +137,11 @@ const TabSwitcher = () => {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`
-                 switch-button relative flex items-center gap-3 px-6 lg:px-8 py-4 lg:py-5 rounded-xl font-semibold text-base lg:text-lg transition-all duration-300 whitespace-nowrap
+                  switch-button relative flex items-center gap-3 px-6 lg:px-8 py-4 lg:py-5 rounded-xl font-semibold text-base lg:text-lg transition-all duration-300 whitespace-nowrap
                   ${
                     activeTab === tab.id
-                      ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg transform scale-105"
-                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                      ? "primary-color"
+                      : "primary-color"
                   }
                 `}
               >
@@ -165,7 +165,7 @@ const TabSwitcher = () => {
 
         {/* Tab Content */}
         {activeTabData && (
-          <div className="animate-fadeIn">
+          <div className="animate-fadeIn all-card">
             {/* Content Header */}
 
             {/* Cards Grid */}
@@ -186,7 +186,7 @@ const TabSwitcher = () => {
 
                     {/* Category Badge */}
                     <div className="absolute top-4 left-4">
-                      <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg theme">
+                      <span className="primary-bg px-4 py-2 rounded-full text-sm font-semibold shadow-lg theme">
                         {card.category}
                       </span>
                     </div>
@@ -205,7 +205,7 @@ const TabSwitcher = () => {
                     </p>
 
                     {/* CTA Button */}
-                    <button className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-purple-600 transition-colors duration-300 group/btn">
+                    <button className="primary-color inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-purple-600 transition-colors duration-300 group/btn">
                       En savoir plus
                       <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                     </button>

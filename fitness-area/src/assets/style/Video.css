@@ -25,3 +25,9 @@
 .video video:hover + span{
     filter: blur(15px);
 }
+
+@media screen and (max-width:1024px) {
+    .video video {
+        width: 100%;
+    }
+}

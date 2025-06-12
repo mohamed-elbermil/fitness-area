@@ -1,6 +1,5 @@
 h3 {
   font-size: 45px;
-  width: 12em;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 50px;
@@ -26,13 +25,13 @@ h3 {
   margin-right: 2em;
 }
 
-.box-presentation {
-  display: flex;
-  align-items: center;
-  margin-top: 2em;
-}
 .all-box {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+  margin-top: 2em;
 }
 .box {
   background: #b7b7b7;
@@ -40,9 +39,23 @@ h3 {
   height: 23em;
   border-radius: 20px;
   position: relative;
-  margin-right: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+@media screen and (max-width: 1024px )  {
+  .presentation img {
+    display: none;
+  }
+
+  .all-box {
+    justify-content: space-around;
+  }
+
+  .box {
+    width: 100%;
+  }
 }
