@@ -28,6 +28,7 @@ header {
 
 .nav-left a,
 .mobile-nav-dropdown a {
+  font-size: 17px;
   color: white;
   text-decoration: none;
   font-weight: 500;
