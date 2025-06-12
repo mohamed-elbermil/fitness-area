@@ -1,9 +1,16 @@
 .container {
-    background: #171717;
+    background: url("../images/bg.png");
+    background-size: cover;
+    background-size: cover;
+    background-position: bottom;
     color: #fff;
     padding: 2em;
     margin: 2em;
     border-radius: 20px;
+    height: 52em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title {
@@ -18,7 +25,8 @@
 }
 
 .bloc {
-    background: #ffffffd1;
+    background: #ffffffab;
+    backdrop-filter: blur(15px);
     color: black;
     border-radius: 20px;
     padding: 2em;
@@ -52,5 +60,7 @@ i {
     }
     .container  {
         padding: 1em;
+        height: auto;
+
     }
 }
