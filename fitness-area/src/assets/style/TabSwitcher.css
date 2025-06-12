@@ -1,30 +1,32 @@
 @import url("../style/TabSwitcher.css");
 
-h2 {
-  font-size: 3em;
-  margin: 1em 0;
-  width: 100%;}
-
-  .all-bloc {
-    width: 69em;
-  }
-
-.containers {
+.parcours {
   display: flex;
   flex-direction: column;
+  gap: 44px;
   align-items: center;
-  height: 50vh;
-  margin: 15em 0;
+  margin: 5em 0;
+}
+
+.card-sport {
+  padding: 1em;
+}
+
+.theme {
+  padding: 7px 14px;
+}
+
+.switch-button {
+  padding: 1em;
 }
 
 .containers button {
   padding: 9px 25px;
   border-radius: 90px;
-  border: solid 1px #00000026;
-  color: #0000006e;
+  border: solid 1px black;
+  color: #000000;
   font-size: 22px;
   margin-right: 1em;
-  cursor: pointer;
 }
 
 .containers button:hover {
@@ -40,32 +42,13 @@ h2 {
   border-radius: 8px;
 }
 
-.all-images {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-img {
-  width: 100%;
-  border-radius: var(--border-radius-full);
-}
-
-.images img:hover {
-  transition: 0.4s ease-in-out;
-  margin-bottom: 2em;
-  filter: brightness(1.2);
-}
-
 .images {
-  width: 21em;
-  margin: 1em;
+  width: 18em;
 }
 
 .images p {
-  font-size: var(--font-paragraph);
   opacity: 0;
   height: 0;
-  color: #00000094;
 }
 
 .images:hover p {

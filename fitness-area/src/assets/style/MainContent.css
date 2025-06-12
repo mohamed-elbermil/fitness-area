@@ -1,49 +1,48 @@
 h3 {
-    font-size: 45px;
-    width: 12em;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 50px;
+  font-size: 45px;
+  width: 12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
 }
 .presentation {
-    margin: var(--spacing-verticale);
-    display: flex;
-    align-items: center;
-
+  margin: var(--spacing-verticale);
+  display: flex;
+  align-items: center;
 }
 
 .right-presentation span {
-    font-size: 21px;
-    text-transform: uppercase;
-    color: orange;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: orange;
 }
 .right-presentation p {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 .presentation img {
-    width: 30em;
-    border-radius: var(--border-radius-medium);
-    margin-right: 2em;
+  width: 30em;
+  border-radius: var(--border-radius-medium);
+  margin-right: 2em;
 }
 
 .box-presentation {
-    display: flex;
-    align-items: center;
-    margin-top: 2em;
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
 }
 .all-box {
-    display: flex;
+  display: flex;
 }
 .box {
-    background: #b7b7b7;
-    width: 23em;
-    height: 23em;
-    border-radius: 20px;
-    position: relative;
-    margin-right: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: #b7b7b7;
+  width: 23em;
+  height: 23em;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
