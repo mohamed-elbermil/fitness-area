@@ -14,6 +14,7 @@ import ServicesPromotion from "./assets/components/ServicesPromotion";
 import Video from "./assets/components/Video";
 import Formule from "./pages/Formule";
 import Coaching from "./pages/Coaching";
+import Footer from "./assets/components/Footer"
 
 // Ce Layout est à l'intérieur d'une Route
 function Layout() {
@@ -36,6 +37,7 @@ function Layout() {
           <MainContent />
           <ServicesPromotion />
           <Video />
+          <Footer/>
         </>
       )}
     </>
