@@ -25,7 +25,7 @@ function Layout() {
     <>
       {!hideLayout && <Header />}
       <Routes>
-        <Route path="/" element={<h2>Accueil</h2>} />
+        <Route path="/" element={<h2></h2>} />
         <Route path="/formules" element={<Formule />} />
         <Route path="/coaching" element={<Coaching />} />
       </Routes>
