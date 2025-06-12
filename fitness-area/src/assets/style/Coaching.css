@@ -1,0 +1,12 @@
+@import url("../style/variables.css");
+.coach-title {
+    font-size: 4em;
+}
+
+.coach-title span {
+    color: var(--primary-color);
+}
+
+.btn-book {
+    background: var(--primary-color);
+}

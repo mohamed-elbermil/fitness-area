@@ -191,8 +191,8 @@
     max-width: 1280px;
     margin: 0 auto;
     color: white;
-    height: 81vh;
-    overflow-y: scroll;
+    /* height: 81vh;
+    overflow-y: scroll; */
 }
 
 /* Location Tabs */

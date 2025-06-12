@@ -1,0 +1,158 @@
+@import url("./variables.css");
+/* Container */
+.container-service {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Section */
+.services-section {
+  padding: 64px 0;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Services */
+.services-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.gradient-text {
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.services-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Service Card */
+.service-card {
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Values Section */
+.values-wrapper {
+  background: linear-gradient(90deg, #eff6ff, #ede9fe);
+  border-radius: 24px;
+  padding: 48px 32px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* Values Header */
+.values-header {
+  margin-bottom: 48px;
+}
+
+.values-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.values-subtitle {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+/* Values List */
+.values-list {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+  .values-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Value Item */
+.value-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.value-icon {
+  width: 24px;
+  height: 24px;
+  color: #22c55e; /* green-500 */
+  flex-shrink: 0;
+}
+
+.value-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333;
+}
