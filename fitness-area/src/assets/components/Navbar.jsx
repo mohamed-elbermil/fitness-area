@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../style/Header.css";
 import Button from "./Button";
 import { Menu, X } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,34 +11,35 @@ export default function Navbar() {
 
   const navLinks = (
     <>
-      <a href="#">Accueil</a>
-      <a href="#">Formules</a>
-      <a href="#">Coaching</a>
-      <a href="#">Concept</a>
+      <Link to="/">Accueil</Link>
+      <Link to="/formules">Formules</Link>
+      <Link to="/coaching">Coaching</Link>
+      <Link to="/concept">Concept</Link>
     </>
   );
 
   return (
     <>
       <nav className="nav">
-        {/* Burger menu (mobile) */}
-        <div className="mobile-menu-button" onClick={toggleMobileMenu}>
+        <div 
+          className="mobile-menu-button" 
+          onClick={toggleMobileMenu} 
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          role="button"
+          tabIndex={0}
+          onKeyPress={e => e.key === 'Enter' && toggleMobileMenu()}
+        >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </div>
 
-        {/* Left: Nav links (desktop) */}
         <div className="nav-left">{navLinks}</div>
-
-        {/* Center: Logo */}
         <img src="/logo.png" alt="Logo Fitness-Area" className="logo" />
-
-        {/* Right: Member button */}
         <div className="nav-right">
           <Button variant="member">Espace membre</Button>
         </div>
       </nav>
 
-      {/* Mobile menu dropdown */}
       {isOpen && (
         <div className="mobile-nav-dropdown">
           {navLinks}
