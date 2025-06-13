@@ -1,66 +1,73 @@
 .container {
-    background: url("../images/bg.png");
-    background-size: cover;
-    background-size: cover;
-    background-position: bottom;
-    color: #fff;
-    padding: 2em;
-    margin: 2em;
-    border-radius: 20px;
-    height: 52em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background: url("../images/bg.png");
+  background-size: cover;
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 20px;
+  height: 52em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
-    font-size: 18px;
-    margin: 1em 0;
+  font-size: 18px;
+  margin: 1em 0;
 }
 
 .all_bloc {
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
 }
 
 .bloc {
-    background: #ffffffab;
-    backdrop-filter: blur(15px);
-    color: black;
-    border-radius: 20px;
-    padding: 2em;
-    width: 43em;
+  background: #ffffffab;
+  backdrop-filter: blur(15px);
+  color: black;
+  border-radius: 20px;
+  padding: 2em;
+  width: 43em;
+}
+
+.bloc span {
+  font-weight: 700;
+  background: #fff8f89c;
+  padding: 6px 9px;
+  border-radius: 44px;
 }
 
 .bloc p {
-    margin-top: 5em;
-    font-size: 16px;
+  margin-top: 2em;
+  font-size: 16px;
 }
 
 i {
-    background: var(--primary-color);
-    font-size: 2em;
-    width: 2em;
-    height: 2em;
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    color: var(--icon);
+  background: var(--primary-color);
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  color: var(--icon);
+  margin-bottom: 17px;
 }
 
-@media screen and (max-width:1024px) {
-    .all_bloc {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .bloc {
-        width: 100%;
-    }
-    .container  {
-        padding: 1em;
-        height: auto;
-
-    }
+@media screen and (max-width: 1024px) {
+  .all_bloc {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bloc {
+    width: 100%;
+  }
+  .container {
+    padding: 1em;
+    height: auto;
+  }
 }

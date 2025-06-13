@@ -22,7 +22,6 @@ h3 {
 .presentation img {
   width: 30em;
   border-radius: var(--border-radius-medium);
-  margin-right: 2em;
 }
 
 .all-box {
@@ -34,9 +33,7 @@ h3 {
   margin-top: 2em;
 }
 .box {
-  background: #b7b7b7;
   width: 23em;
-  height: 23em;
   border-radius: 20px;
   position: relative;
   display: flex;
@@ -45,8 +42,7 @@ h3 {
   align-items: center;
 }
 
-
-@media screen and (max-width: 1024px )  {
+@media screen and (max-width: 1024px) {
   .presentation img {
     display: none;
   }
