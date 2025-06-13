@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
 
         <div className="nav-left">{navLinks}</div>
-        <img src="/logo.png" alt="Logo Fitness-Area" className="logo" />
+        <a href="#"><img src="/logo.png" alt="Logo Fitness-Area" className="logo" /></a>
         <div className="nav-right">
           <Button variant="member">Espace membre</Button>
         </div>

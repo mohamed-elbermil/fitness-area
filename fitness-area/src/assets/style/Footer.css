@@ -1,9 +1,10 @@
 @import url("./variables.css");
 
 .footer {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 2rem 0;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 5em;
 }
 
 /* Header du footer */
@@ -87,9 +88,16 @@
 }
 
 /* Contact info */
-.footer-contact p {
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-contact p, a {
   margin-bottom: 0.75rem;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.5;
 }
 

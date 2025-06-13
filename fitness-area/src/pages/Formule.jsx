@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Check, Star, MapPin, Clock, Users, Waves, Dumbbell, Heart, Sparkles } from "lucide-react";
 import "../assets/style/Formule.css";
 import Navbar from "../assets/components/Navbar";
+import Footer from "../assets/components/Footer";
 
 export default function Formule() {
   const [location, setLocation] = useState("hors_paris");
@@ -181,9 +182,8 @@ export default function Formule() {
           </div>
         </div>
       </div>
-
-      <div className="footer-spacer"></div>
     </section>
+    <Footer/>
     </>
   );
 }
