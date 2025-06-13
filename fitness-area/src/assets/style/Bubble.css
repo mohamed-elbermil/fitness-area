@@ -1,26 +1,33 @@
 .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bubble {
-    background: var(--disabled-1);
-    padding: 2em;
-    margin: 1em;
-    border-radius: 54px;
-    transition-duration: .5s;
-    color: #000000b8;
-    font-size: 13px;
+  background: var(--disabled-1);
+  padding: 2em;
+  margin: 1em;
+  border-radius: 54px;
+  transition-duration: 0.5s;
+  color: #000000b8;
+  font-size: 13px;
 }
 
-.bubble.active, .bubble:hover {
-    background: #FFCEBF;
+.bubble.active,
+.bubble:hover {
+  background: #ffcebf;
 }
 
-@media screen and (max-width:768px) {
-    .container {
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
 }

@@ -89,6 +89,7 @@ header {
 
   .logo {
     margin: 0 auto;
+    height: 57px;
   }
 }
 
@@ -147,16 +148,18 @@ header {
   font-size: 24px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .banner {
     margin: 8em 2em 0 2em;
   }
-  
-  .banner, .banner-left {
+
+  .banner,
+  .banner-left {
     height: auto;
   }
 
-  .banner-left, .banner-right {
+  .banner-left,
+  .banner-right {
     position: inherit;
   }
 
@@ -190,5 +193,3 @@ header {
     width: 100%;
   }
 }
-
-
