@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Button from "./Button";
 import "../style/Header.css";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -16,7 +17,9 @@ function Header() {
               potentiel.
             </p>
             <div className="btn-both">
-              <Button variant="subscribe">S'inscrire</Button>
+              <Link to="/formules">
+                <Button variant="subscribe">S'inscrire</Button>
+              </Link>
               <Button variant="join">
                 <a
                   href="https://www.instagram.com/fitnessarea8/"
