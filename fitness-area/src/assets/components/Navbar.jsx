@@ -34,18 +34,18 @@ export default function Navbar() {
         </div>
 
         <div className="nav-left">{navLinks}</div>
-        <a href="#">
+        <a href="/">
           <img src="/logo.png" alt="Logo Fitness-Area" className="logo" />
         </a>
         <div className="nav-right">
-          <Button variant="member">Contact</Button>
+          <Link to="/contact"><Button variant="member">Contact</Button></Link>
         </div>
       </nav>
 
       {isOpen && (
         <div className="mobile-nav-dropdown">
           {navLinks}
-          <Button variant="member">Contact</Button>
+          <Link to="/contact"><Button variant="member">Contact</Button></Link>
         </div>
       )}
     </>
