@@ -33,7 +33,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #00bfff);
+  background: var(--primary-color);
   border-radius: 2px;
 }
 
