@@ -1,3 +1,5 @@
+@import "../style/variables.css";
+
 .contact-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
@@ -72,7 +74,7 @@
 
 .info-item i {
   font-size: 1.8rem;
-  color: #007bff;
+  color: var(--primary-color);
   margin-right: 1.5rem;
   width: 40px;
   height: 40px;
@@ -140,7 +142,7 @@
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #007bff 0%, #00bfff 100%);
+  background: var(--primary-color);
   color: white;
   padding: 1.2rem 2.5rem;
   border: none;
