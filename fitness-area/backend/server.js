@@ -19,6 +19,10 @@ mongoose.connect('mongodb+srv://mohameddu69780:wS3OA9xBDWNZgFZB@fitness-area.ta0
 const contactRoutes = require('./routes/contactRoutes');
 app.use('/api', contactRoutes);
 
+const formulesRouter = require('./routes/formules');
+app.use('/api/formules', formulesRouter);
+
+
 
 // Démarrage du serveur
 const PORT = 5000;
