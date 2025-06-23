@@ -16,8 +16,9 @@ mongoose.connect('mongodb+srv://mohameddu69780:wS3OA9xBDWNZgFZB@fitness-area.ta0
 });
 
 // Routes
-const contactRoutes = require('./routes/contact');
-app.use('/api/contact', contactRoutes);
+const contactRoutes = require('./routes/contactRoutes');
+app.use('/api', contactRoutes);
+
 
 // Démarrage du serveur
 const PORT = 5000;
