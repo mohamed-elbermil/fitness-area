@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../assets/style/Contact.css';
 import Navbar from '../assets/components/Navbar';
+import Footer from '../assets/components/Footer'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -64,25 +65,26 @@ function Contact() {
             <p>Pour tout renseignement, prenez directement RDV au club ou laissez-nous vos coordonnées afin d’être appelé par l’un de nos conseillers.</p>
             <div className="form-group">
               <label htmlFor="name">Nom</label>
-              <input type="text" id="name" placeholder='' name="name" value={formData.name} onChange={handleChange} required />
+              <input type="text" id="name" placeholder=" " name="name" value={formData.name} onChange={handleChange} required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+              <input type="email" id="email" placeholder=" " name="email" value={formData.email} onChange={handleChange} required />
             </div>
             <div className="form-group">
               <label htmlFor="subject">Sujet</label>
-              <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required />
+              <input type="text" id="subject" placeholder=" " name="subject" value={formData.subject} onChange={handleChange} required />
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required></textarea>
+              <textarea id="message" placeholder=" " name="message" rows="5" value={formData.message} onChange={handleChange} required></textarea>
             </div>
             <button type="submit" className="submit-btn">Envoyer</button>
             {status && <p className="form-status">{status}</p>}
           </form>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

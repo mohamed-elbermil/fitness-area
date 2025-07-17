@@ -1,18 +1,14 @@
 @import "../style/variables.css";
+@import "../style/reset.css";
 
 .contact-page {
   min-height: 100vh;
   background: #fff;
 }
 
-.contact-container {
-  height: 100vh;
-}
-
 .contact-container h1 {
   text-align: center;
   color: #2c3e50;
-  margin-bottom: 3rem;
   font-size: 2.8rem;
   font-weight: 700;
   position: relative;
@@ -43,9 +39,13 @@
 .contact-form h2 {
   color: var(--primary-color);
   text-transform: uppercase;
-  margin-bottom: 2rem;
   font-size: 22px;
   font-weight: 600;
+}
+
+.contact-form p {
+  margin: 1em 0 2em 0;
+  width: 37em;
 }
 
 .form-group {
@@ -64,9 +64,13 @@
   top: 15px;
   font-weight: 700;
   transition-duration: .4s;
+  pointer-events: none;
 }
 
-.form-group:has(input:focus) label, .form-group:has(textarea:focus) label {
+.form-group:has(input:focus) label,
+.form-group:has(textarea:focus) label,
+.form-group:has(input:not(:placeholder-shown)) label,
+.form-group:has(textarea:not(:placeholder-shown)) label {
   opacity: 50%;
   font-weight: 200;
   font-size: 1px;
@@ -84,8 +88,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  border-color: var(--primary-color);
 }
 
 .form-group textarea {
@@ -103,7 +106,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 20%;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block;
