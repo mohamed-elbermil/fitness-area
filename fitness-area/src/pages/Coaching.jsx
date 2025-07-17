@@ -52,6 +52,11 @@ const Coaching = () => {
           </div>
         </div>
       </section>
+
+      <section className='separate'>
+        <img src="https://images.pexels.com/photos/4720757/pexels-photo-4720757.jpeg" alt="" />
+      </section>
+
       {/* Section Coachs */}
       <section className="coaching-coaches-section">
         <h2 className="coaching-section-title">Our Certified Trainers</h2>
