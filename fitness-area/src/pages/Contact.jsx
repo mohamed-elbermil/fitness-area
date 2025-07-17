@@ -45,24 +45,17 @@ function Contact() {
         <h1>Contactez-nous</h1>
 
         <div className="contact-content">
-          <div className="contact-info">
-            <h2>Nos coordonnées</h2>
-            <div className="info-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <p>123 Rue du Fitness, 75000 Paris</p>
-            </div>
-            <div className="info-item">
-              <i className="fas fa-phone"></i>
-              <p>01 23 45 67 89</p>
-            </div>
-            <div className="info-item">
-              <i className="fas fa-envelope"></i>
-              <p>contact@fitness-area.fr</p>
-            </div>
-            <div className="info-item">
-              <i className="fas fa-clock"></i>
-              <p>Lun-Ven: 6h-22h<br />Sam-Dim: 8h-20h</p>
-            </div>
+          <div className="contact-info" style={{height: '100vh', padding: 0}}>
+            <iframe
+              title="Localisation Fitness Area"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9999999999995!2d2.292292315674!3d48.8583730792876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fddf1e1e1e1%3A0x1a2b3c4d5e6f7g8h!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1710000000000!5m2!1sfr!2sfr"
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: '100vh', width: '100%' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
