@@ -36,10 +36,25 @@
     margin-left: 7px;
 }
 
+.btn-member {
+    position: relative;
+    padding-right: 38px;
+}
+
 .btn-member::after {
     content: '\f061';
     font-family: 'FontAwesome';
-    transform: rotate(321deg) !important;
+    transform: rotate(321deg);
     display: inline-block;
-    margin-left: 6px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    min-width: 18px;
+    transform: translateY(-50%) rotate(321deg);
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), right 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.btn-member:hover::after {
+    right: 15px;
+    transform: translateY(-50%) rotate(321deg) translateX(7px);
 }

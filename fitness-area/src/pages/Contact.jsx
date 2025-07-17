@@ -43,8 +43,6 @@ function Contact() {
     <div className="contact-page">
       <Navbar />
       <div className="contact-container">
-        <h1>Contactez-nous</h1>
-
         <div className="contact-content">
           <div className="contact-info" style={{height: '100vh', padding: 0}}>
             <iframe
