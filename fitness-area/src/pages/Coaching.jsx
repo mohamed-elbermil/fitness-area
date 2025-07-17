@@ -3,6 +3,7 @@ import CoachCard from '../assets/components/CoachCard';
 import Navbar from '../assets/components/Navbar';
 import "../assets/style/Coaching.css"
 import ServiceCard from "../assets/components/ServiceCard"
+import banner1 from '../assets/images/banner-1.jpg';
 
 const Coaching = () => {
   const coaches = [
@@ -20,23 +21,36 @@ const Coaching = () => {
 
   return (
     <>
-    <Navbar/>
-    <div style={{ padding: '40px', maxWidth: '1000px', margin: '80px auto' }}>
-      <h1 className='coach-title' style={{ textAlign: 'center', marginBottom: '30px' }}>Votre équipe de <span>fitness-area</span></h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px', justifyContent: 'center' }}>
-        {coaches.map((coach, index) => (
-          <CoachCard
-            key={index}
-            name={coach.name}
-            role={coach.role}
-            image={coach.image}
-            onBook={() => alert(`Réserver avec ${coach.name}`)}
-            onInfo={() => alert(`Infos sur ${coach.name}`)}
-          />
-        ))}
+      <Navbar />
+      {/* Bannière immersive */}
+      <div className="coaching-hero-banner">
+        <img src={banner1} alt="Coaching" className="coaching-hero-img" />
+        <div className="coaching-hero-overlay" />
+        <div className="coaching-hero-content">
+          <h1 className="coaching-hero-title">PERSONAL TRAINING.</h1>
+          <p className="coaching-hero-subtitle">Match with your perfect coach.<br/>Work out from anywhere.</p>
+        </div>
       </div>
-    </div>
-    <ServiceCard/>
+      {/* Avantages/Services */}
+      <ServiceCard />
+      {/* Section Coachs */}
+      <section className="coaching-coaches-section">
+        <h2 className="coaching-section-title">Our Certified Trainers</h2>
+        <p className="coaching-section-subtitle">will help you achieve your goals.</p>
+        <div className="coaching-coaches-list">
+          {coaches.map((coach, index) => (
+            <CoachCard
+              key={index}
+              name={coach.name}
+              role={coach.role}
+              image={coach.image}
+              onBook={() => alert(`Réserver avec ${coach.name}`)}
+              onInfo={() => alert(`Infos sur ${coach.name}`)}
+            />
+          ))}
+        </div>
+      </section>
+      {/* Programmes et témoignages à venir */}
     </>
   );
 };

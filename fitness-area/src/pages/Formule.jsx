@@ -3,6 +3,7 @@ import { Check, Users, Waves, Dumbbell, Heart } from "lucide-react";
 import "../assets/style/Formule.css";
 import Navbar from "../assets/components/Navbar";
 import Footer from "../assets/components/Footer";
+import banner1 from "../assets/images/banner-1.jpg";
 
 const plans = [
   {
@@ -55,6 +56,15 @@ export default function Formule() {
   return (
     <>
       <Navbar />
+      {/* Nouvelle bannière immersive */}
+      <div className="formule-hero-banner">
+        <img src={banner1} alt="Salle de sport" className="formule-hero-img" />
+        <div className="formule-hero-overlay" />
+        <div className="formule-hero-content">
+          <h1 className="formule-hero-title">Nos forfaits</h1>
+          <p className="formule-hero-subtitle">Trouvez le forfait sport qui vous correspond</p>
+        </div>
+      </div>
       <section className="formule-gradient-bg">
         <div className="formule-center-block">
           <h1 className="formule-main-title">Choisissez votre formule idéale !</h1>
