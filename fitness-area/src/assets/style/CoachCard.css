@@ -1,84 +1,91 @@
 .coach-card {
   width: 100%;
-  max-width: 400px;
-  border: 1px solid #eee;
-  border-radius: 12px;
+  max-width: 340px;
+  border: none;
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 24px rgba(20,20,30,0.10);
+  background: #23242a;
+  transition: transform 0.22s, box-shadow 0.22s;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .coach-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(20,20,30,0.18);
 }
-
 .coach-image img {
-  width: 100%;
-  height: 250px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
+  border-radius: 50%;
+  margin-top: 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  border: 4px solid #23242a;
 }
-
 .coach-content {
-  padding: 20px;
+  padding: 24px 18px 32px 18px;
   text-align: center;
+  width: 100%;
 }
-
 .coach-content h3 {
-  margin: 10px 0 5px;
-  font-size: 1.4rem;
-  color: #222;
+  margin: 18px 0 6px;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
-
 .coach-role {
-  color: #0077cc;
+  color: var(--primary-color);
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
 }
-
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-  color: #555;
+  gap: 18px;
+  margin-bottom: 18px;
+  color: #bdbdbd;
 }
-
 .coach-actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 12px;
+  margin-top: 10px;
 }
-
 .btn-book {
-  background: linear-gradient(to right, #0077cc, #00b4d8);
-  color: white;
+  background: #181a20;
+  color: var(--primary-color);
   border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
+  padding: 8px 18px;
+  border-radius: 999px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  gap: 8px;
-  transition: background 0.3s ease;
+  gap: 7px;
+  box-shadow: none;
+  transition: background 0.18s, color 0.18s;
 }
-
 .btn-book:hover {
-  background: linear-gradient(to right, #005fa3, #0095b6);
+  background: #23242a;
+  color: #fff;
 }
-
 .btn-info {
-  background-color: #f1f1f1;
+  background: none;
   border: none;
-  padding: 10px;
-  border-radius: 6px;
+  color: #bdbdbd;
+  padding: 8px;
+  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.18s, color 0.18s;
 }
-
 .btn-info:hover {
-  background-color: #e0e0e0;
+  background: #23242a;
+  color: var(--primary-color);
 }

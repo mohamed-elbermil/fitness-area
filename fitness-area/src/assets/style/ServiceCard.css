@@ -9,33 +9,34 @@
 /* Section */
 .services-section {
   padding: 64px 0;
-  background: #fff;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 /* Header Services */
 .services-header {
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 
 .services-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #111;
-  margin-bottom: 16px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #13131c;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 .gradient-text {
-  background: var(--primary-color);
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Subtitle */
 .services-subtitle {
-  font-size: 1.25rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #bdbdbd;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -45,6 +46,7 @@
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(1, 1fr);
+  margin-top: 32px;
 }
 
 @media(min-width: 768px) {
@@ -62,70 +64,82 @@
 /* Service Card */
 .service-card {
   text-align: center;
-  transition: transform 0.2s ease;
+  background: #23242a;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(20,20,30,0.08);
+  padding: 32px 18px 28px 18px;
+  transition: transform 0.18s, box-shadow 0.18s;
   cursor: default;
+  color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(20,20,30,0.13);
 }
 
 .service-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
-  background: var(--primary-color);
-  margin-bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #181a20;
+  margin-bottom: 20px;
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
-  color: white;
+  width: 28px;
+  height: 28px;
+  color: var(--primary-color);
 }
 
 .service-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: #111;
-  margin-bottom: 12px;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .service-description {
   font-size: 1rem;
-  color: #555;
+  color: #bdbdbd;
   line-height: 1.5;
 }
 
 /* Values Section */
 .values-wrapper {
-  background: linear-gradient(90deg, #eff6ff, #ede9fe);
-  border-radius: 24px;
-  padding: 48px 32px;
-  margin-top: 80px;
+  background: #23242a;
+  border-radius: 18px;
+  padding: 36px 18px;
+  margin-top: 56px;
   text-align: center;
+  box-shadow: 0 2px 12px rgba(20,20,30,0.08);
 }
 
 /* Values Header */
 .values-header {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .values-title {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #111;
-  margin-bottom: 12px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
 .values-subtitle {
-  font-size: 1.125rem;
-  color: #666;
+  font-size: 1rem;
+  color: #bdbdbd;
 }
 
 /* Values List */
 .values-list {
   display: grid;
-  gap: 24px;
+  gap: 18px;
   grid-template-columns: repeat(1, 1fr);
   max-width: 700px;
   margin: 0 auto;
@@ -141,18 +155,19 @@
 .value-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .value-icon {
-  width: 24px;
-  height: 24px;
-  color: #22c55e; /* green-500 */
+  width: 22px;
+  height: 22px;
+  color: var(--primary-color);
   flex-shrink: 0;
 }
 
 .value-text {
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  color: #333;
+  color: #fff;
 }

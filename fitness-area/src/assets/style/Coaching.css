@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 80px;
+  background: #181a20;
 }
 .coaching-hero-img {
   width: 100%;
@@ -56,6 +57,7 @@
   margin-bottom: 0.7rem;
   text-shadow: 0 2px 16px rgba(0,0,0,0.18);
   text-transform: uppercase;
+  color: #fff;
 }
 .coaching-hero-subtitle {
   font-size: 1.25rem;
@@ -65,12 +67,12 @@
   line-height: 1.5;
 }
 .coaching-coaches-section {
-  background: #181a20;
+  background: #fff;
   padding: 64px 0 48px 0;
   text-align: center;
 }
 .coaching-section-title {
-  color: #fff;
+  color: #181a20;
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 0.2em;
@@ -78,7 +80,7 @@
   text-transform: uppercase;
 }
 .coaching-section-subtitle {
-  color: #bdbdbd;
+  color: #444;
   font-size: 1.15rem;
   margin-bottom: 2.5rem;
 }
@@ -110,4 +112,88 @@
   .coaching-coaches-list {
     gap: 16px;
   }
+}
+.programs-section {
+  background: #181a20;
+  padding: 64px 0 48px 0;
+}
+.programs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  padding: 0 16px;
+}
+.programs-title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.programs-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.18s;
+}
+.programs-link:hover {
+  color: #fff;
+}
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media (min-width: 700px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  .programs-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.program-card {
+  position: relative;
+  height: 340px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.program-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(20,20,30,0.82) 60%, rgba(20,20,30,0.18) 100%);
+  z-index: 1;
+  transition: background 0.18s;
+}
+.program-card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+}
+.program-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0 0 32px 0;
+  padding: 0 18px;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18);
 }
