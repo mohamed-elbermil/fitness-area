@@ -61,20 +61,7 @@ export default function Formule() {
           <p className="formule-main-subtitle">
             Sélectionnez la formule qui vous correspond le mieux et profitez du meilleur du fitness à Lyon.
           </p>
-          <div className="formule-toggle-group">
-            <button
-              className={`formule-toggle-btn${selectedPeriod === "mois" ? " active" : ""}`}
-              onClick={() => setSelectedPeriod("mois")}
-            >
-              Mensuel
-            </button>
-            <button
-              className={`formule-toggle-btn${selectedPeriod === "semaine" ? " active" : ""}`}
-              onClick={() => setSelectedPeriod("semaine")}
-            >
-              Hebdomadaire
-            </button>
-          </div>
+          {/* Retrait du toggle group */}
           <div className="formule-cards-row">
             {plans.map((plan) => (
               <div key={plan.key} className={`formule-pricing-card${plan.highlight ? " highlight" : ""}`}>
@@ -83,10 +70,10 @@ export default function Formule() {
                 <div className="formule-card-desc">{plan.desc}</div>
                 <div className="formule-card-price-block">
                   <span className="formule-card-price">
-                    {selectedPeriod === "mois" ? plan.price : plan.priceWeek}
+                    {plan.price}
                   </span>
                   <span className="formule-card-price-period">
-                    {selectedPeriod === "mois" ? plan.pricePeriod : "/semaine"}
+                    {plan.pricePeriod}
                   </span>
                 </div>
                 <ul className="formule-card-services">
