@@ -108,25 +108,35 @@
 
 .form-group {
   margin-bottom: 1.8rem;
+  position: relative;
+
 }
 
 .form-group label {
+  position: absolute;
   display: block;
   margin-bottom: 0.8rem;
-  color: #4a5568;
+  color: #000000;
   font-weight: 500;
   font-size: 1.1rem;
+  top: 15px;
+  font-weight: 700;
+  transition-duration: .4s;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group:has(input:focus) label, .form-group:has(textarea:focus) label {
+  opacity: 50%;
+  font-weight: 200;
+  font-size: 1px;
+  top: -9px;
+}
+
+.form-group input, .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 10px;
+  border-bottom: 2px solid #00000024;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  background-color: #ffffff;
 }
 
 .form-group input:focus,

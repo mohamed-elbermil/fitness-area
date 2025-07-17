@@ -66,10 +66,12 @@ function Contact() {
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Envoyez-nous un message</h2>
+            <h2>Contactez l'un de nos clubs
+            </h2>
+            <p>Pour tout renseignement, prenez directement RDV au club ou laissez-nous vos coordonnées afin d’être appelé par l’un de nos conseillers.</p>
             <div className="form-group">
               <label htmlFor="name">Nom</label>
-              <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+              <input type="text" id="name" placeholder='' name="name" value={formData.name} onChange={handleChange} required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
