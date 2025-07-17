@@ -27,28 +27,28 @@ const Coaching = () => {
         <img src={banner1} alt="Coaching" className="coaching-hero-img" />
         <div className="coaching-hero-overlay" />
         <div className="coaching-hero-content">
-          <h1 className="coaching-hero-title">PERSONAL TRAINING.</h1>
-          <p className="coaching-hero-subtitle">Match with your perfect coach.<br/>Work out from anywhere.</p>
+          <h1 className="coaching-hero-title">Coaching</h1>
+          <p className="coaching-hero-subtitle">Atteignez vos objectifs avec nos coachs pros</p>
         </div>
       </div>
       {/* Programmes d'entraînement */}
       <section className="programs-section">
         <div className="programs-header">
-          <h2 className="programs-title">OUR TRAINING PROGRAMS.</h2>
-          <a href="#" className="programs-link">View All Coaches &rarr;</a>
+          <h2 className="programs-title">Notre programme d'entraînement</h2>
+          <a href="#" className="programs-link">Voir tous les coachs &rarr;</a>
         </div>
         <div className="programs-grid">
           <div className="program-card" style={{backgroundImage: 'url(https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg)'}}>
             <span className="program-title">YOGA</span>
           </div>
           <div className="program-card" style={{backgroundImage: 'url(https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg)'}}>
-            <span className="program-title">FUNCTIONAL TRAINING</span>
+            <span className="program-title">Entraînement</span>
           </div>
           <div className="program-card" style={{backgroundImage: 'url(https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg)'}}>
-            <span className="program-title">WEIGHT LOSS</span>
+            <span className="program-title">Perte de poids</span>
           </div>
           <div className="program-card" style={{backgroundImage: 'url(https://images.pexels.com/photos/2261482/pexels-photo-2261482.jpeg)'}}>
-            <span className="program-title">STRETCHING & MOBILITY</span>
+            <span className="program-title">Mobilité</span>
           </div>
         </div>
       </section>
