@@ -142,3 +142,9 @@
     font-size: 1.8rem;
   }
 } 
+
+@media screen and (min-width: 1440px) {
+  .contact-content {
+    align-items: center;
+  }
+}
