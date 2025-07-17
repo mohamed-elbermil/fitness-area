@@ -946,14 +946,15 @@
   width: 100%;
 }
 .formule-card-service {
-  display: flex;
+  display: flex
+;
   align-items: center;
   font-size: 1.01rem;
   color: #444;
   gap: 0.5rem;
-  background: #f6f6f6;
+  background: #ff693a14;
   border-radius: 10px;
-  padding: 0.35rem 0.8rem;
+  padding: 8px 0.8rem;
 }
 .formule-card-service-icon {
   color: var(--primary-color);
@@ -977,7 +978,7 @@
   display: block;
 }
 .formule-card-cta:hover {
-  background: #5b21b6;
+  background: #dd4d20;
 }
 @media (max-width: 1100px) {
   .formule-cards-row {
