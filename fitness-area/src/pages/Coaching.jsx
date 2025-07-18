@@ -1,6 +1,7 @@
 import React from 'react';
 import CoachCard from '../assets/components/CoachCard';
 import Navbar from '../assets/components/Navbar';
+import Footer from '../assets/components/Footer'
 import "../assets/style/Coaching.css"
 import ServiceCard from "../assets/components/ServiceCard"
 import banner1 from '../assets/images/banner-1.jpg';
@@ -10,12 +11,12 @@ const Coaching = () => {
     {
       name: 'Camille Dupont',
       role: 'Coach Fitness',
-      image: 'https://images.pexels.com/photos/7242904/pexels-photo-7242904.jpeg',
+      image: 'https://images.pexels.com/photos/6740049/pexels-photo-6740049.jpeg',
     },
     {
       name: 'Lucas Martin',
       role: 'Coach Nutrition',
-      image: 'https://images.pexels.com/photos/5209197/pexels-photo-5209197.jpeg',
+      image: 'https://images.pexels.com/photos/8611938/pexels-photo-8611938.jpeg',
     },
   ];
 
@@ -35,7 +36,7 @@ const Coaching = () => {
       <section className="programs-section">
         <div className="programs-header">
           <h2 className="programs-title">Notre programme d'entraînement</h2>
-          <a href="#" className="programs-link">Voir tous les coachs &rarr;</a>
+          <a href="#all-coach" className="programs-link">Voir tous les coachs &rarr;</a>
         </div>
         <div className="programs-grid">
           <div className="program-card" style={{backgroundImage: 'url(https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg)'}}>
@@ -58,9 +59,9 @@ const Coaching = () => {
       </section>
 
       {/* Section Coachs */}
-      <section className="coaching-coaches-section">
-        <h2 className="coaching-section-title">Our Certified Trainers</h2>
-        <p className="coaching-section-subtitle">will help you achieve your goals.</p>
+      <section className="coaching-coaches-section" id='all-coach'>
+        <h2 className="coaching-section-title">Nos formateurs certifiés</h2>
+        <p className="coaching-section-subtitle">vous aideront à atteindre vos objectifs</p>
         <div className="coaching-coaches-list">
           {coaches.map((coach, index) => (
             <CoachCard
@@ -68,13 +69,12 @@ const Coaching = () => {
               name={coach.name}
               role={coach.role}
               image={coach.image}
-              onBook={() => alert(`Réserver avec ${coach.name}`)}
-              onInfo={() => alert(`Infos sur ${coach.name}`)}
+              onMail={() => alert(`Mail à ${coach.name}`)}
             />
           ))}
         </div>
       </section>
-      {/* Programmes et témoignages à venir */}
+      <Footer/>
     </>
   );
 };

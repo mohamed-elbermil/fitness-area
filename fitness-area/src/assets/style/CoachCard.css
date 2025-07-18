@@ -7,7 +7,6 @@
   box-shadow: 0 4px 24px rgba(20,20,30,0.10);
   background: #23242a;
   transition: transform 0.22s, box-shadow 0.22s;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,4 +87,91 @@
 .btn-info:hover {
   background: #23242a;
   color: var(--primary-color);
+}
+
+.coach-card.new-design {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(20,20,30,0.13);
+  background: none;
+  padding: 0;
+  position: relative;
+}
+
+.coach-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.coach-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.coach-card-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+}
+
+.coach-icon-btn {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.18s;
+  padding: 0;
+}
+.coach-icon-btn:hover {
+  background: #f0f0f0;
+}
+
+.coach-card-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38%;
+  background: linear-gradient(0deg, rgba(30,30,30,0.85) 80%, rgba(30,30,30,0.05) 100%);
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.coach-card-info {
+  width: 100%;
+  padding: 18px 18px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.coach-card-name {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  letter-spacing: 0.2px;
+}
+
+.coach-card-role {
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 400;
 }

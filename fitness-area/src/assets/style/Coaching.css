@@ -68,7 +68,7 @@
 }
 .coaching-coaches-section {
   background: #fff;
-  padding: 64px 0 48px 0;
+  padding: 9em 0;
   text-align: center;
 }
 .coaching-section-title {
@@ -119,6 +119,7 @@
 }
 .programs-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;

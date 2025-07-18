@@ -1,30 +1,26 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin, Info, Calendar } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import '../style/CoachCard.css';
 
-const CoachCard = ({ name, role, image, onBook, onInfo }) => {
+const CoachCard = ({ name, role, image, email }) => {
   return (
-    <div className="coach-card">
-      <div className="coach-image">
-        <img src={image} alt={name} />
-      </div>
-      <div className="coach-content">
-        <h3>{name}</h3>
-        <p className="coach-role">{role}</p>
-
-        <div className="social-icons">
-          <Facebook size={16} />
-          <Instagram size={16} />
-          <Linkedin size={16} />
+    <div className="coach-card new-design">
+      <div className="coach-card-img-wrapper">
+        <img src={image} alt={name} className="coach-card-img" />
+        <div className="coach-card-actions">
+          <a
+            className="coach-icon-btn"
+            href={`mailto:${email || ''}`}
+            title="Envoyer un mail"
+          >
+            <Mail size={20} />
+          </a>
         </div>
-
-        <div className="coach-actions">
-          <button className="btn-book" onClick={onBook}>
-            <Calendar size={16} /> Réserver
-          </button>
-          <button className="btn-info" onClick={onInfo}>
-            <Info size={16} />
-          </button>
+        <div className="coach-card-overlay">
+          <div className="coach-card-info">
+            <span className="coach-card-name">{name}</span>
+            <span className="coach-card-role">{role}</span>
+          </div>
         </div>
       </div>
     </div>
