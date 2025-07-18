@@ -94,7 +94,7 @@ export default function Formule() {
                     </li>
                   ))}
                 </ul>
-                <button className="formule-card-cta">{plan.cta}</button>
+                <a href="https://buy.stripe.com/test_aFa7sKaA69VM9Wx4oCes000" className="formule-card-cta">{plan.cta}</a>
               </div>
             ))}
           </div>
