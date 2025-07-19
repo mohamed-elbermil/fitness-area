@@ -17,18 +17,15 @@ function Header() {
               potentiel.
             </p>
             <div className="btn-both">
-              <Link to="/formules">
-                <Button variant="subscribe">S'inscrire</Button>
-              </Link>
-              <Button variant="join">
-                <a
-                  href="https://www.instagram.com/fitnessarea8/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Rejoindre la communauté
-                </a>
-              </Button>
+              <Link to="/formules" className="btn btn-subscribe">S'inscrire</Link>
+              <a
+                href="https://www.instagram.com/fitnessarea8/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-join"
+              >
+                Rejoindre la communauté
+              </a>
             </div>
           </div>
           <div className="banner-right">

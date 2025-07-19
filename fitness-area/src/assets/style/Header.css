@@ -51,6 +51,11 @@ header {
   height: 40px;
 }
 
+.btn {
+  text-align: center;
+  padding: 10px 13px;
+}
+
 /* Mobile responsiveness */
 .mobile-menu-button {
   display: none;
@@ -150,8 +155,8 @@ header {
 
 @media screen and (max-width: 1024px) {
   .banner {
-    margin: 8em 2em 0 2em;
-  }
+    margin: 8em 1em;
+}
 
   .banner,
   .banner-left {
@@ -164,7 +169,9 @@ header {
   }
 
   .banner-left h1 {
-    font-size: inherit;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
   }
 
   .banner-right {

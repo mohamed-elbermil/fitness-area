@@ -119,7 +119,8 @@
 
 @media (max-width: 768px) {
   .contact-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     gap: 2rem;
   }
   
