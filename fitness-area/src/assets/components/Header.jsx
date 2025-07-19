@@ -4,6 +4,27 @@ import "../style/Header.css";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
+function AnimatedNumber({ value, duration = 1200, suffix = "" }) {
+  const [display, setDisplay] = useState(0);
+  useEffect(() => {
+    let start = 0;
+    const increment = value / (duration / 16);
+    let frame;
+    function animate() {
+      start += increment;
+      if (start < value) {
+        setDisplay(Math.floor(start));
+        frame = requestAnimationFrame(animate);
+      } else {
+        setDisplay(value);
+      }
+    }
+    animate();
+    return () => cancelAnimationFrame(frame);
+  }, [value, duration]);
+  return <p>{display}{suffix}</p>;
+}
+
 function Header() {
   return (
     <header>
@@ -30,15 +51,15 @@ function Header() {
           </div>
           <div className="banner-right">
             <div className="infos">
-              <p>90%</p>
+              <AnimatedNumber value={90} duration={1200} suffix="%" />
               <span>de satisfaction</span>
             </div>
             <div className="infos">
-              <p>16</p>
+              <AnimatedNumber value={16} duration={1200} />
               <span>ans d'expérience</span>
             </div>
             <div className="infos">
-              <p>150</p>
+              <AnimatedNumber value={150} duration={1200} />
               <span>tasse de café</span>
             </div>
           </div>
