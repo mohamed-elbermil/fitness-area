@@ -272,6 +272,15 @@ h3 {
   background: #ff9c63;
   color: #fff;
 }
+.inscription-btn-muscle::after {
+  display: none !important;
+}
+.muscle-icon {
+  color: var(--primary-color);
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
 @media (max-width: 900px) {
   .inscription-cards {
     flex-direction: column;

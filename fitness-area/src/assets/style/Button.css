@@ -58,3 +58,8 @@
     right: 15px;
     transform: translateY(-50%) rotate(321deg) translateX(7px);
 }
+
+.btn-member.inscription-btn-muscle::after {
+  display: none !important;
+  content: none !important;
+}

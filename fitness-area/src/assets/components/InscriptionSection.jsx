@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 export default function InscriptionSection() {
   return (
@@ -36,7 +37,11 @@ export default function InscriptionSection() {
           <div className="inscription-card-desc">pour tes programmes d’entraînement et ton suivi</div>
         </div>
       </div>
-      <a href="/contact" className="inscription-btn">JE M’INSCRIS</a>
+      <a href="/contact" style={{textDecoration: 'none'}}>
+        <button className="btn btn-member inscription-btn-muscle">
+          JE M’INSCRIS
+        </button>
+      </a>
     </section>
   );
 } 

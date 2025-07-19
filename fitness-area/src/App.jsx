@@ -36,10 +36,10 @@ function Layout() {
       {!hideLayout && (
         <>
           <Bubble />
-          <TabSwitcher />
-          <MainContent />
           <ServicesPromotion />
           <Video />
+          <TabSwitcher />
+          <MainContent />
           <InscriptionSection />
           <Footer/>
         </>
