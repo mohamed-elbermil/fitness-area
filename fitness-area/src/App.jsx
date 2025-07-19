@@ -40,7 +40,6 @@ function Layout() {
           <Video />
           <TabSwitcher />
           <MainContent />
-          <InscriptionSection />
           <Footer/>
         </>
       )}

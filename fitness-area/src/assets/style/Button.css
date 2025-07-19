@@ -16,6 +16,7 @@
 }
 .btn-subscribe:hover,.btn-member:hover {
     background: var(--hover);
+    box-shadow: 0 0 0 1px #090a10;
 }
 .btn-join {
     border: solid 1px var(--white);

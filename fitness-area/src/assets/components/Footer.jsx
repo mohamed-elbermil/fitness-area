@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className="footer">
       {/* Header du footer avec logo et réseaux sociaux */}
       <div className="footer-header">
-        <div className="logo-footer">FITNESS + AREA</div>
+        <div className="logo-footer">
+          <img src="/logo.png" alt="Logo Fitness-Area" style={{height: '40px'}} />
+        </div>
         <div className="social-icons">
           <a href="#" className="social-icon" aria-label="Facebook">
             <svg
