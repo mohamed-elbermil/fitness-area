@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import "../style/variables.css";
 import styles from "../style/ServicesPromotion.module.css";
 
 function ServicesPromotion() {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <div className={styles.title}>
         <h3>La musculation : force et bien-être</h3>
         <p>
@@ -46,7 +53,7 @@ function ServicesPromotion() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

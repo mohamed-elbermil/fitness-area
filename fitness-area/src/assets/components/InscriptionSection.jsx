@@ -1,9 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Button from "./Button";
 
 export default function InscriptionSection() {
   return (
-    <section className="inscription-section">
+    <motion.section
+      className="inscription-section"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <h2 className="inscription-title">
         <span className="inscription-bold">S’inscrire</span> <span className="inscription-italic">n’a jamais été aussi simple</span>
       </h2>
@@ -42,6 +49,6 @@ export default function InscriptionSection() {
           JE M’INSCRIS
         </button>
       </a>
-    </section>
+    </motion.section>
   );
 } 
