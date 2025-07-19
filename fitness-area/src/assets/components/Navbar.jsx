@@ -14,7 +14,6 @@ export default function Navbar() {
       <Link to="/">Accueil</Link>
       <Link to="/formules">Formules</Link>
       <Link to="/coaching">Coaching</Link>
-      <Link to="/concept">Concept</Link>
     </>
   );
 
