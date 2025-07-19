@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/MainContent.css";
+import InscriptionSection from "./InscriptionSection";
 
 const boxes = [
   "Boxe training",
@@ -120,6 +121,9 @@ function MainContent() {
           <div className="coach-card coach-card-empty"></div>
         </div>
       </section>
+
+      {/* SECTION INSCRIPTION SIMPLE déplacée en bas */}
+      <InscriptionSection />
     </>
   );
 }
