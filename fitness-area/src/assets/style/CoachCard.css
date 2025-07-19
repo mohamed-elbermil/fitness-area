@@ -4,13 +4,23 @@
   border: none;
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(20,20,30,0.10);
-  background: #23242a;
+  box-shadow: 0 4px 24px rgba(20, 20, 30, 0.10);
   transition: transform 0.22s, box-shadow 0.22s;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.coach-card:nth-child(4) {
+  background: linear-gradient(135deg, #FF7F7F 0%, #FF693A 120%);
+  opacity:70%;
+}
+
+.coach-card:last-child {
+  background: linear-gradient(135deg, #FF7F7F 0%, #FF693A 120%);
+  opacity:20%;
+}
+
 .coach-card:hover {
   transform: translateY(-6px) scale(1.025);
   box-shadow: 0 8px 32px rgba(20,20,30,0.18);
@@ -39,8 +49,14 @@
 .coach-role {
   color: var(--primary-color);
   font-weight: 500;
-  margin-bottom: 18px;
+  margin: 9px 0;
   font-size: 1.05rem;
+  background: linear-gradient(45deg, #ff8a65, #ffb8a2);
+  width: 8em;
+  text-align: center;
+  padding: 5px;
+  border-radius: 45px;
+  color: black;
 }
 .social-icons {
   display: flex;

@@ -55,3 +55,124 @@ h3 {
     width: 100%;
   }
 }
+
+/* SECTION COACHS SPORTIFS */
+.coachs-section {
+  margin: 3em 2em;
+  padding: 2em 0 0 0;
+}
+
+.coachs-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.coachs-title-bold {
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: #111;
+}
+.coachs-title-italic {
+  font-style: italic;
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.coachs-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.7em 2em;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 2em;
+  margin-top: 0.5em;
+  box-shadow: 0 2px 8px #ff693a33;
+}
+.coachs-btn:hover {
+  background: #ff9c63;
+  color: #fff;
+}
+.coachs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5em;
+}
+.coach-card {
+  background: linear-gradient(135deg, #ff693a 60%, #ffbfa3 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  box-shadow: 0 4px 24px 0 rgba(255, 105, 58, 0.10);
+}
+.coach-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+  filter: brightness(0.98) contrast(1.08);
+}
+.coach-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1.2em 1.2em 1.2em 1.2em;
+  background: linear-gradient(0deg, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.0) 100%);
+  color: #fff;
+  border-radius: 0 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.coach-name {
+  font-weight: 900;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.coach-role {
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+}
+.coach-exp {
+  font-size: 0.95em;
+  color: #fff;
+  opacity: 0.8;
+}
+.coach-card-empty {
+  background: linear-gradient(135deg, #ffbfa3 60%, #fff6f2 100%);
+  border-radius: 24px;
+  min-height: 320px;
+}
+@media (max-width: 1200px) {
+  .coachs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .coachs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+  .coachs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .coachs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
