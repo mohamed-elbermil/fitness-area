@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.btn:not(.btn-member):not(.btn-join) {
+    padding: 10px 22px;
+}
+
 .btn-subscribe, .btn-member {
     background: var(--primary-color);
     color: var(--black);
@@ -63,4 +67,12 @@
 .btn-member.inscription-btn-muscle::after {
   display: none !important;
   content: none !important;
+}
+
+.nav-right .btn-member {
+    padding: 10px 43px 10px 20px;
+}
+
+.coachs-header .btn-member {
+    padding: 10px 43px 10px 20px;
 }
