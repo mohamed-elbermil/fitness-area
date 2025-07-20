@@ -59,6 +59,15 @@ i {
 }
 
 @media screen and (max-width: 1024px) {
+
+  .title {
+    margin: 1em 0;
+    padding: 9px;
+    background: #ffffff85;
+    backdrop-filter: blur(51px);
+    border-radius: 14px;
+    color: black;
+  }
   .all_bloc {
     flex-wrap: wrap;
     justify-content: center;
