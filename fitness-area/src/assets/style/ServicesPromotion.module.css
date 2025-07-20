@@ -80,3 +80,29 @@ i {
     height: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    background: linear-gradient(120deg, #fff 60%, #f7f7fa 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 32px #ffffff99;
+    padding: 1.5em 1em;
+    margin: 1.5em 0;
+    text-align: center;
+  }
+  .title h3 {
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 0.7em;
+    letter-spacing: 0.5px;
+  }
+  .title p {
+    color: #222;
+    font-size: 1.05em;
+    line-height: 1.7;
+    opacity: 0.95;
+    margin: 0;
+    text-align: left;
+  }
+}
