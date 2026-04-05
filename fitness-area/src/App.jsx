@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,18 +6,18 @@ import {
 } from "react-router-dom";
 
 import Header from "./assets/components/Header";
-import Bubble from "./assets/components/Bubble";
-import MainContent from "./assets/components/MainContent";
-import TabSwitcher from "./assets/components/TabSwitcher";
 import ServicesPromotion from "./assets/components/ServicesPromotion";
-import Video from "./assets/components/Video";
+import TabSwitcher from "./assets/components/TabSwitcher";
+import Testimonials from "./assets/components/Testimonials";
+import PricingSection from "./assets/components/PricingSection";
+import MainContent from "./assets/components/MainContent";
+import FAQ from "./assets/components/FAQ";
+import Footer from "./assets/components/Footer";
+
 import Formule from "./pages/Formule";
 import Coaching from "./pages/Coaching";
-import Footer from "./assets/components/Footer"
 import Contact from "./pages/Contact";
-import InscriptionSection from "./assets/components/InscriptionSection";
 
-// Ce Layout est à l'intérieur d'une Route
 function Layout() {
   const location = useLocation();
   const noLayoutRoutes = ["/formules", "/coaching", "/contact"];
@@ -28,19 +27,33 @@ function Layout() {
     <>
       {!hideLayout && <Header />}
       <Routes>
-        <Route path="/" element={<h2></h2>} />
+        <Route path="/" element={<span />} />
         <Route path="/formules" element={<Formule />} />
         <Route path="/coaching" element={<Coaching />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {!hideLayout && (
         <>
-          <Bubble />
+          {/* 1. Bénéfices clients — glassmorphism dark */}
           <ServicesPromotion />
-          <Video />
+
+          {/* 2. Activités / Coaching / Suivi — tabs animés */}
           <TabSwitcher />
+
+          {/* 3. Témoignages — social proof + carousel */}
+          <Testimonials />
+
+          {/* 4. Tarifs — pricing cards avec "Recommandé" */}
+          <PricingSection />
+
+          {/* 5. Coachs certifiés */}
           <MainContent />
-          <Footer/>
+
+          {/* 6. FAQ — accordion animé */}
+          <FAQ />
+
+          {/* Footer */}
+          <Footer />
         </>
       )}
     </>

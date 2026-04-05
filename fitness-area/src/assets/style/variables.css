@@ -1,21 +1,39 @@
 :root {
+    /* === Brand Colors === */
     --primary-color: #FF693A;
+    --primary-hover: #ff9c63;
+    --primary-glow: rgba(255, 105, 58, 0.3);
     --secondary-color: #090a10;
+
+    /* === Dark Mode Palette === */
+    --bg-primary: #080808;
+    --bg-secondary: #0d0d0d;
+    --bg-card: #141414;
+    --bg-glass: rgba(255, 255, 255, 0.03);
+    --border-color: rgba(255, 255, 255, 0.08);
+
+    /* === Typography === */
+    --text-primary: #ffffff;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
+
+    /* === Legacy (kept for compatibility) === */
     --hover: #ffddd2;
-    --icon:#C84419;
-    --disabled-1:#e0e0e0;
+    --icon: #C84419;
+    --disabled-1: #e0e0e0;
     --white: #fff;
     --black: #000000;
     --icon-color: #C84419;
-    /* --border-radius-- */
+
+    /* === Border Radius === */
     --border-radius-full: 50px;
     --border-radius-medium: 20px;
     --border-radius-video: 3vw;
-    /* --padding/margin-- */
-    --padding-globale:2em;
-    /* --spacing-- */
-    --spacing-verticale: 60px 2em;
-    /* --font-- */
-    --font-paragraph:16px
 
+    /* === Spacing === */
+    --padding-globale: 2em;
+    --spacing-verticale: 60px 2em;
+
+    /* === Typography === */
+    --font-paragraph: 16px;
 }

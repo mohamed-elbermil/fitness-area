@@ -1,26 +1,21 @@
-/* index.css - Styles globaux de base */
+/* index.css — Dark Mode Global Styles */
 @import "tailwindcss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    scroll-behavior: smooth;}
-
-
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #f0f0f0;
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: #080808;
+  color: #ffffff;
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
@@ -28,3 +23,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #FF693A; border-radius: 3px; }
+
+/* Selection */
+::selection { background: rgba(255, 105, 58, 0.3); color: #fff; }

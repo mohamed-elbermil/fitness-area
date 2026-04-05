@@ -1,69 +1,215 @@
 import React from "react";
-import "../style/MainContent.css";
-import InscriptionSection from "./InscriptionSection";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Button from "./Button";
+import InscriptionSection from "./InscriptionSection";
 
-const boxes = [
-  "Boxe training",
-  "Cardio intense",
-  "Yoga détente",
-  "Musculation avancée",
-  "Cours collectif",
-  "Aqua fitness",
+const coaches = [
+  {
+    name: "THOMAS",
+    role: "Coach Musculation & Force",
+    exp: "8 ans d'expérience",
+    cert: "BPJEPS AF",
+    img: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    name: "SARAH",
+    role: "Nutritionniste Sportive",
+    exp: "6 ans d'expérience",
+    cert: "Diététicienne certifiée",
+    img: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    name: "MARC",
+    role: "Coach Cardio & HIIT",
+    exp: "5 ans d'expérience",
+    cert: "DEJEPS Performance",
+    img: "https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
 ];
 
-// Array con URLs de sitios fitness válidos (puedes cambiarlos si quieres)
-const fitnessLinks = [
-  "https://www.bodybuilding.com/",
-  "https://www.menshealth.com/",
-  "https://www.yogajournal.com/",
-  "https://www.fitnessmagazine.com/",
-  "https://www.shape.com/",
-  "https://www.acefitness.org/",
-];
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.12 } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+};
 
 function MainContent() {
   return (
     <>
-      {/* SECTION COACHS SPORTIFS */}
-      <section className="coachs-section">
-        <div className="coachs-header">
-          <h2><span className="coachs-title-bold">Nos</span> <span className="coachs-title-italic">coachs sportifs</span></h2>
-          <a href="/coaching" style={{textDecoration: 'none'}}>
-            <Button variant="member">Découvrez nos coachs</Button>
-          </a>
-        </div>
-        <div className="coachs-grid">
-          <div className="coach-card">
-            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="Coach Thomas" />
-            <div className="coach-info">
-              <span className="coach-name">THOMAS</span>
-              <span className="coach-role">Coach sportif</span>
-              <span className="coach-exp">3 ans d'expériences</span>
+      {/* COACHES SECTION */}
+      <section
+        style={{
+          background: "#080808",
+          padding: "7rem 2rem",
+          borderTop: "1px solid rgba(255,255,255,0.05)",
+        }}
+      >
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          {/* Header row */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "space-between",
+              marginBottom: "3rem",
+              flexWrap: "wrap",
+              gap: "1rem",
+            }}
+          >
+            <div>
+              <p
+                style={{
+                  color: "#FF693A",
+                  fontWeight: 700,
+                  fontSize: "0.8rem",
+                  letterSpacing: "2.5px",
+                  textTransform: "uppercase",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                EXPERTISE
+              </p>
+              <h2
+                style={{
+                  fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)",
+                  fontWeight: 900,
+                  color: "#fff",
+                  textTransform: "uppercase",
+                  lineHeight: 1.1,
+                  margin: 0,
+                }}
+              >
+                Nos{" "}
+                <span style={{ color: "#FF693A", fontStyle: "italic", fontWeight: 500 }}>
+                  coachs certifiés
+                </span>
+              </h2>
             </div>
+            <Link to="/coaching" style={{ textDecoration: "none" }}>
+              <Button variant="member">Découvrez nos coachs</Button>
+            </Link>
           </div>
-          <div className="coach-card">
-            <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg" alt="Coach Sarah" />
-            <div className="coach-info">
-              <span className="coach-name">SARAH</span>
-              <span className="coach-role">Nutritionniste</span>
-              <span className="coach-exp">3 ans d'expériences</span>
-            </div>
-          </div>
-          <div className="coach-card">
-            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="Coach Thomas 2" />
-            <div className="coach-info">
-              <span className="coach-name">THOMAS</span>
-              <span className="coach-role">Coach sportif</span>
-              <span className="coach-exp">3 ans d'expériences</span>
-            </div>
-          </div>
-          <div className="coach-card coach-card-empty"></div>
-          <div className="coach-card coach-card-empty"></div>
+
+          {/* Coach cards */}
+          <motion.div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "1.4rem",
+            }}
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {coaches.map((coach, i) => (
+              <motion.div
+                key={i}
+                variants={cardVariants}
+                whileHover={{ y: -6, transition: { duration: 0.25 } }}
+                style={{
+                  background: "rgba(255,255,255,0.03)",
+                  border: "1px solid rgba(255,255,255,0.07)",
+                  borderRadius: "22px",
+                  overflow: "hidden",
+                  position: "relative",
+                  minHeight: "340px",
+                }}
+              >
+                <img
+                  src={coach.img}
+                  alt={`Coach ${coach.name}`}
+                  style={{
+                    width: "100%",
+                    height: "280px",
+                    objectFit: "cover",
+                    display: "block",
+                    filter: "brightness(0.9) contrast(1.05)",
+                  }}
+                />
+                {/* Gradient overlay */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    height: "65%",
+                    background:
+                      "linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%)",
+                  }}
+                />
+                {/* Cert badge */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "1rem",
+                    right: "1rem",
+                    background: "rgba(255,105,58,0.88)",
+                    color: "#000",
+                    fontSize: "10.5px",
+                    fontWeight: 800,
+                    padding: "4px 11px",
+                    borderRadius: "50px",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.5px",
+                  }}
+                >
+                  {coach.cert}
+                </div>
+                {/* Info */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    padding: "1.4rem",
+                  }}
+                >
+                  <div
+                    style={{
+                      color: "#fff",
+                      fontWeight: 900,
+                      fontSize: "1.1rem",
+                      letterSpacing: "1px",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {coach.name}
+                  </div>
+                  <div
+                    style={{
+                      color: "#FF693A",
+                      fontSize: "0.88rem",
+                      fontWeight: 600,
+                      marginTop: "3px",
+                    }}
+                  >
+                    {coach.role}
+                  </div>
+                  <div
+                    style={{
+                      color: "rgba(255,255,255,0.55)",
+                      fontSize: "0.82rem",
+                      marginTop: "2px",
+                    }}
+                  >
+                    {coach.exp}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
-      {/* SECTION INSCRIPTION SIMPLE déplacée en bas */}
+      {/* CTA INSCRIPTION */}
       <InscriptionSection />
     </>
   );
